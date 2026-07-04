@@ -80,6 +80,54 @@ const strings = {
       `© ${year} Natural Ceylon Cinnamon. All rights reserved. Make your daily cup do more.`,
     cookiePreferences: 'Cookie Preferences',
   },
+  about: {
+    title: 'About NCC',
+    subtitle: 'From Sri Lanka to Your Morning Cup',
+    founder: {
+      name: 'Ruwan Senavirathna',
+      role: 'Founder, Natural Ceylon Cinnamon',
+      photoCaption: 'Ruwan Senavirathna, Founder — Natural Ceylon Cinnamon',
+      quote: "I couldn't find cinnamon in the UK that I'd actually trust. So I went back to the source.",
+      intro:
+        'We work directly with growers in Sri Lanka, select each harvest by grade, test every batch independently, and ship directly to you.',
+    },
+    whyWeStarted: {
+      heading: 'Why We Started',
+      paragraphs: [
+        "After years of buying cinnamon labelled as 'Ceylon' only to find it was Cassia, or poorly stored, or unlabelled in terms of grade, Natural Ceylon Cinnamon was built to fix the problem.",
+        'We source directly from growers in Sri Lanka, the only country that produces true Ceylon cinnamon (Cinnamomum verum) at scale. Every harvest is graded by essential oil concentration, tested independently for purity, and shipped directly to you. No middlemen. No substitutions.',
+      ],
+    },
+    differentiators: {
+      heading: 'What Makes NCC Different',
+      items: [
+        {
+          title: 'The grade system.',
+          description:
+            "Ceylon cinnamon is graded C0 to C5 by essential oil content. Higher grade means higher potency. Most brands don't disclose this. We built our entire product range around it.",
+        },
+        {
+          title: 'Traceability.',
+          description: 'Every batch is traceable to its growing region. Test reports available on request.',
+        },
+        {
+          title: 'Honest copy.',
+          description:
+            'We will not tell you cinnamon cures anything. What we will tell you is that it has been studied extensively for its role in supporting healthy metabolic function, and that grade and origin matter more than any marketing claim.',
+        },
+      ],
+    },
+    products: {
+      heading: 'Our Products',
+      paragraph:
+        'We offer true Ceylon cinnamon across three grades — C4 Daily, C5 Heritage, and Alba Reserve — alongside our Ritual Collection of coffee and chai formats. Every product uses authenticated Ceylon, with no Cassia blending.',
+    },
+    basedInUk: {
+      heading: 'Based in the UK. Sourced in Sri Lanka.',
+      paragraph:
+        "Natural Ceylon Cinnamon ships across the United Kingdom. We're a small, focused brand, and we intend to stay that way. Quality over volume, always.",
+    },
+  },
   notFound: {
     title: '404',
     message: "The page you're looking for doesn't exist.",
