@@ -5,6 +5,7 @@ import { HomePage } from '../modules/home'
 import NotFoundPage from '../modules/not-found/NotFoundPage'
 import { RecipesPage } from '../modules/recipes'
 import { SciencePage } from '../modules/science'
+import { GiftSetsPage, ShopPage } from '../modules/shop'
 
 const router=createBrowserRouter( [
   {
@@ -14,6 +15,8 @@ const router=createBrowserRouter( [
       { path: 'about-ncc', element: <AboutPage /> },
       { path: 'the-science', element: <SciencePage /> },
       { path: 'recipes', element: <RecipesPage /> },
+      { path: 'shop', element: <ShopPage /> },
+      { path: 'shop/gift-sets', element: <GiftSetsPage /> },
       { path: '*', element: <NotFoundPage /> },
     ],
   },

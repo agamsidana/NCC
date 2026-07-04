@@ -429,6 +429,98 @@ const strings = {
     ],
     pagination: { currentPage: 1, totalPages: 5 },
   },
+  shop: {
+    title: 'Shop',
+    description: 'Every grade is authentic Ceylon. Choose by your goals and how your palate leans.',
+    exploreCta: 'Explore',
+    products: [
+      {
+        slug: 'c5-heritage',
+        name: 'C5 Heritage Ceylon Cinnamon 100g',
+        category: 'cinnamon',
+        description:
+          'Higher essential oil concentration than C4. More aromatic, slightly sweeter. The most popular NCC grade.',
+        price: '£10.95',
+      },
+      {
+        slug: 'c4-daily',
+        name: 'C4 Daily Ceylon Cinnamon 100g',
+        category: 'cinnamon',
+        description:
+          'The everyday workhorse. Consistent, clean, and reliable for daily use in coffee, oats, or cooking.',
+        price: '£8.95',
+      },
+      {
+        slug: 'alba-reserve',
+        name: 'Alba Reserve Ceylon Cinnamon 100g',
+        category: 'cinnamon',
+        description:
+          'The most delicate grade. The smallest cut of the first-flush harvest. Ideal for finishing lattes, gifting, and serious cinnamon lovers.',
+        price: '£13.95',
+      },
+      {
+        slug: 'ceylon-reserve-coffee',
+        name: 'Ceylon Reserve Coffee',
+        category: 'ritual',
+        description: 'Premium Arabica coffee blended with grade C5 Heritage Ceylon cinnamon.',
+        price: '£12.95',
+      },
+      {
+        slug: 'golden-chai-latte',
+        name: 'Golden Chai Latte',
+        category: 'ritual',
+        description: 'One heaped teaspoon into hot oat milk. A deeply warming Sri Lankan spice blend.',
+        price: '£19.95',
+      },
+      {
+        slug: 'spice-of-kings-set-a',
+        name: 'Spice of Kings Set A',
+        category: 'gift-set',
+        description: null,
+        price: '£34.95',
+      },
+      {
+        slug: 'queen-of-spices-reserve-set-b',
+        name: 'Queen of Spices Reserve Set B',
+        category: 'gift-set',
+        description: null,
+        price: '£69.00',
+      },
+      {
+        slug: 'morning-ritual-duo',
+        name: 'Morning Ritual Duo',
+        category: 'gift-set',
+        description: null,
+        price: '£19.95',
+      },
+      {
+        slug: 'chai-and-ceylon-set',
+        name: 'Chai & Ceylon Set',
+        category: 'gift-set',
+        description: null,
+        price: '£25.95',
+      },
+      {
+        slug: 'daily-ritual-trio',
+        name: 'Daily Ritual Trio',
+        category: 'gift-set',
+        description: null,
+        price: '£37.00',
+      },
+      {
+        slug: 'discovery-and-reserve-bridge',
+        name: 'Discovery & Reserve Bridge',
+        category: 'gift-set',
+        description: null,
+        price: '£39.95',
+      },
+    ],
+  },
+  giftSets: {
+    title: 'Gift Sets',
+    description:
+      'Curated Sri Lankan ritual gift sets. Premium packaging, provenance-led ingredients, and a story worth giving.',
+  },
   notFound: {
     title: '404',
     message: "The page you're looking for doesn't exist.",
