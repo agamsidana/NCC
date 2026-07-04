@@ -627,9 +627,18 @@ const strings = {
     removeLabel: 'Remove',
   },
   notFound: {
+    eyebrow: 'Lost Your Way?',
     title: '404',
-    message: "The page you're looking for doesn't exist.",
-    backHome: 'Back to home',
+    heading: "This Page Doesn't Exist",
+    message:
+      "The page you're looking for doesn't exist. It may have been moved, or the link might be off.",
+    backHome: 'Back to Home',
+    quickLinksLabel: 'Or try one of these',
+    quickLinks: [
+      { label: 'Shop All Products', href: '/shop' },
+      { label: 'Recipes & Rituals', href: '/recipes' },
+      { label: 'The Science', href: '/the-science' },
+    ],
   },
 } as const
 
