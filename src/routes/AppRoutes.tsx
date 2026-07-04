@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider, } from 'react-router-dom'
 import MainLayout from '../layouts/MainLayout'
 import { AboutPage } from '../modules/about'
+import { FindYourRitualPage } from '../modules/find-your-ritual'
 import { HomePage } from '../modules/home'
 import NotFoundPage from '../modules/not-found/NotFoundPage'
 import { ProductPage } from '../modules/product'
@@ -21,6 +22,7 @@ const router=createBrowserRouter( [
       { path: 'shop/gift-sets', element: <GiftSetsPage /> },
       { path: 'products/:slug', element: <ProductPage /> },
       { path: 'reviews', element: <ReviewsPage /> },
+      { path: 'find-your-ritual', element: <FindYourRitualPage /> },
       { path: '*', element: <NotFoundPage /> },
     ],
   },

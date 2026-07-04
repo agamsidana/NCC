@@ -546,6 +546,76 @@ const strings = {
     title: 'Customer Reviews',
     subtitle: 'What customers are saying across the NCC range — real reviews from every product.',
   },
+  findYourRitual: {
+    title: 'Find Your Ritual',
+    intro: {
+      eyebrow: 'Find Your Ritual',
+      heading: 'Not Sure Which Grade Is Right for You?',
+      subheading: '5 quick questions. We match you to the right grade.',
+      steps: ['Tell us your goals', 'Describe your routine', 'Get your recommendation'],
+      cta: 'Start the Quiz',
+      duration: 'Takes less than 60 seconds',
+    },
+    questions: [
+      {
+        question: "What's your main goal with Ceylon cinnamon?",
+        options: [
+          { label: 'Sharpen my focus and mental clarity', grade: 'c5-heritage' },
+          { label: 'Support healthy blood sugar and metabolism', grade: 'alba-reserve' },
+          { label: 'Unwind, reduce stress and sleep better', grade: 'c4-daily' },
+          { label: "I'm curious about natural wellness", grade: 'c4-daily' },
+        ],
+      },
+      {
+        question: 'How often do you plan to use it?',
+        options: [
+          { label: 'Every single day', grade: 'c4-daily' },
+          { label: 'A few times a week', grade: 'c5-heritage' },
+          { label: 'Occasionally, as a treat', grade: 'alba-reserve' },
+          { label: 'Mostly to gift it to someone', grade: 'alba-reserve' },
+        ],
+      },
+      {
+        question: 'Where will it go first?',
+        options: [
+          { label: 'My morning coffee', grade: 'c5-heritage' },
+          { label: 'Tea, chai, or lattes', grade: 'c4-daily' },
+          { label: 'Baking and cooking', grade: 'c4-daily' },
+          { label: 'Not sure yet', grade: 'c4-daily' },
+        ],
+      },
+      {
+        question: 'How would you describe your palate?',
+        options: [
+          { label: 'I like bold, warming spice', grade: 'c4-daily' },
+          { label: 'I prefer something delicate and subtle', grade: 'alba-reserve' },
+          {
+            label: 'I want the most authentic Ceylon flavour, whatever the intensity',
+            grade: 'c5-heritage',
+          },
+          { label: "I don't have a strong preference", grade: 'c4-daily' },
+        ],
+      },
+      {
+        question: 'What matters most to you?',
+        options: [
+          { label: 'Everyday reliability and value', grade: 'c4-daily' },
+          { label: 'The most aromatic, popular grade', grade: 'c5-heritage' },
+          { label: 'The rarest, most exclusive grade', grade: 'alba-reserve' },
+          { label: 'Just exploring — I want to start somewhere', grade: 'c4-daily' },
+        ],
+      },
+    ],
+    progressLabel: (current: number, total: number) => `Question ${current} of ${total}`,
+    backCta: 'Back',
+    nextCta: 'Next',
+    result: {
+      eyebrow: 'Your Match',
+      heading: "Here's Your Ritual",
+      retakeCta: 'Retake the Quiz',
+      shopCta: 'Shop This Grade',
+    },
+  },
   notFound: {
     title: '404',
     message: "The page you're looking for doesn't exist.",
