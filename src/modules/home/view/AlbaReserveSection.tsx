@@ -11,7 +11,7 @@ function AlbaReserveSection() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 md:grid-cols-2 md:items-center md:gap-16">
         <div className="relative mx-auto w-full max-w-md md:max-w-none">
           <img
-            src={IMAGES.mainProduct}
+            src={IMAGES.albaReserve}
             alt={albaReserve.heading}
             className="aspect-[4/5] w-full rounded-2xl object-cover shadow-lg"
           />

@@ -108,21 +108,21 @@ const strings = {
           description:
             'Higher essential oil concentration than C4. More aromatic, slightly sweeter. The most popular NCC grade.',
           price: '£10.95',
-          href: '/shop/c5-heritage',
+          href: '/products/c5-heritage',
         },
         {
           title: 'C4 Daily Ceylon Cinnamon 100g',
           description:
             'The everyday workhorse. Consistent, clean, and reliable for daily use in coffee, oats, or cooking.',
           price: '£8.95',
-          href: '/shop/c4-daily',
+          href: '/products/c4-daily',
         },
         {
           title: 'Alba Reserve Ceylon Cinnamon 100g',
           description:
             'The most delicate grade. The innermost quill of the first-flush harvest. Ideal for finishing lattes, gifting, and serious cooks.',
           price: '£12.95',
-          href: '/shop/alba-reserve',
+          href: '/products/alba-reserve',
         },
       ],
       exploreCta: 'Explore',
@@ -144,7 +144,7 @@ const strings = {
           'Enjoy immediately, no need to strain',
         ],
         cta: 'Shop Cinnamon Coffee',
-        href: '/shop/cinnamon-coffee',
+        href: '/products/ceylon-reserve-coffee',
       },
       afternoon: {
         tag: 'Afternoon Chai',
@@ -158,7 +158,7 @@ const strings = {
           'Froth for a café-style finish. Sweeten if needed.',
         ],
         cta: 'Shop Golden Chai Latte',
-        href: '/shop/golden-chai-latte',
+        href: '/products/golden-chai-latte',
       },
     },
     albaReserve: {
@@ -173,7 +173,7 @@ const strings = {
       ],
       cta: 'Explore Alba Reserve',
       shareLabel: 'Share Alba',
-      href: '/shop/alba-reserve',
+      href: '/products/alba-reserve',
     },
     ourStory: {
       eyebrow: 'Our Story',
@@ -259,11 +259,11 @@ const strings = {
       {
         title: 'Shop',
         links: [
-          { label: 'C4 Daily', href: '/shop/c4-daily' },
-          { label: 'C5 Heritage', href: '/shop/c5-heritage' },
-          { label: 'Alba Reserve', href: '/shop/alba-reserve' },
-          { label: 'Ceylon Reserve Coffee', href: '/shop/ceylon-reserve-coffee' },
-          { label: 'Golden Chai Latte', href: '/shop/golden-chai-latte' },
+          { label: 'C4 Daily', href: '/products/c4-daily' },
+          { label: 'C5 Heritage', href: '/products/c5-heritage' },
+          { label: 'Alba Reserve', href: '/products/alba-reserve' },
+          { label: 'Ceylon Reserve Coffee', href: '/products/ceylon-reserve-coffee' },
+          { label: 'Golden Chai Latte', href: '/products/golden-chai-latte' },
           { label: 'Gift Sets', href: '/shop/gift-sets' },
         ],
       },
@@ -520,6 +520,22 @@ const strings = {
     title: 'Gift Sets',
     description:
       'Curated Sri Lankan ritual gift sets. Premium packaging, provenance-led ingredients, and a story worth giving.',
+  },
+  productPage: {
+    addToCartCta: 'Add To Cart',
+    buyNowCta: 'Buy it now',
+    shareLabel: 'Share',
+    quantityLabel: 'Quantity',
+    taxesNote: 'Taxes included.',
+    trustBadges: [
+      { icon: 'mdi:calendar-check-outline', label: '30-Day Money-Back' },
+      { icon: 'mdi:truck-fast-outline', label: 'Dispatched Within 24h' },
+      { icon: 'mdi:flask-outline', label: 'Lab Tested' },
+    ],
+    whoIsThisForHeading: 'Who is this for?',
+    reviewsHeading: 'What Our Customers Say',
+    reviewsSubheading: 'Customer Reviews',
+    crossSellHeading: 'Complete Your Ritual',
   },
   notFound: {
     title: '404',
