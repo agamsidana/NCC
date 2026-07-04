@@ -3,6 +3,7 @@ import MainLayout from '../layouts/MainLayout'
 import { AboutPage } from '../modules/about'
 import { HomePage } from '../modules/home'
 import NotFoundPage from '../modules/not-found/NotFoundPage'
+import { SciencePage } from '../modules/science'
 
 const router=createBrowserRouter( [
   {
@@ -10,6 +11,7 @@ const router=createBrowserRouter( [
     children: [
       { index: true, element: <HomePage /> },
       { path: 'about-ncc', element: <AboutPage /> },
+      { path: 'the-science', element: <SciencePage /> },
       { path: '*', element: <NotFoundPage /> },
     ],
   },

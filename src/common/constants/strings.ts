@@ -128,6 +128,40 @@ const strings = {
         "Natural Ceylon Cinnamon ships across the United Kingdom. We're a small, focused brand, and we intend to stay that way. Quality over volume, always.",
     },
   },
+  science: {
+    title: 'The Science Behind Ceylon Cinnamon',
+    intro:
+      "Ceylon cinnamon has been the subject of hundreds of peer-reviewed studies. Here's an honest summary of what the research says, and what it doesn't.",
+    disclaimer:
+      'These statements have not been evaluated by the MHRA. This product is not intended to diagnose, treat, cure, or prevent any disease.',
+    sections: [
+      {
+        heading: 'Ceylon vs. Cassia: Why Species Matters',
+        paragraphs: [
+          'Cassia (Cinnamomum cassia) and Ceylon (Cinnamomum verum) are botanically different plants. Ceylon is lighter in colour, more delicate in flavour, and critically different in its coumarin content. Cassia contains 1–5% coumarin. Authenticated Ceylon contains approximately 0.04%, more than 25x less.',
+          "The European Food Safety Authority has set tolerable daily intake limits specifically because of Cassia's coumarin levels. If you're consuming cinnamon regularly, species matters.",
+        ],
+        note: null,
+        source: 'Source: European Food Safety Authority (EFSA).',
+      },
+      {
+        heading: 'Metabolic Health Research',
+        paragraphs: [
+          "Over 40 peer-reviewed studies have examined cinnamon's relationship with glucose metabolism, insulin sensitivity, and post-meal blood sugar response. Several randomised controlled trials have shown statistically significant reductions in fasting blood glucose and HbA1c in participants supplementing with cinnamon regularly.",
+        ],
+        note: 'Important note: Ceylon cinnamon is a complementary addition to a healthy lifestyle, not a treatment or cure for any medical condition. If you have a health condition, speak to a healthcare professional before supplementing.',
+        source: 'Source: PubMed, 2010–2024.',
+      },
+      {
+        heading: 'Why Grade Matters Scientifically',
+        paragraphs: [
+          'Essential oil concentration varies significantly by grade. C1 grade contains roughly 0.5–1% volatile oil, while C5 Heritage contains 2.5–3%, and Alba Reserve tests highest of all. The bioactive compounds most studied are concentrated in the essential oil, which is why grade — not just species — determines potency.',
+        ],
+        note: null,
+        source: 'Source: ISO 6539 grading standard.',
+      },
+    ],
+  },
   notFound: {
     title: '404',
     message: "The page you're looking for doesn't exist.",
