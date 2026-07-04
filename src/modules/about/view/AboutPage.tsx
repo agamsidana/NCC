@@ -20,7 +20,7 @@ function AboutPage() {
         <div className="mt-10 grid gap-10 md:grid-cols-2 md:items-start md:gap-16">
           <figure>
             <img
-              src={IMAGES.hero}
+              src={IMAGES.ourStory}
               alt={about.founder.photoCaption}
               className="aspect-[3/4] w-full rounded-2xl object-cover shadow-lg"
             />

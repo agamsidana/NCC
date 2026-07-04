@@ -1,3 +1,5 @@
+import { IMAGES } from "./image-source"
+
 /**
  * Single source of truth for hardcoded UI copy (nav labels, footer text,
  * page copy, button labels, etc). Import from here instead of inlining
@@ -109,6 +111,7 @@ const strings = {
             'Higher essential oil concentration than C4. More aromatic, slightly sweeter. The most popular NCC grade.',
           price: '£10.95',
           href: '/products/c5-heritage',
+          img:IMAGES.gradeSystem.image1
         },
         {
           title: 'C4 Daily Ceylon Cinnamon 100g',
@@ -116,6 +119,7 @@ const strings = {
             'The everyday workhorse. Consistent, clean, and reliable for daily use in coffee, oats, or cooking.',
           price: '£8.95',
           href: '/products/c4-daily',
+            img:IMAGES.gradeSystem.image2
         },
         {
           title: 'Alba Reserve Ceylon Cinnamon 100g',
@@ -123,6 +127,7 @@ const strings = {
             'The most delicate grade. The innermost quill of the first-flush harvest. Ideal for finishing lattes, gifting, and serious cooks.',
           price: '£12.95',
           href: '/products/alba-reserve',
+            img:IMAGES.gradeSystem.image3
         },
       ],
       exploreCta: 'Explore',
@@ -536,6 +541,10 @@ const strings = {
     reviewsHeading: 'What Our Customers Say',
     reviewsSubheading: 'Customer Reviews',
     crossSellHeading: 'Complete Your Ritual',
+  },
+  reviewsPage: {
+    title: 'Customer Reviews',
+    subtitle: 'What customers are saying across the NCC range — real reviews from every product.',
   },
   notFound: {
     title: '404',

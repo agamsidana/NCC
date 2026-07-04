@@ -960,3 +960,9 @@ export function getProductBySlug(slug: string | undefined): Product | undefined 
     },
   };
 }
+
+export function getAllProducts(): Product[] {
+  return strings.shop.products
+    .map((product) => getProductBySlug(product.slug))
+    .filter((product): product is Product => Boolean(product));
+}

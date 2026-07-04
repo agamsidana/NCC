@@ -5,6 +5,7 @@ import { HomePage } from '../modules/home'
 import NotFoundPage from '../modules/not-found/NotFoundPage'
 import { ProductPage } from '../modules/product'
 import { RecipesPage } from '../modules/recipes'
+import { ReviewsPage } from '../modules/reviews'
 import { SciencePage } from '../modules/science'
 import { GiftSetsPage, ShopPage } from '../modules/shop'
 
@@ -19,6 +20,7 @@ const router=createBrowserRouter( [
       { path: 'shop', element: <ShopPage /> },
       { path: 'shop/gift-sets', element: <GiftSetsPage /> },
       { path: 'products/:slug', element: <ProductPage /> },
+      { path: 'reviews', element: <ReviewsPage /> },
       { path: '*', element: <NotFoundPage /> },
     ],
   },

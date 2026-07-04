@@ -1,6 +1,5 @@
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
-import { IMAGES } from "../../../common/constants/image-source";
 import strings from "../../../common/constants/strings";
 
 function GradeSystemSection() {
@@ -28,7 +27,7 @@ function GradeSystemSection() {
               className="flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white"
             >
               <img
-                src={IMAGES.mainProduct}
+                src={product.img}
                 alt={product.title}
                 className="aspect-[4/3] w-full object-cover"
               />
