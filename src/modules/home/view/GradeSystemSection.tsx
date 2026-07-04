@@ -29,7 +29,7 @@ function GradeSystemSection() {
               <img
                 src={product.img}
                 alt={product.title}
-                className="aspect-[4/3] w-full object-cover"
+                className="aspect-[4/3] w-full object-cover transition-[filter] duration-500 hover:brightness-105"
               />
               <div className="flex flex-1 flex-col gap-3 p-6">
                 <h3 className="text-sm font-semibold text-neutral-900">

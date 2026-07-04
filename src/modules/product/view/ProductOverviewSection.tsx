@@ -51,7 +51,7 @@ function ProductOverviewSection({ product }: ProductOverviewSectionProps) {
           <img
             src={product.image}
             alt={product.title}
-            className="aspect-square w-full rounded-2xl object-cover shadow-lg"
+            className="aspect-square w-full rounded-2xl object-cover shadow-lg transition-shadow duration-500 hover:shadow-2xl"
           />
         </div>
 

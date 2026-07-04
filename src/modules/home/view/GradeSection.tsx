@@ -23,9 +23,9 @@ function GradeSection() {
           {grade.cards.map((card) => (
             <div
               key={card.title}
-              className="rounded-xl border border-neutral-200 bg-white p-6"
+              className="group rounded-xl border border-neutral-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary-300 hover:shadow-lg"
             >
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary-50 text-primary-600">
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary-50 text-primary-600 transition-colors duration-300 group-hover:bg-primary-600 group-hover:text-white">
                 <Icon icon={card.icon} width={20} height={20} />
               </span>
               <h3 className="mt-4 text-sm font-semibold text-neutral-900">

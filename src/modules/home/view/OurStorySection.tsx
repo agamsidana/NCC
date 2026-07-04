@@ -13,7 +13,7 @@ function OurStorySection() {
           <img
             src={IMAGES.ourStory}
             alt={ourStory.heading}
-            className="aspect-[4/3] w-full rounded-2xl object-cover shadow-lg"
+            className="aspect-[4/3] w-full rounded-2xl object-cover shadow-lg transition-shadow duration-500 hover:shadow-2xl"
           />
         </div>
 

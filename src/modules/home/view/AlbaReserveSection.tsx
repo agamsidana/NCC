@@ -13,7 +13,7 @@ function AlbaReserveSection() {
           <img
             src={IMAGES.albaReserve}
             alt={albaReserve.heading}
-            className="aspect-[4/5] w-full rounded-2xl object-cover shadow-lg"
+            className="aspect-[4/5] w-full rounded-2xl object-cover shadow-lg transition-shadow duration-500 hover:shadow-2xl"
           />
           <span className="absolute bottom-4 left-4 inline-flex items-center gap-1.5 rounded-full bg-black/50 px-3 py-1.5 text-xs font-medium text-white backdrop-blur">
             <Icon icon="mdi:share-outline" width={14} height={14} />

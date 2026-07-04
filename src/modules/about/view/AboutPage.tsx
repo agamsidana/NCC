@@ -22,7 +22,7 @@ function AboutPage() {
             <img
               src={IMAGES.ourStory}
               alt={about.founder.photoCaption}
-              className="aspect-[3/4] w-full rounded-2xl object-cover shadow-lg"
+              className="aspect-[3/4] w-full rounded-2xl object-cover shadow-lg transition-shadow duration-500 hover:shadow-2xl"
             />
             <figcaption className="mt-3 text-sm text-neutral-500">
               {about.founder.photoCaption}
