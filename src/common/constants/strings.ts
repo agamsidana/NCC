@@ -24,6 +24,18 @@ const strings = {
       copyright: (year: number) => `© ${year} Natural Ceylon Cinnamon. All rights reserved.`,
     },
   },
+  home: {
+    hero: {
+      eyebrow: 'Single-Origin Sri Lanka.',
+      heading: 'Better coffee. Better tea. Better rituals.',
+      description:
+        "Not all cinnamon is created equal. NCC sources only true Ceylon: graded, tested, and traceable to its origin in Sri Lanka. Add it to your morning ritual. Feel the difference.",
+      rating: { score: '4.9', reviewCount: '200+ verified buyers' },
+      primaryCta: 'Shop Daily Rituals',
+      secondaryCta: 'Why Ceylon Matters',
+      badges: ['Certified True Ceylon', 'Third-Party Lab Tested', 'Single-Origin Sri Lanka'],
+    },
+  },
   notFound: {
     title: '404',
     message: "The page you're looking for doesn't exist.",
