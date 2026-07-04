@@ -616,6 +616,16 @@ const strings = {
       shopCta: 'Shop This Grade',
     },
   },
+  cart: {
+    title: 'Your Cart',
+    emptyHeading: 'Your cart is empty',
+    emptyMessage: "Looks like you haven't added anything yet. Explore the shop to find your ritual.",
+    continueShoppingCta: 'Continue Shopping',
+    taxesNote: 'Taxes included. Discounts and shipping calculated at checkout.',
+    estimatedTotalLabel: 'Estimated total',
+    checkoutCta: 'Checkout',
+    removeLabel: 'Remove',
+  },
   notFound: {
     title: '404',
     message: "The page you're looking for doesn't exist.",

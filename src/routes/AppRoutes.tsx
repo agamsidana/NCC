@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider, } from 'react-router-dom'
 import MainLayout from '../layouts/MainLayout'
 import { AboutPage } from '../modules/about'
+import { CartPage } from '../modules/cart'
 import { FindYourRitualPage } from '../modules/find-your-ritual'
 import { HomePage } from '../modules/home'
 import NotFoundPage from '../modules/not-found/NotFoundPage'
@@ -23,6 +24,7 @@ const router=createBrowserRouter( [
       { path: 'products/:slug', element: <ProductPage /> },
       { path: 'reviews', element: <ReviewsPage /> },
       { path: 'find-your-ritual', element: <FindYourRitualPage /> },
+      { path: 'cart', element: <CartPage /> },
       { path: '*', element: <NotFoundPage /> },
     ],
   },
