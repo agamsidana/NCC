@@ -1,6 +1,9 @@
 import { combineReducers } from '@reduxjs/toolkit'
+import cartReducer from '../modules/cart/cartSlice'
 
-const rootReducer = combineReducers({})
+const rootReducer = combineReducers({
+  cart: cartReducer,
+})
 
 export type RootReducer = typeof rootReducer
 

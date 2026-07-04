@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { IMAGES } from "../../../common/constants/image-source";
 import type { Product } from "../../../common/constants/products";
 import strings from "../../../common/constants/strings";
+import { addItem } from "../../cart/cartSlice";
+import { useAppDispatch } from "../../../store/hooks";
 
 const galleryImages = [IMAGES.mainProduct, IMAGES.mainProduct, IMAGES.mainProduct];
 
@@ -13,8 +15,22 @@ type ProductOverviewSectionProps = {
 
 function ProductOverviewSection({ product }: ProductOverviewSectionProps) {
   const { productPage } = strings;
+  const dispatch = useAppDispatch();
   const [activeImage, setActiveImage] = useState(0);
   const [quantity, setQuantity] = useState(1);
+
+  function handleAddToCart() {
+    dispatch(
+      addItem({
+        slug: product.slug,
+        title: product.title,
+        image: galleryImages[0],
+        variant: product.variant.value,
+        price: product.price,
+        quantity,
+      }),
+    );
+  }
 
   return (
     <section className="mx-auto max-w-7xl px-4 py-8 md:py-12">
@@ -112,6 +128,7 @@ function ProductOverviewSection({ product }: ProductOverviewSectionProps) {
           <div className="flex w-full flex-col gap-3 pt-2">
             <button
               type="button"
+              onClick={handleAddToCart}
               className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-700"
             >
               {productPage.addToCartCta}

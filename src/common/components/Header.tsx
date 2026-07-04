@@ -3,10 +3,14 @@ import { Link } from 'react-router-dom'
 import strings from '../constants/strings'
 import { Icon } from '@iconify/react'
 import { IMAGES } from '../constants/image-source'
+import { openDrawer, selectCartItemCount } from '../../modules/cart/cartSlice'
+import { useAppDispatch, useAppSelector } from '../../store/hooks'
 
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const dispatch = useAppDispatch()
+  const cartItemCount = useAppSelector(selectCartItemCount)
 
   return (
     <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white">
@@ -48,13 +52,19 @@ function Header() {
           >
             <Icon icon={"iconamoon:profile-duotone"} width={22} height={22} />
           </Link>
-          <Link
-            to="/cart"
+          <button
+            type="button"
             aria-label={strings.layout.cart}
-            className="inline-flex text-primary-600 hover:text-primary-700"
+            onClick={() => dispatch(openDrawer())}
+            className="relative inline-flex text-primary-600 hover:text-primary-700"
           >
             <Icon icon={"solar:bag-linear"} height={22} width={22} />
-          </Link>
+            {cartItemCount > 0 && (
+              <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-primary-600 text-[10px] font-semibold text-white">
+                {cartItemCount}
+              </span>
+            )}
+          </button>
           <button
             type="button"
             aria-label={isMenuOpen ? strings.layout.closeMenu : strings.layout.menu}
