@@ -17,7 +17,7 @@ function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4">
         <Link to="/" className="flex items-center gap-2">
           <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-primary-400 text-primary-600">
-           <img src={IMAGES.logo}/>
+           <img src={IMAGES.logo} className='rounded-full'/>
           </span>
           <span className="flex flex-col leading-none">
             <span className="font-serif text-xl tracking-wide text-neutral-900">

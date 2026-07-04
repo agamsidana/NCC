@@ -51,7 +51,7 @@ function WhyProductSection() {
           <img
             src={IMAGES.mainProduct}
             alt={whyProduct.heading}
-            className="aspect-[4/3] w-full rounded-2xl object-cover shadow-lg"
+            className="aspect-[4/3] w-full rounded-2xl object-cover shadow-lg transition-shadow duration-500 hover:shadow-2xl"
           />
           <span className="absolute bottom-4 left-4 inline-flex items-center gap-1.5 rounded-full bg-white/90 px-3 py-1.5 text-xs font-medium text-neutral-800 shadow">
             <Icon

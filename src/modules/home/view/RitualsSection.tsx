@@ -26,7 +26,7 @@ function RitualsSection() {
             <img
               src={IMAGES.mainProduct}
               alt={rituals.morning.heading}
-              className="aspect-[4/3] w-full object-cover md:h-full md:aspect-auto"
+              className="aspect-[4/3] w-full object-cover transition-[filter] duration-500 hover:brightness-105 md:h-full md:aspect-auto"
             />
             <div className="flex flex-col justify-center gap-4 p-8">
               <span className="inline-flex w-fit items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-primary-600">
@@ -96,7 +96,7 @@ function RitualsSection() {
             <img
               src={IMAGES.mainProduct1}
               alt={rituals.afternoon.heading}
-              className="order-1 aspect-[4/3] w-full object-cover md:order-2 md:h-full md:aspect-auto"
+              className="order-1 aspect-[4/3] w-full object-cover transition-[filter] duration-500 hover:brightness-105 md:order-2 md:h-full md:aspect-auto"
             />
           </div>
         </div>
