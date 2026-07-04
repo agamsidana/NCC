@@ -32,6 +32,225 @@ const strings = {
       secondaryCta: 'Why Ceylon Matters',
       badges: ['Certified True Ceylon', 'Third-Party Lab Tested', 'Single-Origin Sri Lanka'],
     },
+    trustBar: {
+      items: [
+        { label: '4.9 Average Rating', sublabel: '200+ Verified Buyers', icon: 'mdi:star-outline' },
+        { label: '30-Day Money-Back', sublabel: 'No Questions Asked', icon: 'mdi:shield-check-outline' },
+        { label: 'Zero Artificial Additives', sublabel: 'Pure Ceylon Only', icon: 'mdi:leaf-outline' },
+        { label: 'Dispatched Within 24h', sublabel: 'From UK Warehouse', icon: 'mdi:truck-fast-outline' },
+        {
+          label: 'Batch Reports Published',
+          sublabel: 'Full Transparency',
+          icon: 'mdi:file-document-check-outline',
+        },
+      ],
+    },
+    whyProduct: {
+      eyebrow: 'Your Daily Ritual',
+      heading: 'Why Cinnamon, Why Now',
+      paragraphs: [
+        "Most cinnamon sold in the UK isn't actually cinnamon. It's Cassia, a cheaper bark loaded with coumarin that can cause issues at high doses. True Ceylon is different.",
+        'Ceylon cinnamon has been studied for its role in supporting healthy metabolic function, particularly insulin sensitivity and blood sugar management after meals. NCC sources only authenticated Ceylon, graded by oil content, and verified by third-party testing. Your morning ritual deserves better ingredients.',
+      ],
+      stats: [
+        { value: 'C1–C5', label: 'Heritage grade range' },
+        { value: '0.04%', label: 'Coumarin in true Ceylon (vs 1–3% in Cassia)' },
+        { value: '100%', label: 'Traceable to origin' },
+      ],
+      badge: 'True Ceylon Certified',
+      cta: 'Explore the Science',
+    },
+    grade: {
+      eyebrow: 'The NCC Difference',
+      heading: 'Why Serious About Cinnamon Means Being Serious About Grade',
+      subheading:
+        'Every detail, from soil to grading to your cup, shapes the potency and purity of what you consume.',
+      cards: [
+        {
+          icon: 'mdi:water-outline',
+          title: 'Graded by Oil Content',
+          description:
+            'Ceylon is graded C0–C5 by essential oil concentration. Higher grade = greater potency. Most brands never disclose this.',
+        },
+        {
+          icon: 'mdi:map-marker-outline',
+          title: 'Single-Origin Sri Lanka',
+          description:
+            'Every batch is traceable to a specific growing region in Sri Lanka, the only country that produces true Ceylon cinnamon at scale.',
+        },
+        {
+          icon: 'mdi:flask-outline',
+          title: 'Third-Party Lab Verified',
+          description:
+            "We don't ask you to trust the label. Every batch is independently tested for purity, coumarin levels, and heavy metals.",
+        },
+        {
+          icon: 'mdi:tree-outline',
+          title: 'True Ceylon, Not Cassia',
+          description:
+            'Cassia is cheap. Ceylon is the real thing. We use only Cinnamomum verum: authentic, low-coumarin, genuine Ceylon.',
+        },
+        {
+          icon: 'mdi:eye-outline',
+          title: 'Transparent Sourcing',
+          description:
+            "We share our testing reports. You can see exactly what's in your cinnamon: no marketing fluff, no hidden corners.",
+        },
+      ],
+    },
+    gradeSystem: {
+      eyebrow: 'Choose Your Grade',
+      heading: 'The NCC Grade System',
+      subheading: 'Every grade is authentic Ceylon. Choose by your goals and how your palate leans.',
+      products: [
+        {
+          title: 'C5 Heritage Ceylon Cinnamon 100g',
+          description:
+            'Higher essential oil concentration than C4. More aromatic, slightly sweeter. The most popular NCC grade.',
+          price: '£10.95',
+          href: '/shop/c5-heritage',
+        },
+        {
+          title: 'C4 Daily Ceylon Cinnamon 100g',
+          description:
+            'The everyday workhorse. Consistent, clean, and reliable for daily use in coffee, oats, or cooking.',
+          price: '£8.95',
+          href: '/shop/c4-daily',
+        },
+        {
+          title: 'Alba Reserve Ceylon Cinnamon 100g',
+          description:
+            'The most delicate grade. The innermost quill of the first-flush harvest. Ideal for finishing lattes, gifting, and serious cooks.',
+          price: '£12.95',
+          href: '/shop/alba-reserve',
+        },
+      ],
+      exploreCta: 'Explore',
+      viewAllCta: 'View All Products',
+    },
+    rituals: {
+      eyebrow: 'How To Use',
+      heading: 'Two Rituals. One Ingredient.',
+      subheading:
+        'Ceylon cinnamon works as well in your morning coffee as it does in your afternoon chai.',
+      morning: {
+        tag: 'Morning Coffee',
+        tagIcon: 'mdi:coffee-outline',
+        heading: 'The Morning Ritual',
+        description: 'Premium Arabica coffee blended with grade C5 Heritage Ceylon cinnamon.',
+        steps: [
+          'Measure ½ tsp NCC cinnamon',
+          'Add to grounds before brewing, or stir into cup',
+          'Enjoy immediately, no need to strain',
+        ],
+        cta: 'Shop Cinnamon Coffee',
+        href: '/shop/cinnamon-coffee',
+      },
+      afternoon: {
+        tag: 'Afternoon Chai',
+        tagIcon: 'mdi:tea-outline',
+        heading: 'The Afternoon Ritual',
+        description:
+          'One heaped teaspoon into hot oat milk. A deeply warming Sri Lankan spice blend.',
+        steps: [
+          'Add 1 tsp Ceylon Golden Chai to your cup',
+          'Pour over hot oat milk or water. Stir well.',
+          'Froth for a café-style finish. Sweeten if needed.',
+        ],
+        cta: 'Shop Golden Chai Latte',
+        href: '/shop/golden-chai-latte',
+      },
+    },
+    albaReserve: {
+      eyebrow: 'Alba Reserve',
+      heading: 'The Rarest Grade. Reserved for the Serious.',
+      intro: 'Alba is the inner quill of the first-flush cinnamon harvest.',
+      description: 'This is cinnamon at its finest expression.',
+      points: [
+        'Highest essential oil concentration in the NCC range',
+        'Harvested once annually from select Sri Lankan farms',
+        'Limited batch: no reformulation, no substitution',
+      ],
+      cta: 'Explore Alba Reserve',
+      shareLabel: 'Share Alba',
+      href: '/shop/alba-reserve',
+    },
+    ourStory: {
+      eyebrow: 'Our Story',
+      heading: 'From Sri Lanka to Your Morning Cup',
+      quote: "I couldn't find cinnamon in the UK that I'd actually trust. So I went back to the source.",
+      authorName: 'Ruwan Senavirathna',
+      authorTitle: 'Founder, Natural Ceylon Cinnamon',
+      cta: 'Read Our Full Story',
+      href: '/about-ncc',
+    },
+    science: {
+      eyebrow: 'The Research',
+      heading: 'Backed by Peer-Reviewed Science',
+      subheading: 'Ceylon cinnamon has been the subject of hundreds of studies.',
+      stats: [
+        {
+          icon: 'mdi:pulse',
+          value: '40+',
+          label: 'Peer-reviewed studies on Ceylon cinnamon and blood sugar management',
+          source: 'PubMed, 2010–2024',
+        },
+        {
+          icon: 'mdi:lightning-bolt-outline',
+          value: '0.04%',
+          label: 'Coumarin content in true Ceylon vs. up to 1–3% in Cassia',
+          source: 'European Food Safety Authority',
+        },
+        {
+          icon: 'mdi:water-outline',
+          value: '3x',
+          label: 'Higher essential oil concentration in grade C5 vs. C1 grade',
+          source: 'ISO 6539 grading standard',
+        },
+      ],
+      disclaimer: '* These statements refer to complementary wellness support.',
+      cta: 'Read The Science Page',
+      href: '/the-science',
+    },
+    reviews: {
+      eyebrow: 'What Customers Say',
+      heading: 'The Ritual Has Changed Their Mornings',
+      ratingScore: '4.9',
+      ratingCount: '200+ verified buyers',
+      items: [
+        {
+          title: 'Finally, cinnamon that actually tastes like something',
+          body: "I'd been adding generic supermarket cinnamon to my coffee for years. Swapped to NCC C5 grade and the difference is remarkable.",
+          author: 'Sarah M.',
+        },
+        {
+          title: 'I check the label on everything now',
+          body: 'NCC was the only UK brand I found that actually grades their product and publishes their test results.',
+          author: 'James T.',
+        },
+        {
+          title: 'The Chai powder is my new morning ritual',
+          body: 'Oat milk chai with the NCC Golden Chai powder has replaced my second coffee.',
+          author: 'Priya K.',
+        },
+      ],
+      cta: 'Read All Reviews',
+      href: '/reviews',
+    },
+    newsletter: {
+      eyebrow: 'Join The Ritual',
+      heading: 'Make Your Daily Cup Do More',
+      subheading:
+        'Coffee rituals, tea rituals, ingredient guides, new reserve drops — direct to your inbox.',
+      points: [
+        'Coffee & tea ritual guides',
+        'Ingredient deep-dives & recipes',
+        'New reserve drops, early access',
+      ],
+      placeholder: 'Your email address',
+      cta: 'Join The Ritual List',
+      disclaimer: 'No spam. Unsubscribe any time.',
+    },
   },
   footer: {
     tagline: 'Make your daily cup do more.',
