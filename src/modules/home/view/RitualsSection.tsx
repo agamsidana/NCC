@@ -94,7 +94,7 @@ function RitualsSection() {
               </Link>
             </div>
             <img
-              src={IMAGES.mainProduct}
+              src={IMAGES.mainProduct1}
               alt={rituals.afternoon.heading}
               className="order-1 aspect-[4/3] w-full object-cover md:order-2 md:h-full md:aspect-auto"
             />
