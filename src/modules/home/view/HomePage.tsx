@@ -1,3 +1,4 @@
+import Reveal from "../../../common/components/Reveal";
 import SEO from "../../../common/components/SEO";
 import AlbaReserveSection from "./AlbaReserveSection";
 import GradeSection from "./GradeSection";
@@ -21,16 +22,36 @@ function HomePage() {
       />
 
       <HeroSection />
-      <TrustBarSection />
-      <WhyProductSection />
-      <GradeSection />
-      <GradeSystemSection />
-      <RitualsSection />
-      <AlbaReserveSection />
-      <OurStorySection />
-      <ScienceHighlightsSection />
-      <ReviewsSection />
-      <NewsletterSection />
+      <Reveal>
+        <TrustBarSection />
+      </Reveal>
+      <Reveal>
+        <WhyProductSection />
+      </Reveal>
+      <Reveal>
+        <GradeSection />
+      </Reveal>
+      <Reveal>
+        <GradeSystemSection />
+      </Reveal>
+      <Reveal>
+        <RitualsSection />
+      </Reveal>
+      <Reveal>
+        <AlbaReserveSection />
+      </Reveal>
+      <Reveal>
+        <OurStorySection />
+      </Reveal>
+      <Reveal>
+        <ScienceHighlightsSection />
+      </Reveal>
+      <Reveal>
+        <ReviewsSection />
+      </Reveal>
+      <Reveal>
+        <NewsletterSection />
+      </Reveal>
     </>
   );
 }
