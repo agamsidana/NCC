@@ -4,64 +4,68 @@
  * importable directly in TS/TSX for cases Tailwind classes can't reach
  * (canvas/SVG charts, <meta name="theme-color">, inline styles, etc).
  *
- * Each color is a 50-900 scale so Tailwind generates bg-primary-500,
- * text-primary-600, border-primary-100, etc. Adjust hex values here only —
+ * Palette matches the NCC (Natural Ceylon Cinnamon) Shopify theme design:
+ * warm cream backgrounds, terracotta/rust CTAs, gold accents, and near-black
+ * espresso sections (hero banners, footer). Adjust hex values here only —
  * never hardcode colors elsewhere.
  */
 const colors = {
+  // Terracotta / rust — primary CTA & brand accent (buttons, links, star ratings)
   primary: {
-    50: '#eff6ff',
-    100: '#dbeafe',
-    200: '#bfdbfe',
-    300: '#93c5fd',
-    400: '#60a5fa',
-    500: '#3b82f6',
-    600: '#2563eb',
-    700: '#1d4ed8',
-    800: '#1e40af',
-    900: '#1e3a8a',
+    50: '#fbf0e7',
+    100: '#f6dfc7',
+    200: '#edc098',
+    300: '#e2a16b',
+    400: '#d28d56',
+    500: '#c17a4e',
+    600: '#a8663e',
+    700: '#86502f',
+    800: '#623a22',
+    900: '#3d2415',
   },
+  // Gold — secondary accent (icon fills, badges, small highlights)
   secondary: {
-    50: '#f5f3ff',
-    100: '#ede9fe',
-    200: '#ddd6fe',
-    300: '#c4b5fd',
-    400: '#a78bfa',
-    500: '#8b5cf6',
-    600: '#7c3aed',
-    700: '#6d28d9',
-    800: '#5b21b6',
-    900: '#4c1d95',
+    50: '#fbf7ea',
+    100: '#f2e6c4',
+    200: '#e4cd91',
+    300: '#d3b166',
+    400: '#c29b4a',
+    500: '#a98038',
+    600: '#87652b',
+    700: '#654b20',
+    800: '#453317',
+    900: '#271c0d',
   },
+  // Cream through espresso — page backgrounds, body/heading text, dark sections
   neutral: {
-    50: '#f8fafc',
-    100: '#f1f5f9',
-    200: '#e2e8f0',
-    300: '#cbd5e1',
-    400: '#94a3b8',
-    500: '#64748b',
-    600: '#475569',
-    700: '#334155',
-    800: '#1e293b',
-    900: '#0f172a',
+    50: '#fdfbf6',
+    100: '#f7f1e4',
+    200: '#f0e6d2',
+    300: '#e6d6b8',
+    400: '#c7b48c',
+    500: '#9c8763',
+    600: '#6b5d47',
+    700: '#453a2c',
+    800: '#2a2015',
+    900: '#150f0a',
   },
   success: {
-    50: '#f0fdf4',
-    500: '#22c55e',
-    600: '#16a34a',
-    700: '#15803d',
+    50: '#f2f7ec',
+    500: '#6b8e4e',
+    600: '#57733e',
+    700: '#435a30',
   },
   warning: {
-    50: '#fffbeb',
-    500: '#f59e0b',
-    600: '#d97706',
-    700: '#b45309',
+    50: '#fbf3e6',
+    500: '#c9902f',
+    600: '#a87526',
+    700: '#835b1e',
   },
   error: {
-    50: '#fef2f2',
-    500: '#ef4444',
-    600: '#dc2626',
-    700: '#b91c1c',
+    50: '#faeeec',
+    500: '#b8503e',
+    600: '#9a4132',
+    700: '#7a3327',
   },
 } as const
 
