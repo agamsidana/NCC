@@ -1,6 +1,5 @@
 import { Outlet } from 'react-router-dom'
-import { Header } from '../common/components'
-import { strings } from '../common/constants'
+import { Footer, Header } from '../common/components'
 
 function MainLayout() {
   return (
@@ -11,9 +10,7 @@ function MainLayout() {
         <Outlet />
       </main>
 
-      <footer className="border-t border-neutral-200 py-6 text-center text-sm text-neutral-500">
-        {strings.layout.footer.copyright(new Date().getFullYear())}
-      </footer>
+      <Footer />
     </div>
   )
 }
