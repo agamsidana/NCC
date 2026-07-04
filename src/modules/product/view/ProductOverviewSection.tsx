@@ -1,13 +1,10 @@
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { IMAGES } from "../../../common/constants/image-source";
 import type { Product } from "../../../common/constants/products";
 import strings from "../../../common/constants/strings";
 import { addItem } from "../../cart/cartSlice";
 import { useAppDispatch } from "../../../store/hooks";
-
-const galleryImages = [IMAGES.mainProduct, IMAGES.mainProduct, IMAGES.mainProduct];
 
 type ProductOverviewSectionProps = {
   product: Product;
@@ -16,7 +13,6 @@ type ProductOverviewSectionProps = {
 function ProductOverviewSection({ product }: ProductOverviewSectionProps) {
   const { productPage } = strings;
   const dispatch = useAppDispatch();
-  const [activeImage, setActiveImage] = useState(0);
   const [quantity, setQuantity] = useState(1);
 
   function handleAddToCart() {
@@ -24,7 +20,7 @@ function ProductOverviewSection({ product }: ProductOverviewSectionProps) {
       addItem({
         slug: product.slug,
         title: product.title,
-        image: galleryImages[0],
+        image: product.image,
         variant: product.variant.value,
         price: product.price,
         quantity,
@@ -53,25 +49,10 @@ function ProductOverviewSection({ product }: ProductOverviewSectionProps) {
       <div className="mt-6 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-16">
         <div className="flex flex-col gap-3">
           <img
-            src={galleryImages[activeImage]}
+            src={product.image}
             alt={product.title}
             className="aspect-square w-full rounded-2xl object-cover shadow-lg"
           />
-          <div className="flex gap-3">
-            {galleryImages.map((image, index) => (
-              <button
-                key={index}
-                type="button"
-                onClick={() => setActiveImage(index)}
-                aria-label={`Show image ${index + 1}`}
-                className={`h-20 w-20 overflow-hidden rounded-xl border-2 transition-colors ${
-                  activeImage === index ? "border-primary-500" : "border-transparent"
-                }`}
-              >
-                <img src={image} alt="" className="h-full w-full object-cover" />
-              </button>
-            ))}
-          </div>
         </div>
 
         <div className="flex flex-col items-start gap-4">

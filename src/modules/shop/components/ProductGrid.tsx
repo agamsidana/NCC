@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { IMAGES } from "../../../common/constants/image-source";
 import strings from "../../../common/constants/strings";
 
 type Product = {

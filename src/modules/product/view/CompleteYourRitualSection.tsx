@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { IMAGES } from "../../../common/constants/image-source";
 import type { Product } from "../../../common/constants/products";
 import strings from "../../../common/constants/strings";
 
@@ -22,7 +21,7 @@ function CompleteYourRitualSection({ product }: CompleteYourRitualSectionProps) 
           {crossSell.items.map((item) => (
             <Link key={item.href} to={item.href} className="flex flex-col gap-2 text-left">
               <img
-                src={IMAGES.mainProduct}
+                src={item.image}
                 alt={item.title}
                 className="aspect-square w-full rounded-xl object-cover"
               />

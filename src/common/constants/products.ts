@@ -19,6 +19,7 @@ export type ProductCrossSellItem = {
   title: string;
   price: string;
   href: string;
+  image: string;
 };
 
 export type Product = {
@@ -26,6 +27,7 @@ export type Product = {
   vendor: string;
   title: string;
   price: string;
+  image: string;
   category: string;
   categoryHref: string;
   variant: { label: string; value: string };
@@ -934,13 +936,19 @@ export function getProductBySlug(slug: string | undefined): Product | undefined 
   const crossSellItems: ProductCrossSellItem[] = extra.crossSellSlugs
     .map((crossSellSlug) => strings.shop.products.find((product) => product.slug === crossSellSlug))
     .filter((product): product is (typeof strings.shop.products)[number] => Boolean(product))
-    .map((product) => ({ title: product.name, price: product.price, href: `/products/${product.slug}` }));
+    .map((product) => ({
+      title: product.name,
+      price: product.price,
+      href: `/products/${product.slug}`,
+      image: product.img,
+    }));
 
   return {
     slug: base.slug,
     vendor: 'Natural Ceylon Cinnamon',
     title: base.name,
     price: base.price,
+    image: base.img,
     category,
     categoryHref,
     variant: extra.variant,
