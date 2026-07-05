@@ -694,6 +694,236 @@ const strings = {
     checkoutCta: "Checkout",
     removeLabel: "Remove",
   },
+  infoPages: {
+    whyCeylonMatters: {
+      title: "Why Ceylon Matters",
+      intro:
+        "Cinnamon isn't cinnamon. Here's why the difference between Ceylon and Cassia is worth caring about.",
+      sections: [
+        {
+          heading: "Two Different Plants",
+          paragraphs: [
+            'What\'s sold as "cinnamon" in most UK supermarkets isn\'t Ceylon cinnamon (Cinnamomum verum) at all — it\'s Cassia (Cinnamomum cassia), a related but distinct bark. Cassia is cheaper to grow, harder-barked, and far more common worldwide.',
+            "Ceylon is lighter in colour, more delicate in flavour, and grown almost exclusively in Sri Lanka — the only country that produces true Ceylon cinnamon at commercial scale.",
+          ],
+        },
+        {
+          heading: "The Coumarin Difference",
+          paragraphs: [
+            "Cassia naturally contains high levels of coumarin — a compound the European Food Safety Authority has set strict tolerable daily intake limits around. Cassia can contain 1–5% coumarin; authenticated Ceylon contains approximately 0.04%, more than 25 times less.",
+            "If cinnamon is part of your daily routine — coffee, tea, baking — species matters more than most labels let on.",
+          ],
+        },
+        {
+          heading: "Why We Grade Everything",
+          paragraphs: [
+            "Ceylon cinnamon isn't one fixed thing either. Essential oil concentration — the source of its aroma, flavour, and potency — varies significantly by harvest and cut, which is why we grade our range from C4 Daily through to Alba Reserve rather than selling a single generic jar.",
+            "Every batch is tested independently for purity and graded before it reaches you. No blending, no guesswork.",
+          ],
+        },
+        {
+          heading: "Our Promise",
+          paragraphs: [
+            "We source directly from growers in Sri Lanka, we publish what we test for, and we will never tell you cinnamon cures anything it doesn't. Just the real thing, graded honestly.",
+          ],
+        },
+      ],
+    },
+    shippingReturns: {
+      title: "Shipping & Returns",
+      intro:
+        "Straightforward shipping and a genuine 30-day money-back guarantee — no small print games.",
+      sections: [
+        {
+          heading: "Shipping",
+          paragraphs: [
+            "All orders are dispatched from our UK warehouse within 24 hours of being placed, Monday to Friday.",
+            "Standard delivery typically arrives within 3–5 business days. Tracking is included and emailed to you once your order ships.",
+          ],
+        },
+        {
+          heading: "30-Day Money-Back Guarantee",
+          paragraphs: [
+            "If you're not happy with your order for any reason, get in touch within 30 days of delivery and we'll offer a refund or replacement — no questions asked.",
+            "Opened jars are absolutely fine to return under this guarantee. We'd rather you try it properly than guess from the outside.",
+          ],
+        },
+        {
+          heading: "Damaged or Missing Items",
+          paragraphs: [
+            "If anything arrives damaged or an item is missing from your order, contact us with your order number and we'll sort it as quickly as possible — usually a replacement, dispatched the same or next working day.",
+          ],
+        },
+      ],
+    },
+    privacyPolicy: {
+      title: "Privacy Policy",
+      intro:
+        "How Natural Ceylon Cinnamon collects, uses, and protects your information. Last updated 5 July 2026.",
+      sections: [
+        {
+          heading: "Information We Collect",
+          paragraphs: [
+            "When you place an order, we collect the details needed to fulfil it: your name, delivery address, email, and phone number. Payment details are collected and processed securely by our payment provider — we never store full card numbers ourselves.",
+            "We also collect basic site usage data (such as pages visited) to help us understand and improve the shopping experience.",
+          ],
+        },
+        {
+          heading: "How We Use Your Information",
+          paragraphs: [
+            "We use your information to process and deliver orders, respond to customer service enquiries, and — only if you've opted in — send occasional emails about new products or reserve drops. You can unsubscribe from marketing emails at any time.",
+          ],
+        },
+        {
+          heading: "Sharing Your Information",
+          paragraphs: [
+            "We share only what's necessary with the parties who help us run the business: our payment processor and delivery couriers. We do not sell your information to third parties.",
+          ],
+        },
+        {
+          heading: "Your Rights",
+          paragraphs: [
+            "Under UK data protection law, you can request access to, correction of, or deletion of your personal information at any time. Contact us and we'll action your request promptly.",
+          ],
+        },
+        {
+          heading: "Cookies",
+          paragraphs: [
+            "Our site uses cookies to support core functionality like your cart and checkout, and to understand site usage. See our Cookie Policy for full detail.",
+          ],
+        },
+      ],
+    },
+    termsOfService: {
+      title: "Terms of Service",
+      intro:
+        "The terms that apply when you order from Natural Ceylon Cinnamon. Last updated 5 July 2026.",
+      sections: [
+        {
+          heading: "Orders & Acceptance",
+          paragraphs: [
+            "Placing an order through our site is an offer to purchase, which we confirm by email once accepted. We reserve the right to cancel and refund an order if a product turns out to be unavailable.",
+          ],
+        },
+        {
+          heading: "Pricing & Payment",
+          paragraphs: [
+            "All prices are listed in GBP and are inclusive of applicable taxes unless stated otherwise. Payment is taken at checkout via our payment provider.",
+          ],
+        },
+        {
+          heading: "Shipping & Delivery",
+          paragraphs: [
+            "Delivery timeframes on our Shipping & Returns page are estimates, not guarantees. We are not liable for delays caused by circumstances outside our control, including courier delays.",
+          ],
+        },
+        {
+          heading: "Returns & Refunds",
+          paragraphs: [
+            "Our 30-day money-back guarantee is detailed in full on our Shipping & Returns page and applies to every order.",
+          ],
+        },
+        {
+          heading: "Product Information",
+          paragraphs: [
+            "We describe our products as accurately as possible. Our cinnamon is a food ingredient, not a medical treatment — statements about grade or origin are not intended to diagnose, treat, cure, or prevent any disease.",
+          ],
+        },
+        {
+          heading: "Limitation of Liability",
+          paragraphs: [
+            "To the extent permitted by law, our liability for any claim relating to an order is limited to the amount paid for that order.",
+          ],
+        },
+        {
+          heading: "Governing Law",
+          paragraphs: ["These terms are governed by the laws of England and Wales."],
+        },
+      ],
+    },
+    cookiePolicy: {
+      title: "Cookie Policy",
+      intro:
+        "What cookies we use on this site, and how you can manage them. Last updated 5 July 2026.",
+      sections: [
+        {
+          heading: "What Are Cookies",
+          paragraphs: [
+            "Cookies are small files stored on your device that help websites function and remember your preferences between visits.",
+          ],
+        },
+        {
+          heading: "How We Use Cookies",
+          paragraphs: [
+            "We use essential cookies to support core functions like your cart and checkout, functional cookies to remember your preferences, and analytics cookies to understand how visitors use our site so we can improve it.",
+          ],
+        },
+        {
+          heading: "Managing Cookies",
+          paragraphs: [
+            "You can control or delete cookies at any time through your browser settings. Disabling essential cookies may affect the checkout and other core features of the site.",
+          ],
+        },
+      ],
+    },
+  },
+  faq: {
+    title: "Frequently Asked Questions",
+    intro: "Straight answers about our cinnamon, grading, shipping, and more.",
+    items: [
+      {
+        question: "Is your cinnamon really different from what's in supermarkets?",
+        answer:
+          'Almost certainly, yes. Most supermarket "cinnamon" in the UK is Cassia, not true Ceylon cinnamon. We only sell authenticated Ceylon (Cinnamomum verum), sourced directly from Sri Lanka.',
+      },
+      {
+        question: "What do the C4, C5, and Alba Reserve grades mean?",
+        answer:
+          "Ceylon cinnamon is graded by essential oil concentration. Higher grades mean more aroma and potency. C4 Daily is our everyday grade, C5 Heritage is our most popular, and Alba Reserve is the rarest, harvested once a year.",
+      },
+      {
+        question: "Is coumarin dangerous?",
+        answer:
+          "Coumarin is naturally present in cinnamon and is only a concern at the levels found in Cassia, which the European Food Safety Authority has set intake limits around. Authenticated Ceylon contains roughly 25 times less, which is why species matters if you use cinnamon regularly.",
+      },
+      {
+        question: "Where do you ship?",
+        answer:
+          "We currently ship across the United Kingdom. Orders are dispatched within 24 hours and typically arrive in 3–5 business days.",
+      },
+      {
+        question: "What's your returns policy?",
+        answer:
+          "A genuine 30-day money-back guarantee. If you're not happy, contact us within 30 days of delivery for a refund or replacement — opened jars are fine.",
+      },
+      {
+        question: "Do you offer subscriptions?",
+        answer:
+          "Not yet — for now every order is one-off, but it's something we're considering as we grow. Join our newsletter list on the homepage to hear if that changes.",
+      },
+      {
+        question: "Can I see your test results?",
+        answer:
+          "Yes. Every batch is independently tested for purity, coumarin levels, and heavy metals, and reports are available on request — see The Science page for more detail.",
+      },
+    ],
+  },
+  contact: {
+    title: "Contact",
+    intro: "Questions about an order, a grade, or anything else — we read every message.",
+    email: "hello@naturalceyloncinnamon.co.uk",
+    emailLabel: "Email us",
+    responseTime: "We aim to reply within 1 business day.",
+    hoursLabel: "Hours",
+    hours: "Monday–Friday, 9am–5pm (UK time)",
+    basedInLabel: "Based in",
+    basedIn: "United Kingdom · Sourced in Sri Lanka",
+    quickLinksLabel: "Quick links",
+    quickLinks: [
+      { label: "FAQ", href: "/faq" },
+      { label: "Shipping & Returns", href: "/shipping-returns" },
+    ],
+  },
   notFound: {
     eyebrow: "Lost Your Way?",
     title: "404",
