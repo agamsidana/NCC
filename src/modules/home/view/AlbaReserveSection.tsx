@@ -7,7 +7,7 @@ function AlbaReserveSection() {
   const { albaReserve } = strings.home;
 
   return (
-    <section className="bg-neutral-800 py-16 text-neutral-50 md:py-24">
+    <section className="bg-neutral-700 py-16 text-neutral-50 md:py-24">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 md:grid-cols-2 md:items-center md:gap-16">
         <div className="relative mx-auto w-full max-w-md md:max-w-none">
           <img
