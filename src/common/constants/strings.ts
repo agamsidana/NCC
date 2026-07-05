@@ -615,7 +615,7 @@ const strings = {
         description:
           "Higher essential oil concentration than C4. More aromatic, slightly sweeter. The most popular NCC grade.",
         price: "£10.95",
-        img: IMAGES.shop.img1,
+        img: IMAGES.gradeSystem.image1,
       },
       {
         slug: "c4-daily",
@@ -624,7 +624,7 @@ const strings = {
         description:
           "The everyday workhorse. Consistent, clean, and reliable for daily use in coffee, oats, or cooking.",
         price: "£8.95",
-        img: IMAGES.shop.img2,
+        img: IMAGES.gradeSystem.image2,
       },
       {
         slug: "alba-reserve",
@@ -632,8 +632,8 @@ const strings = {
         category: "cinnamon",
         description:
           "The most delicate grade. The smallest cut of the first-flush harvest. Ideal for finishing lattes, gifting, and serious cinnamon lovers.",
-        price: "£13.95",
-        img: IMAGES.shop.img3,
+        price: "£12.95",
+        img: IMAGES.gradeSystem.image3,
       },
       {
         slug: "ceylon-reserve-coffee",
@@ -642,7 +642,7 @@ const strings = {
         description:
           "Premium Arabica coffee blended with grade C5 Heritage Ceylon cinnamon.",
         price: "£12.95",
-        img: IMAGES.shop.img4,
+        img: IMAGES.mainProduct,
       },
       {
         slug: "golden-chai-latte",
@@ -651,7 +651,7 @@ const strings = {
         description:
           "One heaped teaspoon into hot oat milk. A deeply warming Sri Lankan spice blend.",
         price: "£19.95",
-        img: IMAGES.shop.img5,
+        img: IMAGES.mainProduct1,
       },
       {
         slug: "spice-of-kings-set-a",
