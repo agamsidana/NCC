@@ -5,7 +5,7 @@ import MAIN_PRODUCT1 from "../../assets/images/mainProduct2.jpeg";
 import OUR_STORY from "../../assets/images/our_story.png";
 import ALBA_RESERVE from "../../assets/images/alba_reserve.jpeg";
 import IMAGE1 from "../../assets/images/gradeSystem1.jpeg";
-import IMAGE2 from "../../assets/images/gradeSystem2.jpeg";
+import IMAGE2 from "../../assets/images/gradeSystem2.jpg";
 import IMAGE3 from "../../assets/images/gradeSystem3.jpeg";
 import COFFEE1 from "../../assets/images/coffee1.png";
 import COFFEE2 from "../../assets/images/coffee2.png";

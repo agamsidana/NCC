@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
-import { IMAGES } from '../../../common/constants/image-source'
+import { getProductBySlug } from '../../../common/constants/products'
 import strings from '../../../common/constants/strings'
 
 function ResultSection({ recommendedSlug, onRetake }: { recommendedSlug: string; onRetake: () => void }) {
   const { result } = strings.findYourRitual
-  const product = strings.shop.products.find((item) => item.slug === recommendedSlug)
+  const product = getProductBySlug(recommendedSlug)
 
   if (!product) return null
 
@@ -14,10 +14,10 @@ function ResultSection({ recommendedSlug, onRetake }: { recommendedSlug: string;
       <h1 className="mt-3 font-serif text-4xl text-neutral-900 sm:text-5xl">{result.heading}</h1>
 
       <div className="mx-auto mt-8 max-w-sm overflow-hidden rounded-2xl border border-neutral-200 bg-white text-left">
-        <img src={IMAGES.shop.img3} alt={product.name} className="aspect-square w-full object-cover" />
+        <img src={product.image} alt={product.title} className="aspect-square w-full object-cover" />
         <div className="flex flex-col gap-2 p-6">
-          <h2 className="font-serif text-xl text-neutral-900">{product.name}</h2>
-          {product.description && <p className="text-sm text-neutral-500">{product.description}</p>}
+          <h2 className="font-serif text-xl text-neutral-900">{product.title}</h2>
+          <p className="text-sm text-neutral-500">{product.description}</p>
           <p className="text-lg font-semibold text-primary-600">{product.price}</p>
         </div>
       </div>
