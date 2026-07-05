@@ -32,7 +32,7 @@ function ReviewsSection() {
           {reviews.items.map((review) => (
             <div
               key={review.author}
-              className="flex flex-col gap-3 rounded-xl border border-neutral-200 bg-neutral-50 p-6"
+              className="flex flex-col gap-3 rounded-xl border border-neutral-200 bg-neutral-50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary-200 hover:bg-white hover:shadow-lg"
             >
               <span className="flex text-primary-500">
                 {Array.from({ length: 5 }).map((_, index) => (

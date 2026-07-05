@@ -71,11 +71,11 @@ function HeroSection() {
           </div>
         </div>
 
-        <div className="mx-auto w-full max-w-md md:max-w-none">
+        <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-2xl [transform:translateZ(0)] md:max-w-none">
           <img
             src={IMAGES.hero}
             alt={hero.heading}
-            className="aspect-[4/3] w-full rounded-2xl object-cover shadow-lg"
+            className="aspect-[4/3] w-full origin-center rounded-2xl object-cover shadow-lg motion-safe:animate-fade-zoom-out"
           />
         </div>
       </div>

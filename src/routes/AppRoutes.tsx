@@ -7,7 +7,7 @@ import { HomePage } from '../modules/home'
 import { ContactPage, FaqPage, InfoPage } from '../modules/info'
 import NotFoundPage from '../modules/not-found/NotFoundPage'
 import { ProductPage } from '../modules/product'
-import { RecipesPage } from '../modules/recipes'
+import { RecipeDetailPage, RecipesPage } from '../modules/recipes'
 import { ReviewsPage } from '../modules/reviews'
 import { SciencePage } from '../modules/science'
 import { GiftSetsPage, ShopPage } from '../modules/shop'
@@ -21,6 +21,7 @@ const router=createBrowserRouter( [
       { path: 'about-ncc', element: <AboutPage /> },
       { path: 'the-science', element: <SciencePage /> },
       { path: 'recipes', element: <RecipesPage /> },
+      { path: 'recipes/:slug', element: <RecipeDetailPage /> },
       { path: 'shop', element: <ShopPage /> },
       { path: 'shop/gift-sets', element: <GiftSetsPage /> },
       { path: 'products/:slug', element: <ProductPage /> },

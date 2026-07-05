@@ -24,9 +24,11 @@ function ScienceHighlightsSection() {
           {science.stats.map((stat) => (
             <div
               key={stat.label}
-              className="flex flex-col items-center gap-2 rounded-xl border border-neutral-200 bg-white p-6 text-center"
+              className="group flex flex-col items-center gap-2 rounded-xl border border-neutral-200 bg-white p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary-200 hover:shadow-lg"
             >
-              <Icon icon={stat.icon} width={22} height={22} className="text-primary-600" />
+              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-primary-50 text-primary-600 transition-colors duration-300 group-hover:bg-primary-600 group-hover:text-white">
+                <Icon icon={stat.icon} width={20} height={20} />
+              </span>
               <p className="font-serif text-3xl text-neutral-900">{stat.value}</p>
               <p className="text-sm text-neutral-600">{stat.label}</p>
               <p className="mt-1 text-xs text-neutral-400">{stat.source}</p>

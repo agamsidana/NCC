@@ -51,7 +51,7 @@ function ReviewsPage() {
           {allReviews.map((review, index) => (
             <div
               key={`${review.productHref}-${review.author}-${index}`}
-              className="flex flex-col gap-2 rounded-xl border border-neutral-200 bg-white p-6"
+              className="flex flex-col gap-2 rounded-xl border border-neutral-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary-200 hover:shadow-lg"
             >
               <div className="flex items-center justify-between">
                 <span className="flex text-primary-500">

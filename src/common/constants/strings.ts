@@ -422,6 +422,12 @@ const strings = {
   },
   recipes: {
     title: "Recipes and Rituals",
+    backToBlog: "Back to blog",
+    shareLabel: "Share",
+    productLabel: "NCC product",
+    ingredientsHeading: "Ingredients",
+    methodHeading: "Method",
+    whyHeading: "The why",
     posts: [
       {
         slug: "ncc-metabolic-morning-tonic",
@@ -429,6 +435,27 @@ const strings = {
         date: "July 3, 2026",
         excerpt:
           "A 60-second morning drink using three ingredients with functional history: Ceylon cinnamon, fresh lemon, and ginger. Zero caffeine.",
+        product: "C4 Daily or C5 Heritage Ceylon Cinnamon",
+        ingredients: [
+          "300ml warm water (around 70°C — not boiling)",
+          "½ tsp NCC C4 Daily or C5 Heritage Ceylon Cinnamon",
+          "Juice of ½ lemon",
+          "1cm fresh ginger, grated",
+          "½ tsp raw honey (optional)",
+        ],
+        method: [
+          "Add cinnamon and grated ginger to a mug.",
+          "Pour over warm water — not boiling. Boiling water degrades the essential oils in Ceylon cinnamon.",
+          "Add lemon juice. Stir well for 20 seconds.",
+          "Add honey if using. Drink immediately.",
+        ],
+        why: [
+          "Ceylon cinnamon has been studied for its role in supporting blood sugar management. Taking it before food is how many people build the habit.",
+          "Lemon juice provides vitamin C and supports digestion.",
+          "Ginger is a traditional digestive aid used across South Asian medicine for centuries.",
+        ],
+        disclaimer:
+          "This is not a treatment for any condition. It's a functional daily habit using real, traceable ingredients — nothing more.",
       },
       {
         slug: "sri-lankan-red-dal-with-ceylon-cinnamon",
@@ -436,6 +463,30 @@ const strings = {
         date: "June 28, 2026",
         excerpt:
           "Cinnamon in dal is traditional in Sri Lanka — it adds a background warmth that deepens as it cooks. A simple weeknight red lentil dal using C4 Daily.",
+        product: "C4 Daily Ceylon Cinnamon",
+        ingredients: [
+          "200g split red lentils, rinsed",
+          "1 tbsp coconut oil or ghee",
+          "1 small onion, finely chopped",
+          "2 garlic cloves, crushed",
+          "1cm fresh ginger, grated",
+          "1 tsp turmeric",
+          "½ tsp NCC C4 Daily Ceylon Cinnamon",
+          "400ml water or vegetable stock",
+          "Salt, to taste",
+          "Fresh coriander, to serve",
+        ],
+        method: [
+          "Melt the coconut oil in a pan and soften the onion, garlic, and ginger for 4–5 minutes.",
+          "Stir in the turmeric and cinnamon and cook for 30 seconds until fragrant.",
+          "Add the lentils and water. Bring to a simmer and cook for 20–25 minutes, stirring occasionally, until the lentils break down.",
+          "Season with salt, top with fresh coriander, and serve warm.",
+        ],
+        why: [
+          "Cinnamon in savoury cooking is common across Sri Lankan households — it rounds out the earthiness of lentils without adding sweetness.",
+          "C4 Daily is graded for consistent, everyday use, so it holds its warmth through a 20-minute simmer without turning bitter.",
+        ],
+        disclaimer: null,
       },
       {
         slug: "golden-chai-french-toast",
@@ -443,6 +494,26 @@ const strings = {
         date: "June 21, 2026",
         excerpt:
           "The Golden Chai Latte blend — cinnamon, cardamom, ginger, black pepper — makes one of the best French toast batters we've tried.",
+        product: "Golden Chai Latte",
+        ingredients: [
+          "2 large eggs",
+          "120ml whole or oat milk",
+          "1 heaped tsp NCC Golden Chai Latte powder",
+          "½ tsp vanilla extract (optional)",
+          "4 thick slices of bread (brioche or sourdough work best)",
+          "Butter, for frying",
+        ],
+        method: [
+          "Whisk the eggs, milk, Golden Chai powder, and vanilla together in a shallow dish until smooth.",
+          "Dip each slice of bread in the mixture, letting it soak for 20–30 seconds per side.",
+          "Melt butter in a pan over medium heat and fry each slice for 2–3 minutes per side, until golden.",
+          "Serve immediately with fruit, honey, or maple syrup.",
+        ],
+        why: [
+          "The Golden Chai blend's cardamom and black pepper give French toast a warmth plain cinnamon can't on its own.",
+          "Soaking (not just dusting) the bread means the spice cooks into the custard instead of sitting on top.",
+        ],
+        disclaimer: null,
       },
       {
         slug: "iced-ceylon-cinnamon-coffee",
@@ -450,6 +521,25 @@ const strings = {
         date: "June 14, 2026",
         excerpt:
           "Cold brew steeped with NCC C5 Heritage Ceylon cinnamon, poured over ice, finished with oat milk. Takes 12 hours to prepare, 2 minutes to serve.",
+        product: "C5 Heritage Ceylon Cinnamon",
+        ingredients: [
+          "100g coarsely ground coffee",
+          "1 tsp NCC C5 Heritage Ceylon Cinnamon",
+          "1 litre cold water",
+          "Ice cubes",
+          "Oat milk, to taste",
+        ],
+        method: [
+          "Combine the ground coffee and cinnamon in a large jar or cold brew maker.",
+          "Pour over the cold water, stir once, and cover. Steep in the fridge for 12 hours.",
+          "Strain through a fine sieve or cheesecloth into a clean jug.",
+          "Pour over ice and top with oat milk to taste. Keeps in the fridge for up to a week.",
+        ],
+        why: [
+          "Cold steeping avoids the heat that can degrade cinnamon's essential oils, so more of C5 Heritage's aroma carries through into the finished drink.",
+          "Twelve hours is a starting point — steep longer for a stronger, more concentrated batch.",
+        ],
+        disclaimer: null,
       },
       {
         slug: "ceylon-cinnamon-rolls-with-alba-reserve-glaze",
@@ -457,6 +547,29 @@ const strings = {
         date: "June 7, 2026",
         excerpt:
           "Using NCC's Alba Reserve — the most delicate grade in our range — gives the filling a floral warmth that's genuinely different to any cinnamon roll you've had before.",
+        product: "Alba Reserve Ceylon Cinnamon",
+        ingredients: [
+          "500g strong white bread flour",
+          "7g fast-action yeast",
+          "60g caster sugar",
+          "250ml warm milk",
+          "1 egg",
+          "60g butter, softened",
+          "80g soft brown sugar (for the filling)",
+          "2 tsp NCC Alba Reserve Ceylon Cinnamon",
+          "100g icing sugar and 2 tbsp milk (for the glaze)",
+        ],
+        method: [
+          "Mix the flour, yeast, sugar, milk, and egg into a soft dough. Knead for 8–10 minutes, then prove for 1 hour until doubled.",
+          "Roll the dough into a large rectangle. Spread with softened butter, then scatter over the brown sugar mixed with Alba Reserve cinnamon.",
+          "Roll tightly into a log, slice into 10–12 rounds, and arrange in a lined baking tin. Prove for a further 30 minutes.",
+          "Bake at 180°C for 20–25 minutes until golden. Whisk the icing sugar and milk into a glaze and drizzle over the warm rolls.",
+        ],
+        why: [
+          "Alba Reserve is the most delicate grade we offer, so the filling reads as floral rather than sharply spiced — genuinely different from a standard cinnamon roll.",
+          "Because Alba is a finishing-grade cinnamon, a little goes further than it would with C4 or C5.",
+        ],
+        disclaimer: null,
       },
       {
         slug: "ceylon-cinnamon-cardamom-energy-balls",
@@ -464,6 +577,27 @@ const strings = {
         date: "May 31, 2026",
         excerpt:
           "No-bake energy balls made from dates, oats, true Ceylon cinnamon, and cardamom. A genuinely satisfying snack that takes ten minutes to make.",
+        product: "C4 Daily Ceylon Cinnamon",
+        ingredients: [
+          "200g pitted dates",
+          "100g rolled oats",
+          "2 tbsp almond butter (or any nut butter)",
+          "1 tsp NCC C4 Daily Ceylon Cinnamon",
+          "½ tsp ground cardamom",
+          "Pinch of salt",
+          "1–2 tbsp water, if needed",
+        ],
+        method: [
+          "Blitz the dates, oats, almond butter, cinnamon, cardamom, and salt in a food processor until it forms a sticky dough.",
+          "Add a splash of water if the mixture is too dry to bind.",
+          "Roll into 12 small balls and chill in the fridge for at least 20 minutes.",
+          "Store in an airtight container in the fridge for up to a week.",
+        ],
+        why: [
+          "Dates provide natural sweetness so there's no added sugar in this recipe.",
+          "Cinnamon and cardamom together are a common pairing across South Asian sweets — a genuinely satisfying flavour combination, not just a health-food add-on.",
+        ],
+        disclaimer: null,
       },
     ],
     pagination: { currentPage: 1, totalPages: 5 },

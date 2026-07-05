@@ -10,6 +10,15 @@ export default {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         serif: ['Georgia', 'Cambria', 'Times New Roman', 'ui-serif', 'serif'],
       },
+      keyframes: {
+        'fade-zoom-out': {
+          from: { opacity: '0', transform: 'scale(1.04)' },
+          to: { opacity: '1', transform: 'scale(1)' },
+        },
+      },
+      animation: {
+        'fade-zoom-out': 'fade-zoom-out 0.9s ease-out forwards',
+      },
     },
   },
   plugins: [],
