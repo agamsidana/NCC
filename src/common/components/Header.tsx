@@ -45,7 +45,7 @@ function Header() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-8 text-sm font-medium text-neutral-700 md:flex">
+        <nav className="hidden items-center gap-5 whitespace-nowrap text-sm font-medium text-neutral-700 lg:flex xl:gap-8">
           {strings.layout.nav.map((item) => (
             <NavLink
               key={item.href}
@@ -102,7 +102,7 @@ function Header() {
             type="button"
             aria-label={isMenuOpen ? strings.layout.closeMenu : strings.layout.menu}
             aria-expanded={isMenuOpen}
-            className="inline-flex text-neutral-700 hover:text-primary-600 md:hidden"
+            className="inline-flex text-neutral-700 hover:text-primary-600 lg:hidden"
             onClick={() => setIsMenuOpen((open) => !open)}
           >
             {isMenuOpen ?
@@ -114,7 +114,7 @@ function Header() {
       </div>
 
       {isMenuOpen && (
-        <nav className="flex flex-col gap-1 border-t border-neutral-200/70 bg-white/90 px-4 py-4 text-sm font-medium text-neutral-700 backdrop-blur-md md:hidden">
+        <nav className="flex flex-col gap-1 border-t border-neutral-200/70 bg-white/90 px-4 py-4 text-sm font-medium text-neutral-700 backdrop-blur-md lg:hidden">
           {strings.layout.nav.map((item) => (
             <NavLink
               key={item.href}

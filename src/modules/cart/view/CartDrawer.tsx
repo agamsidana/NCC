@@ -130,6 +130,7 @@ function CartDrawer() {
             <p className="mt-1 text-xs text-neutral-500">{cart.taxesNote}</p>
             <Link
               to="/checkout"
+              onClick={() => dispatch(closeDrawer())}
               className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-primary-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-700"
             >
               {cart.checkoutCta}
