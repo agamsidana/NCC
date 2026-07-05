@@ -57,6 +57,17 @@ type ProductDetail = {
   crossSellSlugs: string[];
 };
 
+type ShopProductEntry = {
+  slug: string;
+  name: string;
+  category: string;
+  description: string | null;
+  price: string;
+  img: string;
+};
+
+const shopProducts = strings.shop.products as readonly ShopProductEntry[];
+
 /**
  * PDP-only content keyed by slug, layered on top of strings.shop.products
  * (the catalog's source of truth for slug/name/price/category). Add an
@@ -927,7 +938,7 @@ function resolveCategory(category: string): { category: string; categoryHref: st
 export function getProductBySlug(slug: string | undefined): Product | undefined {
   if (!slug) return undefined;
 
-  const base = strings.shop.products.find((product) => product.slug === slug);
+  const base = shopProducts.find((product) => product.slug === slug);
   if (!base) return undefined;
 
   const extra = productDetails[slug] ?? fallbackDetail;
@@ -970,7 +981,7 @@ export function getProductBySlug(slug: string | undefined): Product | undefined 
 }
 
 export function getAllProducts(): Product[] {
-  return strings.shop.products
+  return shopProducts
     .map((product) => getProductBySlug(product.slug))
     .filter((product): product is Product => Boolean(product));
 }

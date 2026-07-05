@@ -523,7 +523,8 @@ const strings = {
         slug: "spice-of-kings-set-a",
         name: "Spice of Kings Set A",
         category: "gift-set",
-        description: null,
+        description:
+          "Three 30g jars of Sri Lanka's finest: true Ceylon cinnamon, cardamom, and cloves or pepper.",
         price: "£34.95",
         img: IMAGES.shop.img6,
       },
@@ -531,7 +532,8 @@ const strings = {
         slug: "queen-of-spices-reserve-set-b",
         name: "Queen of Spices Reserve Set B",
         category: "gift-set",
-        description: null,
+        description:
+          "The reserve edition — three full 100g jars at our highest grades, built to last months.",
         price: "£69.00",
         img: IMAGES.shop.img7,
       },
@@ -539,7 +541,8 @@ const strings = {
         slug: "morning-ritual-duo",
         name: "Morning Ritual Duo",
         category: "gift-set",
-        description: null,
+        description:
+          "Ceylon Reserve Coffee and C5 Heritage cinnamon, sized to run out together every month.",
         price: "£19.95",
         img: IMAGES.shop.img8,
       },
@@ -547,7 +550,8 @@ const strings = {
         slug: "chai-and-ceylon-set",
         name: "Chai & Ceylon Set",
         category: "gift-set",
-        description: null,
+        description:
+          "Golden Chai Latte paired with C4 Daily cinnamon — warm spice for your afternoon ritual.",
         price: "£25.95",
         img: IMAGES.shop.img9,
       },
@@ -555,7 +559,8 @@ const strings = {
         slug: "daily-ritual-trio",
         name: "Daily Ritual Trio",
         category: "gift-set",
-        description: null,
+        description:
+          "Coffee, chai, and cinnamon in one box — three everyday products, graded for daily use.",
         price: "£37.00",
         img: IMAGES.shop.img10,
       },

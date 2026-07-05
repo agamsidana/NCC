@@ -16,22 +16,27 @@ function ShopPage() {
           <p className="mt-3 text-neutral-600">{shop.description}</p>
         </div>
 
-        <div className="mt-8 flex flex-wrap items-center justify-between gap-4 border-b border-neutral-200 pb-4 text-sm text-neutral-600">
-          <div className="flex items-center gap-4">
-            <span className="text-neutral-400">Filter:</span>
-            <button type="button" className="inline-flex items-center gap-1 hover:text-primary-600">
+        <div className="mt-8 flex flex-wrap items-center justify-between gap-4 border-b border-neutral-200 pb-6">
+          <div className="flex flex-wrap items-center gap-2.5">
+            <button
+              type="button"
+              className="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 px-3.5 py-1.5 text-xs font-medium text-neutral-600 transition-colors hover:border-primary-300 hover:text-primary-600"
+            >
               Availability <Icon icon="mdi:chevron-down" width={14} height={14} />
             </button>
-            <button type="button" className="inline-flex items-center gap-1 hover:text-primary-600">
+            <button
+              type="button"
+              className="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 px-3.5 py-1.5 text-xs font-medium text-neutral-600 transition-colors hover:border-primary-300 hover:text-primary-600"
+            >
               Price <Icon icon="mdi:chevron-down" width={14} height={14} />
             </button>
           </div>
-          <div className="flex items-center gap-4">
-            <span className="inline-flex items-center gap-1">
-              Sort by: <span className="font-medium text-neutral-900">Featured</span>
+          <div className="flex items-center gap-3 text-xs text-neutral-500">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 px-3.5 py-1.5 font-medium text-neutral-700">
+              Sort by: Featured
               <Icon icon="mdi:chevron-down" width={14} height={14} />
             </span>
-            <span className="text-neutral-400">{shop.products.length} products</span>
+            <span>{shop.products.length} products</span>
           </div>
         </div>
 
