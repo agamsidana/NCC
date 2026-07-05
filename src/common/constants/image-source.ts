@@ -31,6 +31,9 @@ import PERSON10 from "../../assets/images/person10.png";
 import REVIEW_IMAGE_1 from "../../assets/images/reviewImage1.png";
 import REVIEW_IMAGE_2 from "../../assets/images/reviewImage2.png";
 import REVIEW_IMAGE_3 from "../../assets/images/reviewImage3.jpg";
+import GROWER_IMAGE_1 from "../../assets/images/grower1.png";
+import GROWER_IMAGE_2 from "../../assets/images/grower2.png";
+import GROWER_IMAGE_3 from "../../assets/images/grower3.png";
 
 export const IMAGES = {
   logo: LOGO,
@@ -70,4 +73,10 @@ export const IMAGES = {
     PERSON10,
   ],
   reviewShowcase: [REVIEW_IMAGE_1, REVIEW_IMAGE_2, REVIEW_IMAGE_3],
+  // Placeholders until real estate/grower photos are added — swap these 3 keys for the new images.
+  growers: {
+    grower1: GROWER_IMAGE_1,
+    grower2: GROWER_IMAGE_2,
+    grower3: GROWER_IMAGE_3,
+  },
 };
