@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import strings from '../constants/strings'
 import { Icon } from '@iconify/react'
 import { IMAGES } from '../constants/image-source'
@@ -47,9 +47,26 @@ function Header() {
 
         <nav className="hidden items-center gap-8 text-sm font-medium text-neutral-700 md:flex">
           {strings.layout.nav.map((item) => (
-            <Link key={item.href} to={item.href} className="hover:text-primary-600">
-              {item.label}
-            </Link>
+            <NavLink
+              key={item.href}
+              to={item.href}
+              className={({ isActive }) =>
+                `relative py-1 transition-colors hover:text-primary-600 ${
+                  isActive ? 'text-primary-600' : ''
+                }`
+              }
+            >
+              {({ isActive }) => (
+                <>
+                  {item.label}
+                  <span
+                    className={`absolute -bottom-1 left-0 h-0.5 w-full origin-left scale-x-0 rounded-full bg-primary-600 transition-transform duration-300 ${
+                      isActive ? 'scale-x-100' : ''
+                    }`}
+                  />
+                </>
+              )}
+            </NavLink>
           ))}
         </nav>
 
@@ -99,14 +116,18 @@ function Header() {
       {isMenuOpen && (
         <nav className="flex flex-col gap-1 border-t border-neutral-200/70 bg-white/90 px-4 py-4 text-sm font-medium text-neutral-700 backdrop-blur-md md:hidden">
           {strings.layout.nav.map((item) => (
-            <Link
+            <NavLink
               key={item.href}
               to={item.href}
-              className="rounded-md px-2 py-2 hover:bg-neutral-100 hover:text-primary-600"
               onClick={() => setIsMenuOpen(false)}
+              className={({ isActive }) =>
+                `rounded-md px-2 py-2 transition-colors hover:bg-neutral-100 hover:text-primary-600 ${
+                  isActive ? 'bg-primary-50 font-semibold text-primary-600' : ''
+                }`
+              }
             >
               {item.label}
-            </Link>
+            </NavLink>
           ))}
           <Link
             to="/account"
