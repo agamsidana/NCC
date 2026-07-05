@@ -49,7 +49,7 @@ function WhyProductSection() {
 
         <div className="relative mx-auto w-full max-w-md md:max-w-none">
           <img
-            src={IMAGES.mainProduct}
+            src={IMAGES.whyProduct}
             alt={whyProduct.heading}
             className="aspect-[4/3] w-full rounded-2xl object-cover shadow-lg transition-shadow duration-500 hover:shadow-2xl"
           />
