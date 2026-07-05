@@ -917,6 +917,288 @@ const productDetails: Record<string, ProductDetail> = {
     },
     crossSellSlugs: ['c5-heritage', 'alba-reserve', 'queen-of-spices-reserve-set-b', 'c4-daily'],
   },
+  'ceramic-mug': {
+    variant: { label: 'Capacity', value: '350ml' },
+    description:
+      'A weighted, matte-finish mug sized for a proper morning pour. Holds heat longer than a thin cup, and sits comfortably in one hand through a slow morning.',
+    details: [
+      'Matte glaze, stoneware body',
+      '350ml capacity',
+      'Dishwasher and microwave safe',
+      'Designed to pair with our Ceylon Reserve Coffee',
+    ],
+    pairsWith: 'Pairs well with: Ceylon Reserve Coffee, Golden Chai Latte',
+    audiences: [
+      {
+        icon: 'mdi:coffee-outline',
+        title: 'You want a mug that feels considered',
+        description: 'Weighted and matte, built to be the one mug you actually reach for.',
+        points: ['Holds heat well through a slow morning', 'Comfortable grip, no handle awkwardness'],
+      },
+      {
+        icon: 'mdi:gift-outline',
+        title: "You're building a ritual, not just buying coffee",
+        description: 'The mug most customers add once they already own the coffee.',
+        points: ['Matches the rest of the Ritual Collection', 'A simple, low-cost gift add-on'],
+      },
+    ],
+    reviews: {
+      ratingCount: 'Based on 2 reviews',
+      items: [
+        {
+          author: 'Ella M.',
+          date: '02/03/2026',
+          rating: 5,
+          title: 'Heavier than expected, in a good way',
+          body: "Feels properly weighted, not like a flimsy café mug. My morning coffee tastes better out of this, somehow.",
+        },
+        {
+          author: 'Robert K.',
+          date: '19/01/2026',
+          rating: 4,
+          title: 'Simple and does the job well',
+          body: 'Nothing fancy, just a genuinely nice mug that keeps coffee hot longer than my old one.',
+        },
+      ],
+    },
+    crossSellSlugs: ['ceylon-reserve-coffee', 'french-press', 'pour-over-dripper'],
+  },
+  'coffee-spoon': {
+    variant: { label: 'Material', value: 'Stainless steel' },
+    description:
+      'A long-handled measuring spoon for precise, consistent brewing. One level scoop is calibrated to match our recommended coffee-to-water ratio.',
+    details: [
+      'Brushed stainless steel',
+      'Long handle for reaching deep jars',
+      'Calibrated scoop size',
+      'Doubles as a stirring spoon',
+    ],
+    pairsWith: 'Pairs well with: Ceylon Reserve Coffee, Glass Storage Jar',
+    audiences: [
+      {
+        icon: 'mdi:scale-balance',
+        title: 'You want consistent brewing',
+        description: 'One scoop, every time, instead of guessing with a regular spoon.',
+        points: ['Calibrated to our recommended ratio', 'Long handle reaches to the bottom of any jar'],
+      },
+      {
+        icon: 'mdi:gift-outline',
+        title: 'You want a small, easy add-on',
+        description: 'A low-cost, practical extra alongside any coffee order.',
+        points: ['Inexpensive upgrade over a kitchen spoon', 'Pairs naturally with our storage jar'],
+      },
+    ],
+    reviews: {
+      ratingCount: 'Based on 2 reviews',
+      items: [
+        {
+          author: 'Priya N.',
+          date: '27/02/2026',
+          rating: 5,
+          title: 'Small thing, genuinely useful',
+          body: 'Stopped guessing how much coffee to use. Consistent cup every morning now.',
+        },
+        {
+          author: 'Sam W.',
+          date: '14/01/2026',
+          rating: 4,
+          title: 'Does exactly what it says',
+          body: 'Sturdy, long enough for our storage jar, and cheap enough to not think twice about.',
+        },
+      ],
+    },
+    crossSellSlugs: ['glass-storage-jar', 'ceylon-reserve-coffee', 'french-press'],
+  },
+  'french-press': {
+    variant: { label: 'Capacity', value: '1L / 8 cups' },
+    description:
+      'Borosilicate glass and brushed steel, for a full-bodied everyday brew. A simple, durable way to make coffee without any electronics involved.',
+    details: [
+      'Borosilicate glass carafe',
+      'Brushed stainless steel frame and filter',
+      '1L capacity, roughly 8 cups',
+      'Dishwasher-safe components',
+    ],
+    pairsWith: 'Pairs well with: Ceylon Reserve Coffee, Coffee Grinder',
+    audiences: [
+      {
+        icon: 'mdi:coffee-outline',
+        title: 'You want full-bodied coffee, simply made',
+        description: 'No filters, no electronics — just hot water, ground coffee, and time.',
+        points: ['Full immersion brewing for a fuller body', 'Makes enough for the whole table'],
+      },
+      {
+        icon: 'mdi:home-outline',
+        title: 'You want fewer gadgets on the counter',
+        description: 'One durable tool that replaces a machine entirely.',
+        points: ['No power cord, no descaling', 'Glass and steel built to last years'],
+      },
+      {
+        icon: 'mdi:gift-outline',
+        title: "You're setting up someone's first proper brew kit",
+        description: 'The single best starting point if buying a first coffee setup as a gift.',
+        points: ['Easiest brewing method to learn', 'Pairs naturally with our grinder and coffee'],
+      },
+    ],
+    reviews: {
+      ratingCount: 'Based on 2 reviews',
+      items: [
+        {
+          author: 'Owen T.',
+          date: '05/03/2026',
+          rating: 5,
+          title: 'Replaced my machine entirely',
+          body: "Didn't expect to switch, but this makes a fuller cup than my old drip machine ever did.",
+        },
+        {
+          author: 'Hana J.',
+          date: '22/01/2026',
+          rating: 5,
+          title: 'Sturdy and simple',
+          body: 'Glass feels solid, filter seals well, no grounds getting through. Exactly what I wanted.',
+        },
+      ],
+    },
+    crossSellSlugs: ['coffee-grinder', 'ceylon-reserve-coffee', 'ceramic-mug'],
+  },
+  'coffee-grinder': {
+    variant: { label: 'Type', value: 'Manual burr' },
+    description:
+      'A manual burr grinder for a consistent grind, cup after cup. Adjustable settings cover everything from French press to pour over.',
+    details: [
+      'Conical steel burr mechanism',
+      'Adjustable grind settings, coarse to fine',
+      'Compact, hand-crank operation',
+      'Removable ceramic-coated hopper',
+    ],
+    pairsWith: 'Pairs well with: Ceylon Reserve Coffee, French Press, Pour Over Dripper',
+    audiences: [
+      {
+        icon: 'mdi:coffee-outline',
+        title: 'You want fresher coffee, ground to order',
+        description: 'Whole beans stay fresher longer than pre-ground coffee.',
+        points: ['Grind right before brewing for more aroma', 'Adjustable for any brew method'],
+      },
+      {
+        icon: 'mdi:tune-variant',
+        title: 'You brew more than one way',
+        description: 'One grinder that adjusts between French press, pour over, and everyday use.',
+        points: ['Coarse-to-fine adjustment dial', 'Consistent particle size at every setting'],
+      },
+    ],
+    reviews: {
+      ratingCount: 'Based on 2 reviews',
+      items: [
+        {
+          author: 'Marcus L.',
+          date: '11/03/2026',
+          rating: 5,
+          title: 'Consistent grind, every time',
+          body: 'Switched from a blade grinder and the difference in taste was immediate.',
+        },
+        {
+          author: 'Chloe R.',
+          date: '30/01/2026',
+          rating: 4,
+          title: 'A bit of an arm workout, worth it',
+          body: 'Manual grinding takes a minute longer than electric, but the coffee is noticeably better.',
+        },
+      ],
+    },
+    crossSellSlugs: ['french-press', 'pour-over-dripper', 'ceylon-reserve-coffee'],
+  },
+  'glass-storage-jar': {
+    variant: { label: 'Capacity', value: '500ml' },
+    description:
+      'Airtight glass storage to keep beans and spice at their best. Keeps light and air out, so coffee and cinnamon stay fresher for longer.',
+    details: [
+      'Borosilicate glass with airtight seal',
+      '500ml capacity',
+      'Suitable for coffee beans, ground coffee, or cinnamon',
+      'Wide neck for easy scooping',
+    ],
+    pairsWith: 'Pairs well with: Ceylon Reserve Coffee, C5 Heritage Ceylon Cinnamon',
+    audiences: [
+      {
+        icon: 'mdi:archive-outline',
+        title: 'You want your coffee to stay fresh longer',
+        description: 'An airtight seal keeps air and light away from beans and ground coffee.',
+        points: ['Blocks light and air exposure', 'Wide opening for easy scooping'],
+      },
+      {
+        icon: 'mdi:gift-outline',
+        title: 'You want your counter to look as good as it works',
+        description: 'A simple, clean jar that looks intentional next to your other rituals.',
+        points: ['Works for both coffee and cinnamon storage', 'Pairs with our measuring spoon'],
+      },
+    ],
+    reviews: {
+      ratingCount: 'Based on 2 reviews',
+      items: [
+        {
+          author: 'Diana P.',
+          date: '08/03/2026',
+          rating: 5,
+          title: 'Coffee stays fresh so much longer',
+          body: 'Used to keep beans in the bag they came in. This actually keeps them tasting fresh for weeks.',
+        },
+        {
+          author: 'Felix G.',
+          date: '25/01/2026',
+          rating: 4,
+          title: 'Great seal, wish it came larger',
+          body: 'Works perfectly for coffee. Would buy a bigger size for cinnamon batches too.',
+        },
+      ],
+    },
+    crossSellSlugs: ['coffee-spoon', 'ceylon-reserve-coffee', 'c5-heritage'],
+  },
+  'pour-over-dripper': {
+    variant: { label: 'Material', value: 'Ceramic' },
+    description:
+      'Ceramic dripper for a clean, slow, single-cup ritual. Spiral ridges inside promote even extraction for a brighter, cleaner cup than immersion brewing.',
+    details: [
+      'Glazed ceramic construction',
+      'Fits standard size-02 paper filters',
+      'Single-cup brewing, roughly 350ml',
+      'Retains heat better than plastic drippers',
+    ],
+    pairsWith: 'Pairs well with: Ceylon Reserve Coffee, Coffee Grinder, Ceramic Mug',
+    audiences: [
+      {
+        icon: 'mdi:water-outline',
+        title: 'You want a brighter, cleaner cup',
+        description: 'Pour over produces a lighter body and clearer flavour than a French press.',
+        points: ['Even extraction from the spiral ridge design', 'Highlights origin flavour notes'],
+      },
+      {
+        icon: 'mdi:clock-outline',
+        title: 'You enjoy the slow morning ritual itself',
+        description: 'A few minutes of intentional, hands-on brewing rather than a quick machine pour.',
+        points: ['A genuinely calming few minutes each morning', 'Ceramic keeps water hotter for longer'],
+      },
+    ],
+    reviews: {
+      ratingCount: 'Based on 2 reviews',
+      items: [
+        {
+          author: 'Amara S.',
+          date: '16/03/2026',
+          rating: 5,
+          title: 'My favourite few minutes of the morning now',
+          body: 'Slower than my old machine, but I actually look forward to it. Cleaner-tasting cup too.',
+        },
+        {
+          author: 'Leo B.',
+          date: '02/02/2026',
+          rating: 5,
+          title: 'Noticeably brighter cup',
+          body: 'Compared side by side with my French press — this is lighter and more aromatic.',
+        },
+      ],
+    },
+    crossSellSlugs: ['coffee-grinder', 'ceramic-mug', 'ceylon-reserve-coffee'],
+  },
 };
 
 const fallbackDetail: ProductDetail = {
