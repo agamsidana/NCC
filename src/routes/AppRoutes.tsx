@@ -9,6 +9,7 @@ import NotFoundPage from '../modules/not-found/NotFoundPage'
 import { ProductPage } from '../modules/product'
 import { RecipeDetailPage, RecipesPage } from '../modules/recipes'
 import { ReviewsPage } from '../modules/reviews'
+import { RitualGuidePage } from '../modules/ritual-guides'
 import { SciencePage } from '../modules/science'
 import { GiftSetsPage, ShopPage } from '../modules/shop'
 import strings from '../common/constants/strings'
@@ -50,6 +51,25 @@ const router=createBrowserRouter( [
       },
       { path: 'faq', element: <FaqPage /> },
       { path: 'contact', element: <ContactPage /> },
+      {
+        path: 'coffee-ritual-guide',
+        element: <RitualGuidePage guide={strings.ritualGuides.coffee} path="/coffee-ritual-guide" />,
+      },
+      {
+        path: 'golden-chai-ritual-guide',
+        element: (
+          <RitualGuidePage guide={strings.ritualGuides.goldenChai} path="/golden-chai-ritual-guide" />
+        ),
+      },
+      {
+        path: 'metabolic-cinnamon-guide',
+        element: (
+          <RitualGuidePage
+            guide={strings.ritualGuides.metabolicCinnamon}
+            path="/metabolic-cinnamon-guide"
+          />
+        ),
+      },
       { path: '*', element: <NotFoundPage /> },
     ],
   },

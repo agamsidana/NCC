@@ -50,6 +50,9 @@ function AboutPage() {
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
+          <p className="mt-6 border-l-2 border-primary-300 pl-4 font-serif text-lg italic leading-snug text-neutral-800">
+            {about.mission}
+          </p>
         </div>
 
         <div className="mt-16 max-w-2xl">

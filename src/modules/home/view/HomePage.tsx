@@ -26,6 +26,9 @@ function HomePage() {
         <TrustBarSection />
       </Reveal>
       <Reveal>
+        <RitualsSection />
+      </Reveal>
+      <Reveal>
         <WhyProductSection />
       </Reveal>
       <Reveal>
@@ -33,9 +36,6 @@ function HomePage() {
       </Reveal>
       <Reveal>
         <GradeSystemSection />
-      </Reveal>
-      <Reveal>
-        <RitualsSection />
       </Reveal>
       <Reveal>
         <AlbaReserveSection />

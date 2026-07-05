@@ -27,16 +27,17 @@ const strings = {
   home: {
     hero: {
       eyebrow: "Single-Origin Sri Lanka.",
-      heading: "Better coffee. Better tea. Better rituals.",
+      heading: "Better coffee. Better rituals. Better ingredients.",
       description:
-        "Not all cinnamon is created equal. NCC sources only true Ceylon: graded, tested, and traceable to its origin in Sri Lanka. Add it to your morning ritual. Feel the difference.",
+        "Upgrade the drinks and pantry staples you already live on — coffee, chai, golden lattes, and daily blends — with true Ceylon cinnamon and traceable Sri Lankan ingredients chosen for function, flavour, and provenance.",
       rating: { score: "4.9", reviewCount: "200+ verified buyers" },
       primaryCta: "Shop Daily Rituals",
       secondaryCta: "Why Ceylon Matters",
       badges: [
-        "Certified True Ceylon",
-        "Third-Party Lab Tested",
-        "Single-Origin Sri Lanka",
+        "Single-Origin Arabica",
+        "True Ceylon Cinnamon",
+        "Functional Latte Blends",
+        "Direct Sri Lankan Sourcing",
       ],
     },
     trustBar: {
@@ -125,10 +126,10 @@ const strings = {
       ],
     },
     gradeSystem: {
-      eyebrow: "Choose Your Grade",
-      heading: "The NCC Grade System",
+      eyebrow: "The Ceylon Range",
+      heading: "One Ingredient, Graded for Every Ritual",
       subheading:
-        "Every grade is authentic Ceylon. Choose by your goals and how your palate leans.",
+        "Every grade is authentic Ceylon cinnamon — the proof layer behind your coffee, chai, and daily pantry staples.",
       products: [
         {
           title: "C5 Heritage Ceylon Cinnamon 100g",
@@ -312,6 +313,9 @@ const strings = {
           { label: "Why Ceylon Matters", href: "/why-ceylon-matters" },
           { label: "Recipes", href: "/recipes" },
           { label: "Find Your Ritual", href: "/find-your-ritual" },
+          { label: "Coffee Ritual Guide", href: "/coffee-ritual-guide" },
+          { label: "Golden Chai Ritual Guide", href: "/golden-chai-ritual-guide" },
+          { label: "Metabolic Cinnamon Guide", href: "/metabolic-cinnamon-guide" },
         ],
       },
       {
@@ -338,7 +342,7 @@ const strings = {
   },
   about: {
     title: "About NCC",
-    subtitle: "From Sri Lanka to Your Morning Cup",
+    subtitle: "From Sri Lanka to Your Daily Ritual",
     founder: {
       name: "Ruwan Senavirathna",
       role: "Founder, Natural Ceylon Cinnamon",
@@ -346,15 +350,17 @@ const strings = {
       quote:
         "I couldn't find cinnamon in the UK that I'd actually trust. So I went back to the source.",
       intro:
-        "We work directly with growers in Sri Lanka, select each harvest by grade, test every batch independently, and ship directly to you.",
+        "We work directly with growers in Sri Lanka on cinnamon, coffee, and the wider spice pantry — selecting each harvest by grade, testing every batch independently, and shipping directly to you.",
     },
     whyWeStarted: {
       heading: "Why We Started",
       paragraphs: [
-        "After years of buying cinnamon labelled as 'Ceylon' only to find it was Cassia, or poorly stored, or unlabelled in terms of grade, Natural Ceylon Cinnamon was built to fix the problem.",
-        "We source directly from growers in Sri Lanka, the only country that produces true Ceylon cinnamon (Cinnamomum verum) at scale. Every harvest is graded by essential oil concentration, tested independently for purity, and shipped directly to you. No middlemen. No substitutions.",
+        "After years of buying cinnamon labelled as 'Ceylon' only to find it was Cassia, or poorly stored, or unlabelled in terms of grade, Ruwan realised the problem wasn't just cinnamon — it was how many everyday rituals are built on low-grade, poorly explained ingredients with no real story behind them.",
+        "Natural Ceylon Cinnamon exists to fix that, starting with what Sri Lanka does best: true Ceylon cinnamon, alongside the coffee, cardamom, and spice traditions that surround it. Every harvest is graded, tested independently for purity, and shipped directly to you. No middlemen. No substitutions.",
       ],
     },
+    mission:
+      "Ruwan isn't building a spice brand with a heritage story attached. He's building a Sri Lankan ritual brand rooted in ingredients his family has understood for generations — translating that knowledge into products you already know how to use.",
     differentiators: {
       heading: "What Makes NCC Different",
       items: [
@@ -378,7 +384,7 @@ const strings = {
     products: {
       heading: "Our Products",
       paragraph:
-        "We offer true Ceylon cinnamon across three grades — C4 Daily, C5 Heritage, and Alba Reserve — alongside our Ritual Collection of coffee and chai formats. Every product uses authenticated Ceylon, with no Cassia blending.",
+        "Our ritual collection starts with Ceylon Reserve Coffee for your morning and Ceylon Golden Chai Latte for your afternoon — both built on true Ceylon cinnamon, graded across three tiers (C4 Daily, C5 Heritage, and Alba Reserve) for however deep you want to go. Every product uses authenticated Ceylon, with no Cassia blending.",
     },
     basedInUk: {
       heading: "Based in the UK. Sourced in Sri Lanka.",
@@ -1057,6 +1063,68 @@ const strings = {
       { label: "FAQ", href: "/faq" },
       { label: "Shipping & Returns", href: "/shipping-returns" },
     ],
+  },
+  ritualGuides: {
+    coffee: {
+      tag: "Morning Ritual",
+      title: "The Coffee Ritual Guide",
+      intro:
+        "Coffee is already a fixed habit — which makes it the easiest place to start. Ceylon Reserve Coffee pairs single-origin Sri Lankan Arabica with true Ceylon cinnamon and cardamom, turning the cup you already make every day into something warmer, more distinctive, and more ownable.",
+      stepsHeading: "How to Make It",
+      steps: [
+        "Measure ½ tsp Ceylon cinnamon into your grounds before brewing, or stir it straight into your cup.",
+        "Brew as normal — filter, cafetière, or pour-over all work.",
+        "Enjoy immediately. No need to strain.",
+      ],
+      whyHeading: "Why This Works",
+      whyPoints: [
+        "Ceylon cinnamon adds natural warmth and a subtly sweet edge, without added sugar.",
+        "Cardamom rounds out the bitterness of a dark roast.",
+        "Cinnamon's essential oils are delicate — add it to warm grounds or a finished cup, never to boiling water.",
+      ],
+      productSlug: "ceylon-reserve-coffee",
+      productCta: "Shop Ceylon Reserve Coffee",
+    },
+    goldenChai: {
+      tag: "Afternoon Ritual",
+      title: "The Golden Chai Ritual Guide",
+      intro:
+        "The afternoon slump doesn't need a second coffee. Ceylon Golden Chai Latte Blend is a comfort ritual with compound logic — cinnamon, cardamom, ginger, and black pepper, chosen for how they work together, not just how they taste.",
+      stepsHeading: "How to Make It",
+      steps: [
+        "Add 1 heaped teaspoon of Golden Chai Latte Blend to your cup.",
+        "Pour over hot oat milk or water and stir well.",
+        "Froth for a café-style finish, or drink as is. Sweeten only if you want to.",
+      ],
+      whyHeading: "Why This Works",
+      whyPoints: [
+        "Black pepper increases the bioavailability of the other compounds in the blend.",
+        "Ginger and cardamom are traditional digestive aids used across South Asian medicine for centuries.",
+        "No added sugar — the sweetness comes from the spice blend itself, not a syrup base.",
+      ],
+      productSlug: "golden-chai-latte",
+      productCta: "Shop Golden Chai Latte",
+    },
+    metabolicCinnamon: {
+      tag: "Daily Base",
+      title: "The Metabolic Cinnamon Guide",
+      intro:
+        "True Ceylon cinnamon is the foundational ingredient underneath every ritual in this range — not just coffee and chai, but porridge, smoothies, oats, and any blood-sugar-aware routine. This is the guide to using it well, at whichever grade fits your goals.",
+      stepsHeading: "How to Use It",
+      steps: [
+        "Start with ¼–½ tsp per serving — Ceylon's flavour is more delicate than Cassia, so a little goes further than you'd expect.",
+        "Add it after cooking or brewing, not before — heat above boiling degrades its essential oils.",
+        "Store in a sealed container away from light and heat to preserve potency.",
+      ],
+      whyHeading: "Why Grade Matters Here",
+      whyPoints: [
+        "C4 Daily is graded for consistent, everyday use — coffee, oats, and cooking.",
+        "C5 Heritage carries a higher essential oil concentration, for a more aromatic result in baking and lattes.",
+        "Alba Reserve is the finishing grade — best dusted over a finished drink or dessert, not cooked.",
+      ],
+      productSlug: "c4-daily",
+      productCta: "Shop Ceylon Cinnamon",
+    },
   },
   notFound: {
     eyebrow: "Lost Your Way?",

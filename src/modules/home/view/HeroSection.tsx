@@ -4,8 +4,9 @@ import { IMAGES } from "../../../common/constants/image-source";
 import strings from "../../../common/constants/strings";
 
 const badgeIcons = [
+  "mdi:coffee-outline",
   "mdi:certificate-outline",
-  "mdi:flask-outline",
+  "mdi:tea-outline",
   "mdi:map-marker-outline",
 ];
 
