@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import strings from '../constants/strings'
 import { Icon } from '@iconify/react'
@@ -9,11 +9,27 @@ import { useAppDispatch, useAppSelector } from '../../store/hooks'
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
   const dispatch = useAppDispatch()
   const cartItemCount = useAppSelector(selectCartItemCount)
 
+  useEffect(() => {
+    function handleScroll() {
+      setIsScrolled(window.scrollY > 8)
+    }
+    handleScroll()
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white">
+    <header
+      className={`sticky top-0 z-50 border-b backdrop-blur-md backdrop-saturate-150 transition-all duration-300 ${
+        isScrolled
+          ? 'border-neutral-200/70 bg-white/75 shadow-sm'
+          : 'border-white/10 bg-white/40'
+      }`}
+    >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4">
         <Link to="/" className="flex items-center gap-2">
           <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-primary-400 text-primary-600">
@@ -81,7 +97,7 @@ function Header() {
       </div>
 
       {isMenuOpen && (
-        <nav className="flex flex-col gap-1 border-t border-neutral-200 px-4 py-4 text-sm font-medium text-neutral-700 md:hidden">
+        <nav className="flex flex-col gap-1 border-t border-neutral-200/70 bg-white/90 px-4 py-4 text-sm font-medium text-neutral-700 backdrop-blur-md md:hidden">
           {strings.layout.nav.map((item) => (
             <Link
               key={item.href}
