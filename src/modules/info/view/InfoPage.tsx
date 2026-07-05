@@ -1,15 +1,5 @@
 import SEO from '../../../common/components/SEO'
-
-type InfoSection = {
-  heading: string
-  paragraphs: readonly string[]
-}
-
-type InfoContent = {
-  title: string
-  intro: string
-  sections: readonly InfoSection[]
-}
+import type { InfoContent } from '../types'
 
 function InfoPage({ content, path }: { content: InfoContent; path: string }) {
   return (

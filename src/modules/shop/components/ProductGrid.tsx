@@ -1,15 +1,7 @@
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import strings from "../../../common/constants/strings";
-
-type Product = {
-  slug: string;
-  name: string;
-  price: string;
-  description?: string | null;
-  img: string;
-  category?: string;
-};
+import type { ShopProduct } from "../types";
 
 const categoryLabels: Record<string, string> = {
   cinnamon: "Cinnamon",
@@ -17,7 +9,7 @@ const categoryLabels: Record<string, string> = {
   "gift-set": "Gift Set",
 };
 
-function ProductGrid({ products }: { products: readonly Product[] }) {
+function ProductGrid({ products }: { products: readonly ShopProduct[] }) {
   return (
     <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-5 lg:grid-cols-4">
       {products.map((product) => (

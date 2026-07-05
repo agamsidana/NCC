@@ -5,21 +5,13 @@ import SEO from '../../../common/components/SEO'
 import { IMAGES } from '../../../common/constants/image-source'
 import { getProductBySlug } from '../../../common/constants/products'
 import strings from '../../../common/constants/strings'
-
-type CartLine = { slug: string; quantity: number }
+import type { CartLine } from '../types'
+import { formatPrice, parsePrice } from '../utils'
 
 const initialLines: CartLine[] = [
   { slug: 'spice-of-kings-set-a', quantity: 1 },
   { slug: 'c5-heritage', quantity: 1 },
 ]
-
-function parsePrice(price: string) {
-  return Number(price.replace(/[^0-9.]/g, ''))
-}
-
-function formatPrice(value: number) {
-  return `£${value.toFixed(2)}`
-}
 
 function CartPage() {
   const { cart } = strings

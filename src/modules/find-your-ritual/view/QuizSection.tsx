@@ -1,8 +1,6 @@
 import { Icon } from '@iconify/react'
 import strings from '../../../common/constants/strings'
-
-type Option = { label: string; grade: string }
-type Question = { question: string; options: readonly Option[] }
+import type { Question } from '../types'
 
 function QuizSection({
   question,

@@ -1,11 +1,10 @@
 import { useMemo, useState } from 'react'
 import SEO from '../../../common/components/SEO'
 import strings from '../../../common/constants/strings'
+import type { Phase } from '../types'
 import IntroSection from './IntroSection'
 import QuizSection from './QuizSection'
 import ResultSection from './ResultSection'
-
-type Phase = 'intro' | 'quiz' | 'result'
 
 function FindYourRitualPage() {
   const { findYourRitual } = strings
