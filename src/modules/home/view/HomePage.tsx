@@ -3,6 +3,7 @@ import SEO from "../../../common/components/SEO";
 import AlbaReserveSection from "./AlbaReserveSection";
 import GradeSection from "./GradeSection";
 import GradeSystemSection from "./GradeSystemSection";
+import HarvestPeopleSection from "./HarvestPeopleSection";
 import HeroSection from "./HeroSection";
 import NewsletterSection from "./NewsletterSection";
 import OurStorySection from "./OurStorySection";
@@ -42,6 +43,9 @@ function HomePage() {
       </Reveal>
       <Reveal>
         <OurStorySection />
+      </Reveal>
+      <Reveal>
+        <HarvestPeopleSection />
       </Reveal>
       <Reveal>
         <ScienceHighlightsSection />

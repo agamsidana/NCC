@@ -217,6 +217,28 @@ const strings = {
       cta: "Read Our Full Story",
       href: "/about-ncc",
     },
+    harvestPeople: {
+      eyebrow: "Direct From The Estate",
+      heading: "The People Behind the Harvest",
+      description:
+        "Ruwan's name is on the label. But the trust starts long before that — with the growers and estate workers in Sri Lanka who harvest and peel every stick by hand, the way their families have for generations.",
+      photos: [
+        {
+          image: "grower1",
+          caption: "Hand-harvesting the inner bark, the way it's done here for generations.",
+        },
+        {
+          image: "grower2",
+          caption: "Peeling and rolling each quill by hand — no machine replaces this step.",
+        },
+        {
+          image: "grower3",
+          caption: "Sun-drying on the estate before grading and export.",
+        },
+      ],
+      cta: "Meet Our Growers",
+      href: "/our-growers",
+    },
     science: {
       eyebrow: "The Research",
       heading: "Backed by Peer-Reviewed Science",
@@ -311,6 +333,7 @@ const strings = {
           { label: "About NCC", href: "/about-ncc" },
           { label: "The Science", href: "/the-science" },
           { label: "Why Ceylon Matters", href: "/why-ceylon-matters" },
+          { label: "Meet Our Growers", href: "/our-growers" },
           { label: "Recipes", href: "/recipes" },
           { label: "Find Your Ritual", href: "/find-your-ritual" },
           { label: "Coffee Ritual Guide", href: "/coffee-ritual-guide" },
@@ -1245,6 +1268,44 @@ const strings = {
       productSlug: "c4-daily",
       productCta: "Shop Ceylon Cinnamon",
     },
+  },
+  growers: {
+    eyebrow: "Direct From The Estate",
+    title: "The People Behind the Harvest",
+    intro:
+      "Every grade in the NCC range starts the same way — with someone climbing, cutting, and peeling by hand. This is that part of the story: the people we source from, and why that relationship is the actual proof behind every claim on our label.",
+    sections: [
+      {
+        heading: "A Relationship, Not a Transaction",
+        paragraphs: [
+          "These are the same estates and the same families my father sourced from when I was a child. When I say 'direct Sri Lankan sourcing,' I mean it literally — no brokers reshaping the story between the tree and the label.",
+          "That relationship is what makes grading honest. When you know the people who peeled the bark, you know exactly what you're grading — and you can't fake that with a supply chain you've never seen.",
+        ],
+      },
+      {
+        heading: "How It's Actually Made",
+        paragraphs: [
+          "True Ceylon cinnamon is peeled, not stripped — thin layers of inner bark rolled by hand into the quills you recognise. It's slow, skilled work, done the same way it has been for generations, because machinery still can't replicate it without damaging the bark's essential oils.",
+          "Every grade you see on this site — C4 Daily, C5 Heritage, Alba Reserve — starts as the same hand-peeled bark. The grade is decided afterwards, by how fine, how aromatic, and how consistent that particular harvest turns out to be.",
+        ],
+      },
+    ],
+    gallery: [
+      {
+        image: "grower1",
+        caption: "Hand-harvesting the inner bark, the way it's done here for generations.",
+      },
+      {
+        image: "grower2",
+        caption: "Peeling and rolling each quill by hand — no machine replaces this step.",
+      },
+      {
+        image: "grower3",
+        caption: "Sun-drying on the estate before grading and export.",
+      },
+    ],
+    cta: "Shop The Ceylon Range",
+    href: "/shop",
   },
   notFound: {
     eyebrow: "Lost Your Way?",

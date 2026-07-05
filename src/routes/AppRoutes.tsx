@@ -3,6 +3,7 @@ import MainLayout from '../layouts/MainLayout'
 import { AboutPage } from '../modules/about'
 import { CartPage } from '../modules/cart'
 import { FindYourRitualPage } from '../modules/find-your-ritual'
+import { GrowersPage } from '../modules/growers'
 import { HomePage } from '../modules/home'
 import { ContactPage, FaqPage, InfoPage } from '../modules/info'
 import NotFoundPage from '../modules/not-found/NotFoundPage'
@@ -33,6 +34,7 @@ const router=createBrowserRouter( [
         path: 'why-ceylon-matters',
         element: <InfoPage content={strings.infoPages.whyCeylonMatters} path="/why-ceylon-matters" />,
       },
+      { path: 'our-growers', element: <GrowersPage /> },
       {
         path: 'shipping-returns',
         element: <InfoPage content={strings.infoPages.shippingReturns} path="/shipping-returns" />,
