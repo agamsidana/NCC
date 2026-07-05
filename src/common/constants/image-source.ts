@@ -28,6 +28,9 @@ import PERSON7 from "../../assets/images/person7.png";
 import PERSON8 from "../../assets/images/person8.png";
 import PERSON9 from "../../assets/images/person9.png";
 import PERSON10 from "../../assets/images/person10.png";
+import REVIEW_IMAGE_1 from "../../assets/images/reviewImage1.png";
+import REVIEW_IMAGE_2 from "../../assets/images/reviewImage2.png";
+import REVIEW_IMAGE_3 from "../../assets/images/reviewImage3.jpg";
 
 export const IMAGES = {
   logo: LOGO,
@@ -66,4 +69,5 @@ export const IMAGES = {
     PERSON9,
     PERSON10,
   ],
+  reviewShowcase: [REVIEW_IMAGE_1, REVIEW_IMAGE_2, REVIEW_IMAGE_3],
 };

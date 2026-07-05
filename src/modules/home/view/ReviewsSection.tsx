@@ -29,33 +29,32 @@ function ReviewsSection() {
           </div>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3">
           {reviews.items.map((review, index) => (
             <div
               key={review.author}
-              className="flex flex-col gap-3 rounded-xl border border-neutral-200 bg-neutral-50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary-200 hover:bg-white hover:shadow-lg"
+              className="group flex flex-col transition-all duration-300 hover:-translate-y-1.5"
             >
-              <span className="flex text-primary-500">
+              <div className="overflow-hidden rounded-2xl border border-neutral-200 shadow-sm transition-all duration-300 [transform:translateZ(0)] group-hover:border-primary-200 group-hover:shadow-xl">
+                <img
+                  src={IMAGES.reviewShowcase[index % IMAGES.reviewShowcase.length]}
+                  alt={`${review.author} sharing their NCC ritual`}
+                  className="aspect-[4/5] w-full object-cover transition-[filter] duration-500 group-hover:brightness-105"
+                />
+              </div>
+
+              <span className="mt-5 flex text-primary-500">
                 {Array.from({ length: 5 }).map((_, starIndex) => (
                   <Icon key={starIndex} icon="mdi:star" width={14} height={14} />
                 ))}
               </span>
-              <h3 className="text-sm font-semibold text-neutral-900">
+              <h3 className="mt-2 text-sm font-semibold text-neutral-900">
                 {review.title}
               </h3>
-              <p className="flex-1 text-sm text-neutral-600">{review.body}</p>
-              <div className="flex items-center gap-2 pt-2">
-                <span className="h-8 w-8 shrink-0 overflow-hidden rounded-full">
-                  <img
-                    src={IMAGES.reviewers[index % IMAGES.reviewers.length]}
-                    alt={review.author}
-                    className="h-full w-full scale-125 object-cover"
-                  />
-                </span>
-                <span className="text-sm font-medium text-neutral-900">
-                  {review.author}
-                </span>
-              </div>
+              <p className="mt-1 text-sm text-neutral-600">{review.body}</p>
+              <span className="mt-3 text-sm font-medium text-neutral-900">
+                {review.author}
+              </span>
             </div>
           ))}
         </div>
