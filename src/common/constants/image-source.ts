@@ -34,10 +34,19 @@ import REVIEW_IMAGE_3 from "../../assets/images/reviewImage3.jpg";
 import GROWER_IMAGE_1 from "../../assets/images/grower1.png";
 import GROWER_IMAGE_2 from "../../assets/images/grower2.png";
 import GROWER_IMAGE_3 from "../../assets/images/grower3.png";
+import SHOP_HERO from "../../assets/images/shopHero.png"
+import GIFT_SET from "../../assets/images/giftSet.png"
+import BEST_SELLER_COFFEE from "../../assets/images/bestSeller1.png";
+import BEST_SELLER_TEA from "../../assets/images/bestSeller2.png";
 
 export const IMAGES = {
   logo: LOGO,
   hero: HERO,
+  shopHero:SHOP_HERO,
+  bestSellerCoffee:BEST_SELLER_COFFEE,
+  bestSellerTea:BEST_SELLER_TEA,
+
+  giftSet:GIFT_SET,
   mainProduct: MAIN_PRODUCT,
   mainProduct1: MAIN_PRODUCT1,
   ourStory: OUR_STORY,
@@ -73,7 +82,6 @@ export const IMAGES = {
     PERSON10,
   ],
   reviewShowcase: [REVIEW_IMAGE_1, REVIEW_IMAGE_2, REVIEW_IMAGE_3],
-  // Placeholders until real estate/grower photos are added — swap these 3 keys for the new images.
   growers: {
     grower1: GROWER_IMAGE_1,
     grower2: GROWER_IMAGE_2,

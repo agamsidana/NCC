@@ -39,7 +39,7 @@ function ShopHeroSection() {
 
         <div className="relative mx-auto w-full max-w-lg overflow-hidden rounded-2xl shadow-xl [transform:translateZ(0)] md:max-w-none">
           <img
-            src={IMAGES.hero}
+            src={IMAGES.shopHero}
             alt={hero.heading}
             className="aspect-[4/5] w-full origin-center object-cover motion-safe:animate-fade-zoom-out"
           />
