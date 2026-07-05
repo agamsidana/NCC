@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
+import { IMAGES } from "../../../common/constants/image-source";
 import strings from "../../../common/constants/strings";
 
 function ReviewsSection() {
@@ -29,14 +30,14 @@ function ReviewsSection() {
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
-          {reviews.items.map((review) => (
+          {reviews.items.map((review, index) => (
             <div
               key={review.author}
               className="flex flex-col gap-3 rounded-xl border border-neutral-200 bg-neutral-50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary-200 hover:bg-white hover:shadow-lg"
             >
               <span className="flex text-primary-500">
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <Icon key={index} icon="mdi:star" width={14} height={14} />
+                {Array.from({ length: 5 }).map((_, starIndex) => (
+                  <Icon key={starIndex} icon="mdi:star" width={14} height={14} />
                 ))}
               </span>
               <h3 className="text-sm font-semibold text-neutral-900">
@@ -44,8 +45,12 @@ function ReviewsSection() {
               </h3>
               <p className="flex-1 text-sm text-neutral-600">{review.body}</p>
               <div className="flex items-center gap-2 pt-2">
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary-100 text-xs font-semibold text-primary-700">
-                  {review.author.charAt(0)}
+                <span className="h-8 w-8 shrink-0 overflow-hidden rounded-full">
+                  <img
+                    src={IMAGES.reviewers[index % IMAGES.reviewers.length]}
+                    alt={review.author}
+                    className="h-full w-full scale-125 object-cover"
+                  />
                 </span>
                 <span className="text-sm font-medium text-neutral-900">
                   {review.author}

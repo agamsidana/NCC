@@ -1,6 +1,7 @@
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import SEO from "../../../common/components/SEO";
+import { IMAGES } from "../../../common/constants/image-source";
 import { getAllProducts } from "../../../common/constants/products";
 import strings from "../../../common/constants/strings";
 
@@ -69,7 +70,16 @@ function ReviewsPage() {
               <h3 className="text-sm font-semibold text-neutral-900">{review.title}</h3>
               <p className="text-sm text-neutral-600">{review.body}</p>
               <div className="mt-1 flex items-center justify-between text-xs">
-                <span className="font-medium text-neutral-900">{review.author}</span>
+                <span className="flex items-center gap-2">
+                  <span className="h-6 w-6 shrink-0 overflow-hidden rounded-full">
+                    <img
+                      src={IMAGES.reviewers[index % IMAGES.reviewers.length]}
+                      alt={review.author}
+                      className="h-full w-full scale-125 object-cover"
+                    />
+                  </span>
+                  <span className="font-medium text-neutral-900">{review.author}</span>
+                </span>
                 <Link to={review.productHref} className="text-primary-600 hover:underline">
                   {review.productTitle}
                 </Link>

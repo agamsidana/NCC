@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import { IMAGES } from "../../../common/constants/image-source";
 import type { Product } from "../../../common/constants/products";
 
 type ProductReviewsSectionProps = {
@@ -25,14 +26,14 @@ function ProductReviewsSection({ product }: ProductReviewsSectionProps) {
         </div>
 
         <div className="mt-10 flex flex-col divide-y divide-neutral-200">
-          {reviews.items.map((review) => (
+          {reviews.items.map((review, index) => (
             <div key={review.author} className="flex flex-col gap-2 py-6">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-1 text-primary-500">
-                  {Array.from({ length: 5 }).map((_, index) => (
+                  {Array.from({ length: 5 }).map((_, starIndex) => (
                     <Icon
-                      key={index}
-                      icon={index < review.rating ? "mdi:star" : "mdi:star-outline"}
+                      key={starIndex}
+                      icon={starIndex < review.rating ? "mdi:star" : "mdi:star-outline"}
                       width={16}
                       height={16}
                     />
@@ -42,7 +43,16 @@ function ProductReviewsSection({ product }: ProductReviewsSectionProps) {
               </div>
               <h3 className="text-sm font-semibold text-neutral-900">{review.title}</h3>
               <p className="text-sm text-neutral-600">{review.body}</p>
-              <p className="text-sm font-medium text-neutral-900">{review.author}</p>
+              <div className="flex items-center gap-2">
+                <span className="h-6 w-6 shrink-0 overflow-hidden rounded-full">
+                  <img
+                    src={IMAGES.reviewers[index % IMAGES.reviewers.length]}
+                    alt={review.author}
+                    className="h-full w-full scale-125 object-cover"
+                  />
+                </span>
+                <p className="text-sm font-medium text-neutral-900">{review.author}</p>
+              </div>
             </div>
           ))}
         </div>
