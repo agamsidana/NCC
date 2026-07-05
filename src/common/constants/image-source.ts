@@ -1,4 +1,4 @@
-import LOGO from "../../assets/images/logo.jpeg";
+import LOGO from "../../assets/images/logo.jpg";
 import HERO from "../../assets/images/hero.png";
 import MAIN_PRODUCT from "../../assets/images/mainProduct.jpg";
 import MAIN_PRODUCT1 from "../../assets/images/mainProduct2.png";
