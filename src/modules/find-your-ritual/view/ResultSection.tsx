@@ -1,8 +1,17 @@
+import { Icon } from '@iconify/react'
 import { Link } from 'react-router-dom'
 import { getProductBySlug } from '../../../common/constants/products'
 import strings from '../../../common/constants/strings'
 
-function ResultSection({ recommendedSlug, onRetake }: { recommendedSlug: string; onRetake: () => void }) {
+function ResultSection({
+  recommendedSlug,
+  matchingAnswers,
+  onRetake,
+}: {
+  recommendedSlug: string
+  matchingAnswers: string[]
+  onRetake: () => void
+}) {
   const { result } = strings.findYourRitual
   const product = getProductBySlug(recommendedSlug)
 
@@ -21,6 +30,27 @@ function ResultSection({ recommendedSlug, onRetake }: { recommendedSlug: string;
           <p className="text-lg font-semibold text-primary-600">{product.price}</p>
         </div>
       </div>
+
+      {matchingAnswers.length > 0 && (
+        <div className="mx-auto mt-6 max-w-md rounded-xl border border-neutral-200 bg-neutral-50 p-4 text-left">
+          <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500">
+            {result.whyMatchedLabel}
+          </p>
+          <ul className="mt-2 flex flex-col gap-1.5">
+            {matchingAnswers.map((answer) => (
+              <li key={answer} className="flex items-start gap-2 text-sm text-neutral-700">
+                <Icon
+                  icon="mdi:check-circle-outline"
+                  width={16}
+                  height={16}
+                  className="mt-0.5 shrink-0 text-primary-500"
+                />
+                {answer}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
         <Link

@@ -1015,6 +1015,7 @@ const strings = {
     result: {
       eyebrow: "Your Match",
       heading: "Here's Your Ritual",
+      whyMatchedLabel: "Matched because you told us:",
       retakeCta: "Retake the Quiz",
       shopCta: "Shop This Grade",
     },

@@ -15,18 +15,26 @@ function FindYourRitualPage() {
   const totalQuestions = findYourRitual.questions.length
   const currentQuestion = findYourRitual.questions[questionIndex]
 
-  const recommendedSlug = useMemo(() => {
-    const grades = answers
+  const { recommendedSlug, matchingAnswers } = useMemo(() => {
+    const selectedOptions = answers
       .map((optionIndex, index) =>
-        optionIndex === undefined ? null : findYourRitual.questions[index].options[optionIndex].grade,
+        optionIndex === undefined ? null : findYourRitual.questions[index].options[optionIndex],
       )
-      .filter((grade): grade is NonNullable<typeof grade> => grade !== null)
+      .filter((option): option is NonNullable<typeof option> => option !== null)
 
-    if (grades.length === 0) return null
+    if (selectedOptions.length === 0) {
+      return { recommendedSlug: null, matchingAnswers: [] as string[] }
+    }
 
     const counts = new Map<string, number>()
-    grades.forEach((grade) => counts.set(grade, (counts.get(grade) ?? 0) + 1))
-    return [...counts.entries()].sort((a, b) => b[1] - a[1])[0][0]
+    selectedOptions.forEach((option) => counts.set(option.grade, (counts.get(option.grade) ?? 0) + 1))
+    const topGrade = [...counts.entries()].sort((a, b) => b[1] - a[1])[0][0]
+
+    const matchingAnswers = selectedOptions
+      .filter((option) => option.grade === topGrade)
+      .map((option) => option.label)
+
+    return { recommendedSlug: topGrade, matchingAnswers }
   }, [answers, findYourRitual.questions])
 
   function handleSelect(optionIndex: number) {
@@ -83,7 +91,11 @@ function FindYourRitualPage() {
         )}
 
         {phase === 'result' && recommendedSlug && (
-          <ResultSection recommendedSlug={recommendedSlug} onRetake={handleRetake} />
+          <ResultSection
+            recommendedSlug={recommendedSlug}
+            matchingAnswers={matchingAnswers}
+            onRetake={handleRetake}
+          />
         )}
       </div>
     </>
