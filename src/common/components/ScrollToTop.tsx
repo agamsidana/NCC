@@ -10,7 +10,7 @@ import { useLocation } from 'react-router-dom'
  * a "#faq" link) once that route's content has painted.
  */
 function ScrollToTop() {
-  const { pathname, hash } = useLocation()
+  const { pathname, search, hash, key } = useLocation()
 
   useEffect(() => {
     if (!hash) {
@@ -24,7 +24,7 @@ function ScrollToTop() {
     })
 
     return () => cancelAnimationFrame(frame)
-  }, [pathname, hash])
+  }, [pathname, search, hash, key])
 
   return null
 }

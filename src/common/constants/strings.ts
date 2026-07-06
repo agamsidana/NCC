@@ -791,9 +791,9 @@ const strings = {
     ritualCards: [
       {
         title: "Coffee",
-        description: "Large warm coffee cup with premium matte coffee bag.",
+        description: "Explore premium coffee blends.",
         img: IMAGES.ritual1,
-        href: "/products/ceylon-reserve-coffee",
+        href: "/shop?category=coffee#all-products",
       },
       {
         title: "Tea & Chai",
