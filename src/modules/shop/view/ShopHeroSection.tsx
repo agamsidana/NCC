@@ -22,17 +22,11 @@ function ShopHeroSection() {
 
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <Link
-              to="/products/ceylon-reserve-coffee"
+              to="/shop#ritual"
               className="inline-flex items-center gap-2 rounded-full bg-primary-600 px-7 py-3.5 text-sm font-medium text-white transition-colors hover:bg-primary-700"
             >
-              {hero.primaryCta}
+              {hero.cta}
               <Icon icon="mdi:arrow-right" width={16} height={16} />
-            </Link>
-            <Link
-              to="/shop#ritual"
-              className="inline-flex items-center rounded-full border border-neutral-300 px-7 py-3.5 text-sm font-medium text-neutral-800 transition-colors hover:border-primary-400 hover:text-primary-600"
-            >
-              {hero.secondaryCta}
             </Link>
           </div>
         </div>

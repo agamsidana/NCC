@@ -5,19 +5,9 @@ import MAIN_PRODUCT1 from "../../assets/images/mainProduct2.png";
 import WHY_PRODUCT from "../../assets/images/whyProduct.png"
 import OUR_STORY from "../../assets/images/our_story.png";
 import ALBA_RESERVE from "../../assets/images/alba_reserve.png";
-import IMAGE1 from "../../assets/images/gradeSystem1.jpeg";
-import IMAGE2 from "../../assets/images/gradeSystem2.jpg";
-import IMAGE3 from "../../assets/images/gradeSystem3.jpeg";
-import COFFEE1 from "../../assets/images/coffee1.png";
-import COFFEE2 from "../../assets/images/coffee2.png";
-import COFFEE3 from "../../assets/images/coffee3.png";
-import COFFEE4 from "../../assets/images/coffee4.png";
-import COFFEE5 from "../../assets/images/coffee5.png";
-import COFFEE6 from "../../assets/images/coffee6.png";
-import COFFEE7 from "../../assets/images/coffee7.png";
-import COFFEE8 from "../../assets/images/coffee8.png";
-import COFFEE9 from "../../assets/images/coffee9.png";
-import COFFEE10 from "../../assets/images/coffee10.png";
+import IMAGE1 from "../../assets/images/C5HeritageCinnamon.png";
+import IMAGE2 from "../../assets/images/C4DailyCinnamon.png";
+import IMAGE3 from "../../assets/images/AlbaReserveCinnamon.png";
 import PERSON1 from "../../assets/images/person1.png";
 import PERSON2 from "../../assets/images/person2.png";
 import PERSON3 from "../../assets/images/person3.png";
@@ -53,6 +43,10 @@ import GIFT_SET_RESERVE_SPICE_COLLECTION from "../../assets/images/giftSetCeylon
 import GIFT_SET_MORNING_RITUAL_DUO from "../../assets/images/giftSetMorningRitualDuo.jpg";
 import GIFT_SET_CHAI_AND_CEYLON_SET from "../../assets/images/giftSetChai&CeylonSet.jpg";
 import GIFT_SET_DAILY_RITUAL_TRIO from "../../assets/images/giftSetDailyRitualTrio.jpg";
+import CEYLON_DARK_ROAST from "../../assets/images/ceylonDarkRoast.png";
+import CEYLON_COLD_BREW from "../../assets/images/ceylonColdBrew.png";
+import CEYLON_HERBAL_WELLNESS from "../../assets/images/ceylonHerbalWellness.png";
+import CEYLON_GREEN_TEA from "../../assets/images/ceylonGreenTea.png";
 
 export const IMAGES = {
   logo: LOGO,
@@ -76,18 +70,10 @@ export const IMAGES = {
     image2: IMAGE2,
     image3: IMAGE3,
   },
-  shop: {
-    img1: COFFEE1,
-    img2: COFFEE2,
-    img3: COFFEE3,
-    img4: COFFEE4,
-    img5: COFFEE5,
-    img6: COFFEE6,
-    img7: COFFEE7,
-    img8: COFFEE8,
-    img9: COFFEE9,
-    img10: COFFEE10,
-  },
+  ceylonDarkRoast: CEYLON_DARK_ROAST,
+  ceylonColdBrew: CEYLON_COLD_BREW,
+  ceylonHerbalWellness: CEYLON_HERBAL_WELLNESS,
+  ceylonGreenTea: CEYLON_GREEN_TEA,
   reviewers: [
     PERSON1,
     PERSON2,

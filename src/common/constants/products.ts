@@ -448,6 +448,444 @@ const productDetails: Record<string, ProductDetail> = {
     },
     crossSellSlugs: ['c4-daily', 'ceylon-reserve-coffee', 'chai-and-ceylon-set', 'alba-reserve'],
   },
+  'ceylon-reserve-coffee-tin': {
+    variant: { label: 'Format', value: 'Reusable Tin, 200g' },
+    description:
+      'The same Ceylon Reserve Coffee — premium Arabica blended with grade C5 Heritage Ceylon cinnamon — packed in a matte tin built to stay on the counter and be refilled, not thrown out.',
+    details: [
+      'Premium Arabica coffee beans',
+      'Blended with C5 Heritage Ceylon cinnamon',
+      'Airtight matte tin, reusable and refillable',
+      'Ground for filter or cafetière brewing',
+      'Single-origin Sri Lankan cinnamon, no fillers',
+    ],
+    pairsWith: 'Pairs well with: oat milk, the Morning Ritual',
+    audiences: [
+      {
+        icon: 'mdi:archive-outline',
+        title: 'You want packaging that earns a spot on the counter',
+        description:
+          'The tin is the point — an airtight, refillable container instead of a pouch you fold over and forget about.',
+        points: [
+          'Stays fresh between uses without a clip or fold',
+          'Refill from any future coffee order',
+          'Looks considered next to a grinder or French press',
+        ],
+      },
+      {
+        icon: 'mdi:gift-outline',
+        title: 'You want to gift something that feels finished',
+        description: 'A tin reads as a complete gift on its own — no need to pair it with anything else.',
+        points: [
+          'No need to decant it into something nicer',
+          'Comes with brewing guidance on the base',
+          'Pairs naturally with our other Ritual products',
+        ],
+      },
+      {
+        icon: 'mdi:coffee-outline',
+        title: 'You already know you like the blend',
+        description: "Same coffee as the original pouch — this is the format upgrade, not a different recipe.",
+        points: [
+          'Identical Arabica and C5 Heritage cinnamon blend',
+          'Ready to brew straight from the tin',
+          'Works in filter machines, cafetières, or pour-over',
+        ],
+      },
+    ],
+    reviews: {
+      ratingCount: 'Based on 3 reviews',
+      items: [
+        {
+          author: 'Daniel P.',
+          date: '11/05/2026',
+          rating: 5,
+          title: 'Finally stopped clipping a pouch shut',
+          body: 'Small thing, but the tin staying properly airtight between uses makes a real difference to freshness.',
+        },
+        {
+          author: 'Grace O.',
+          date: '02/04/2026',
+          rating: 5,
+          title: 'Bought as a gift, kept for myself',
+          body: 'Looked too good on the counter to give away. Ordered a second one for the original recipient.',
+        },
+        {
+          author: 'Marcus T.',
+          date: '19/02/2026',
+          rating: 4,
+          title: 'Same great coffee, better format',
+          body: "Tastes identical to the pouch version, which is what I wanted — just easier to keep fresh.",
+        },
+      ],
+    },
+    crossSellSlugs: ['ceylon-reserve-coffee', 'c5-heritage', 'ceramic-mug', 'morning-ritual-duo'],
+  },
+  'ceylon-estate-black-tea': {
+    variant: { label: 'Size', value: '100g loose leaf' },
+    description:
+      'Single-origin Ceylon black tea leaves, loose and unblended — for the afternoon ritual when you want real tea, not a spiced latte. Steep it plain, or add a splash of milk.',
+    details: [
+      'Single-origin Sri Lankan black tea, loose leaf',
+      'No spices, flavourings, or additives',
+      'Presented in a gift-ready box',
+      'Steeps hot or cold-brewed overnight',
+      'Naturally lower caffeine than a second coffee',
+    ],
+    pairsWith: 'Pairs well with: hot water, a splash of milk, the Afternoon Ritual',
+    audiences: [
+      {
+        icon: 'mdi:tea-outline',
+        title: "You want an afternoon ritual that isn't spiced",
+        description:
+          'For when Golden Chai Latte is too much and a second coffee is too much caffeine — a plain, real Ceylon black tea.',
+        points: [
+          'No cardamom, ginger, or pepper — just tea',
+          'Naturally lower caffeine than coffee',
+          'Works hot or cold-brewed',
+        ],
+      },
+      {
+        icon: 'mdi:leaf-outline',
+        title: 'You care about single-origin, even in tea',
+        description:
+          'The same provenance standard as our cinnamon — traceable to a specific Sri Lankan growing region.',
+        points: [
+          'Loose leaf, not dust-grade bags',
+          'No fillers or flavourings to mask lower-quality leaf',
+          'Traceable to origin, like the rest of the NCC range',
+        ],
+      },
+      {
+        icon: 'mdi:gift-outline',
+        title: 'You want a considered gift for a tea drinker',
+        description: 'An easy, distinctive gift for someone who already drinks tea daily and would notice the difference.',
+        points: [
+          'Gift-ready box, no extra wrapping needed',
+          'Reads as an upgrade, not a novelty',
+          'Pairs naturally with our other Ritual products',
+        ],
+      },
+    ],
+    reviews: {
+      ratingCount: 'Based on 3 reviews',
+      items: [
+        {
+          author: 'Helena B.',
+          date: '23/05/2026',
+          rating: 5,
+          title: 'Real tea, not a syrup-flavoured bag',
+          body: "I wanted something plain after a while on the Golden Chai. This is exactly that — clean, single-origin, no fuss.",
+        },
+        {
+          author: 'Robert K.',
+          date: '30/03/2026',
+          rating: 4,
+          title: 'Good cold-brewed overnight',
+          body: 'Tried it cold-brewed on a whim and it worked really well. Smoother than hot-steeped for my taste.',
+        },
+        {
+          author: 'Aisha N.',
+          date: '14/02/2026',
+          rating: 5,
+          title: 'Noticeably better than supermarket loose leaf',
+          body: "You can taste that it's actually single-origin. Won't go back to bagged tea for my afternoon cup.",
+        },
+      ],
+    },
+    crossSellSlugs: ['golden-chai-latte', 'c4-daily', 'ceramic-mug', 'chai-and-ceylon-set'],
+  },
+  'ceylon-dark-roast-coffee': {
+    variant: { label: 'Size', value: '200g' },
+    description:
+      'A bolder, single-origin Arabica roast with no cinnamon pre-blended in — for anyone who wants to control their own ratio, or simply prefers their coffee straight. Same Sri Lankan sourcing standard as the rest of the range, just without the blend.',
+    details: [
+      'Single-origin Sri Lankan Arabica beans',
+      'Dark roast, full-bodied profile',
+      'No cinnamon or additives — plain coffee',
+      'Ground for filter or cafetière brewing',
+      'Pairs with any grade of Ceylon cinnamon, added to taste',
+    ],
+    pairsWith: 'Pairs well with: C4 Daily or C5 Heritage cinnamon, added to taste',
+    audiences: [
+      {
+        icon: 'mdi:coffee-outline',
+        title: 'You want to control your own cinnamon ratio',
+        description:
+          'Some mornings call for more, some for less. This is the plain base — add your own grade, your own amount.',
+        points: [
+          'Works with any NCC cinnamon grade',
+          'No pre-set ratio to work around',
+          'Still single-origin Sri Lankan Arabica',
+        ],
+      },
+      {
+        icon: 'mdi:fire',
+        title: 'You prefer a bolder roast',
+        description: 'A fuller-bodied dark roast for people who find our standard blend too light.',
+        points: [
+          'Deeper, more robust flavour profile',
+          'Holds up well with milk',
+          'Still smooth, not bitter',
+        ],
+      },
+      {
+        icon: 'mdi:tune-variant',
+        title: "You're building your own ritual, not buying ours",
+        description: 'Some people want the ingredients, not the recipe. This is that option.',
+        points: [
+          'Pairs with any grade you already own',
+          'One less pre-set decision made for you',
+          'Same sourcing, same standard',
+        ],
+      },
+    ],
+    reviews: {
+      ratingCount: 'Based on 3 reviews',
+      items: [
+        {
+          author: 'Owen R.',
+          date: '14/05/2026',
+          rating: 5,
+          title: 'Finally, coffee without the cinnamon built in',
+          body: "I already have my own cinnamon ratio dialled in — this let me use it instead of a pre-blended version.",
+        },
+        {
+          author: 'Priya D.',
+          date: '02/04/2026',
+          rating: 4,
+          title: 'Bolder than the original blend',
+          body: 'Noticeably stronger, which is what I wanted. Works great in a cafetière.',
+        },
+        {
+          author: 'Liam H.',
+          date: '19/02/2026',
+          rating: 5,
+          title: 'Good base for oat milk lattes',
+          body: 'Holds its flavour well even with a lot of milk added.',
+        },
+      ],
+    },
+    crossSellSlugs: ['c5-heritage', 'ceylon-reserve-coffee', 'ceramic-mug', 'french-press'],
+  },
+  'ceylon-cold-brew-concentrate': {
+    variant: { label: 'Size', value: '500ml bottle' },
+    description:
+      'A concentrated cold brew, steeped slow and infused with true Ceylon cinnamon, built for the iced version of the ritual. Mix with water, milk, or oat milk over ice — no equipment or steeping time needed.',
+    details: [
+      'Slow-steeped single-origin Arabica cold brew',
+      'Infused with true Ceylon cinnamon',
+      '500ml bottle, makes approximately 8 servings',
+      'Mix 1 part concentrate to 2–3 parts water or milk',
+      'Keeps refrigerated for up to 2 weeks once opened',
+    ],
+    pairsWith: 'Pairs well with: oat milk, ice, the Afternoon Ritual',
+    audiences: [
+      {
+        icon: 'mdi:snowflake',
+        title: 'You want an iced version of the ritual',
+        description: 'No brewing, no steeping — just concentrate, ice, and your milk of choice.',
+        points: [
+          'Ready in under a minute',
+          'No equipment needed',
+          'Same cinnamon blend as the hot version',
+        ],
+      },
+      {
+        icon: 'mdi:clock-fast',
+        title: "You don't have time to cold-brew your own",
+        description: 'Slow-steeped for 18 hours, already done for you.',
+        points: [
+          'Skip the overnight steeping process',
+          'No filtering or straining required',
+          'Consistent strength every time',
+        ],
+      },
+      {
+        icon: 'mdi:cup-outline',
+        title: 'You want café-style iced coffee at home',
+        description: 'The same concentrate format used by specialty cafés, built for your kitchen.',
+        points: [
+          'Adjustable strength to taste',
+          'Works in coffee, lattes, or mocktails',
+          'One bottle replaces a week of iced coffee runs',
+        ],
+      },
+    ],
+    reviews: {
+      ratingCount: 'Based on 3 reviews',
+      items: [
+        {
+          author: 'Zara K.',
+          date: '21/05/2026',
+          rating: 5,
+          title: 'Replaced my daily iced coffee order',
+          body: 'Cheaper and better than what I was buying out. The cinnamon comes through nicely.',
+        },
+        {
+          author: 'Ben T.',
+          date: '08/04/2026',
+          rating: 5,
+          title: 'Great with oat milk over ice',
+          body: 'My go-to afternoon drink now. Lasts about two weeks in the fridge for me.',
+        },
+        {
+          author: 'Nadia F.',
+          date: '26/02/2026',
+          rating: 4,
+          title: 'Strong — dilute more than you think',
+          body: "Very concentrated, which is good value, but start with more water than you'd expect.",
+        },
+      ],
+    },
+    crossSellSlugs: ['c5-heritage', 'ceylon-reserve-coffee', 'glass-storage-jar', 'ceramic-mug'],
+  },
+  'ceylon-herbal-wellness-tea': {
+    variant: { label: 'Size', value: '100g loose leaf' },
+    description:
+      'A caffeine-free herbal blend built for the evening — Ceylon turmeric, ginger, and holy basil (tulsi), sourced with the same single-origin standard as the rest of the range. No tea leaf base, just the herbs themselves.',
+    details: [
+      'Ceylon turmeric, ginger, and holy basil (tulsi)',
+      'Naturally caffeine-free',
+      'No added flavourings or sweeteners',
+      'Loose leaf, steeps in 5–7 minutes',
+      'Presented in a gift-ready box',
+    ],
+    pairsWith: 'Pairs well with: honey, the evening wind-down',
+    audiences: [
+      {
+        icon: 'mdi:weather-night',
+        title: 'You want a caffeine-free evening ritual',
+        description: 'For the part of the day when coffee and chai are both off the table.',
+        points: [
+          'Zero caffeine, unlike our chai or black tea',
+          'Naturally calming turmeric and tulsi blend',
+          'Works well an hour before bed',
+        ],
+      },
+      {
+        icon: 'mdi:leaf-outline',
+        title: "You're curious about Sri Lankan herbal tradition",
+        description:
+          'Turmeric, ginger, and tulsi have a long history in Sri Lankan home remedies, sourced the way NCC sources everything else.',
+        points: [
+          'Single-origin herbs, not a generic blend',
+          'No filler leaf or added flavouring',
+          'Same traceability standard as our cinnamon',
+        ],
+      },
+      {
+        icon: 'mdi:gift-outline',
+        title: 'You want a caffeine-free gift option',
+        description: 'An easy gift for anyone avoiding caffeine, without it feeling like a compromise.',
+        points: [
+          'Gift-ready box, no wrapping needed',
+          'Suitable any time of day',
+          'Distinct from a generic supermarket herbal box',
+        ],
+      },
+    ],
+    reviews: {
+      ratingCount: 'Based on 3 reviews',
+      items: [
+        {
+          author: 'Fiona M.',
+          date: '17/05/2026',
+          rating: 5,
+          title: 'My actual wind-down ritual now',
+          body: 'Replaced my evening chamomile with this. The turmeric and ginger combination is really soothing.',
+        },
+        {
+          author: 'Arjun P.',
+          date: '30/03/2026',
+          rating: 4,
+          title: 'Good, though I add honey',
+          body: 'A little earthy on its own for me, but excellent with a spoon of honey.',
+        },
+        {
+          author: 'Claire B.',
+          date: '11/02/2026',
+          rating: 5,
+          title: 'Glad to have a caffeine-free option from NCC',
+          body: 'Was buying chai and cinnamon already, nice to have something for the evening too.',
+        },
+      ],
+    },
+    crossSellSlugs: ['golden-chai-latte', 'ceylon-estate-black-tea', 'ceramic-mug', 'chai-and-ceylon-set'],
+  },
+  'ceylon-green-tea': {
+    variant: { label: 'Size', value: '100g loose leaf' },
+    description:
+      'A lightly oxidised single-origin Ceylon green tea — brighter and grassier than our black tea, with noticeably lower caffeine than coffee. Traceable to the same growing regions as the rest of the NCC range.',
+    details: [
+      'Single-origin Sri Lankan green tea, loose leaf',
+      'Lightly oxidised, bright and grassy profile',
+      'Lower caffeine than coffee or black tea',
+      'No additives or flavourings',
+      'Steeps in 2–3 minutes at lower temperature',
+    ],
+    pairsWith: 'Pairs well with: a lower-caffeine afternoon, no milk needed',
+    audiences: [
+      {
+        icon: 'mdi:tea-outline',
+        title: 'You want something lighter than black tea',
+        description:
+          'Green tea is brighter and grassier, with a gentler caffeine hit than our black tea or coffee.',
+        points: [
+          'Noticeably lower caffeine than black tea',
+          'No milk required',
+          'Lighter, fresher flavour profile',
+        ],
+      },
+      {
+        icon: 'mdi:leaf-outline',
+        title: 'You care about single-origin, even in green tea',
+        description: 'Same provenance standard as the rest of the range — traceable to a specific Sri Lankan estate.',
+        points: [
+          'Loose leaf, not tea bag dust',
+          'No added flavouring to mask lower-grade leaf',
+          'Traceable to origin',
+        ],
+      },
+      {
+        icon: 'mdi:water-outline',
+        title: 'You want a lower-caffeine daily habit',
+        description: "For a second or third daily cup that doesn't add to your caffeine load the way coffee does.",
+        points: [
+          'Lower caffeine than coffee or black tea',
+          'Works well iced in warmer months',
+          'A gentler alternative to a second coffee',
+        ],
+      },
+    ],
+    reviews: {
+      ratingCount: 'Based on 3 reviews',
+      items: [
+        {
+          author: 'Michael O.',
+          date: '09/05/2026',
+          rating: 5,
+          title: 'Lighter than I expected, in a good way',
+          body: 'Was worried it would be bitter like some green teas, but this is smooth and grassy.',
+        },
+        {
+          author: 'Sara L.',
+          date: '22/03/2026',
+          rating: 4,
+          title: 'Good afternoon alternative to coffee',
+          body: "Doesn't give me the same caffeine jitters as a second coffee would.",
+        },
+        {
+          author: 'Tariq V.',
+          date: '05/02/2026',
+          rating: 5,
+          title: 'Excellent iced in summer',
+          body: 'Cold brewed this over a weekend and it was fantastic over ice.',
+        },
+      ],
+    },
+    crossSellSlugs: ['ceylon-estate-black-tea', 'golden-chai-latte', 'glass-storage-jar', 'ceramic-mug'],
+  },
   'spice-of-kings-set-a': {
     variant: { label: 'Size', value: '3 x 30g' },
     description:

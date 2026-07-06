@@ -8,7 +8,7 @@ import { useAppDispatch } from "../../../store/hooks";
 function FeaturedCoffeeSection() {
   const { featuredCoffee } = strings.shop;
   const dispatch = useAppDispatch();
-  const product = getProductBySlug("ceylon-reserve-coffee");
+  const product = getProductBySlug("ceylon-reserve-coffee-tin");
   const averageRating = product
     ? Math.round(
         product.reviews.items.reduce((sum, review) => sum + review.rating, 0) /

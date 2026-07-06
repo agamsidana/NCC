@@ -683,6 +683,60 @@ const strings = {
         img: IMAGES.mainProduct1,
       },
       {
+        slug: "ceylon-reserve-coffee-tin",
+        name: "Ceylon Reserve Coffee Tin",
+        category: "coffee",
+        description:
+          "The same Ceylon Reserve blend, in a reusable tin built to stay on the counter.",
+        price: "£16.95",
+        img: IMAGES.bestSellerCoffee,
+      },
+      {
+        slug: "ceylon-estate-black-tea",
+        name: "Ceylon Estate Black Tea Box",
+        category: "tea",
+        description:
+          "Single-origin loose-leaf Ceylon black tea, for an unspiced afternoon ritual.",
+        price: "£15.95",
+        img: IMAGES.bestSellerTea,
+      },
+      {
+        slug: "ceylon-dark-roast-coffee",
+        name: "Ceylon Dark Roast Coffee",
+        category: "coffee",
+        description:
+          "Bold single-origin Arabica, dark roasted — no cinnamon blended in, so you control the ritual.",
+        price: "£13.95",
+        img: IMAGES.ceylonDarkRoast,
+      },
+      {
+        slug: "ceylon-cold-brew-concentrate",
+        name: "Ceylon Cold Brew Concentrate",
+        category: "coffee",
+        description:
+          "Ready-to-mix cold brew concentrate, infused with true Ceylon cinnamon — built for iced rituals.",
+        price: "£15.95",
+        img: IMAGES.ceylonColdBrew,
+      },
+      {
+        slug: "ceylon-herbal-wellness-tea",
+        name: "Ceylon Herbal Wellness Tea",
+        category: "tea",
+        description:
+          "Caffeine-free herbal blend of Ceylon turmeric, ginger, and holy basil — an evening wind-down ritual.",
+        price: "£14.95",
+        img: IMAGES.ceylonHerbalWellness,
+      },
+      {
+        slug: "ceylon-green-tea",
+        name: "Ceylon Green Tea",
+        category: "tea",
+        description:
+          "Single-origin Ceylon green tea, lightly oxidised — a brighter, lower-caffeine daily cup.",
+        price: "£13.95",
+        img: IMAGES.ceylonGreenTea,
+      },
+      {
         slug: "spice-of-kings-set-a",
         name: "Ceylon Spice Sampler",
         category: "gift-set",
@@ -781,8 +835,7 @@ const strings = {
       heading: "Coffee Crafted for Slow Mornings",
       description:
         "Single-origin coffee, Ceylon cinnamon and curated essentials for your daily ritual.",
-      primaryCta: "Shop Coffee",
-      secondaryCta: "Explore Rituals",
+      cta: "Explore Rituals",
     },
     ritualHeading: {
       heading: "Choose Your Ritual",
@@ -826,16 +879,16 @@ const strings = {
       description: "Rich aroma, smooth finish and crafted for everyday rituals.",
       cta: "View Details",
       addToCartCta: "Add to Cart",
-      href: "/products/ceylon-reserve-coffee",
+      href: "/products/ceylon-reserve-coffee-tin",
       img: IMAGES.bestSellerCoffee,
     },
     featuredChai: {
       badge: "Best Seller",
       heading: "Ceylon Estate Black Tea Box",
-      description: "Creamy, comforting and infused with premium Ceylon spices.",
+      description: "Single-origin loose-leaf Ceylon black tea, unspiced and traceable.",
       cta: "View Details",
       addToCartCta: "Add to Cart",
-      href: "/products/golden-chai-latte",
+      href: "/products/ceylon-estate-black-tea",
       img: IMAGES.bestSellerTea,
     },
     accessoriesHeading: {
