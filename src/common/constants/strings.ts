@@ -687,7 +687,7 @@ const strings = {
         description:
           "Premium Arabica coffee blended with grade C5 Heritage Ceylon cinnamon.",
         price: "£12.95",
-        img: IMAGES.ritual1,
+        img: IMAGES.mainProduct,
       },
       {
         slug: "golden-chai-latte",

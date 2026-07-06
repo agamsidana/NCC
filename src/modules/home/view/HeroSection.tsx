@@ -90,6 +90,9 @@ function HeroSection() {
           <img
             src={IMAGES.hero}
             alt={hero.heading}
+            fetchPriority="high"
+            loading="eager"
+            decoding="async"
             className="aspect-[4/3] w-full origin-center rounded-2xl object-cover shadow-lg motion-safe:animate-fade-zoom-out"
           />
         </div>
