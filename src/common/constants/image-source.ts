@@ -58,6 +58,11 @@ import SCIENCE_WHY_SPECIES_MATTER from "../../assets/images/scienceWhySpeciesMat
 import SCIENCE_METABOLIC_HEALTH_RESEARCH from "../../assets/images/scienceMetabolicHealthResearch.png";
 import SCIENCE_WHY_GRADE_MATTERS from "../../assets/images/scienceWhyGradeMattersScientifically.png";
 import RITUAL_QUIZ_HERO from "../../assets/images/ritualQuizHero.png";
+import QUIZ_QUESTION_1 from "../../assets/images/q1.png";
+import QUIZ_QUESTION_2 from "../../assets/images/q2.jpg";
+import QUIZ_QUESTION_3 from "../../assets/images/q3.png";
+import QUIZ_QUESTION_4 from "../../assets/images/q4.jpg";
+import QUIZ_QUESTION_5 from "../../assets/images/q5.png";
 
 export const IMAGES = {
   logo: LOGO,
@@ -133,4 +138,11 @@ export const IMAGES = {
     whyGradeMatters: SCIENCE_WHY_GRADE_MATTERS,
   },
   ritualQuizHero: RITUAL_QUIZ_HERO,
+  quizQuestions: [
+    QUIZ_QUESTION_1,
+    QUIZ_QUESTION_2,
+    QUIZ_QUESTION_3,
+    QUIZ_QUESTION_4,
+    QUIZ_QUESTION_5,
+  ],
 };

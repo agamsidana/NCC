@@ -55,7 +55,7 @@ const strings = {
         {
           label: "Zero Artificial Additives",
           sublabel: "Pure Ceylon Only",
-          icon: "mdi:leaf-outline",
+          icon: "mdi:leaf",
         },
         {
           label: "Dispatched Within 24h",
@@ -952,6 +952,7 @@ const strings = {
     questions: [
       {
         question: "What's your main goal with Ceylon cinnamon?",
+        image: IMAGES.quizQuestions[0],
         options: [
           {
             label: "Sharpen my focus and mental clarity",
@@ -970,6 +971,7 @@ const strings = {
       },
       {
         question: "How often do you plan to use it?",
+        image: IMAGES.quizQuestions[1],
         options: [
           { label: "Every single day", grade: "c4-daily" },
           { label: "A few times a week", grade: "c5-heritage" },
@@ -979,6 +981,7 @@ const strings = {
       },
       {
         question: "Where will it go first?",
+        image: IMAGES.quizQuestions[2],
         options: [
           { label: "My morning coffee", grade: "c5-heritage" },
           { label: "Tea, chai, or lattes", grade: "c4-daily" },
@@ -988,6 +991,7 @@ const strings = {
       },
       {
         question: "How would you describe your palate?",
+        image: IMAGES.quizQuestions[3],
         options: [
           { label: "I like bold, warming spice", grade: "c4-daily" },
           {
@@ -1004,6 +1008,7 @@ const strings = {
       },
       {
         question: "What matters most to you?",
+        image: IMAGES.quizQuestions[4],
         options: [
           { label: "Everyday reliability and value", grade: "c4-daily" },
           { label: "The most aromatic, popular grade", grade: "c5-heritage" },

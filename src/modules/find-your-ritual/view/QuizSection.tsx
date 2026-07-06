@@ -31,35 +31,48 @@ function QuizSection({
         {findYourRitual.progressLabel(questionNumber, totalQuestions)}
       </p>
 
-      <h2 className="mt-4 font-serif text-2xl text-neutral-900 sm:text-3xl">{question.question}</h2>
+      <div
+        key={question.question}
+        className="mt-4 grid gap-5 motion-safe:animate-question-enter sm:grid-cols-[200px_1fr] sm:items-start sm:gap-8"
+      >
+        <img
+          src={question.image}
+          alt=""
+          className="aspect-[4/3] w-full rounded-2xl object-cover shadow-md sm:aspect-square"
+        />
 
-      <div className="mt-6 flex flex-col gap-3">
-        {question.options.map((option, index) => {
-          const isSelected = index === selectedOptionIndex
-          return (
-            <button
-              key={option.label}
-              type="button"
-              onClick={() => onSelect(index)}
-              className={
-                isSelected
-                  ? 'flex items-center gap-3 rounded-xl border border-primary-500 bg-primary-50 px-4 py-3 text-left text-sm font-medium text-neutral-900'
-                  : 'flex items-center gap-3 rounded-xl border border-neutral-200 px-4 py-3 text-left text-sm text-neutral-700 hover:border-primary-300'
-              }
-            >
-              <span
-                className={
-                  isSelected
-                    ? 'flex h-4 w-4 shrink-0 items-center justify-center rounded-full border-2 border-primary-600'
-                    : 'flex h-4 w-4 shrink-0 items-center justify-center rounded-full border-2 border-neutral-300'
-                }
-              >
-                {isSelected && <span className="h-2 w-2 rounded-full bg-primary-600" />}
-              </span>
-              {option.label}
-            </button>
-          )
-        })}
+        <div>
+          <h2 className="font-serif text-2xl text-neutral-900 sm:text-3xl">{question.question}</h2>
+
+          <div className="mt-6 flex flex-col gap-3">
+            {question.options.map((option, index) => {
+              const isSelected = index === selectedOptionIndex
+              return (
+                <button
+                  key={option.label}
+                  type="button"
+                  onClick={() => onSelect(index)}
+                  className={
+                    isSelected
+                      ? 'flex items-center gap-3 rounded-xl border border-primary-500 bg-primary-50 px-4 py-3 text-left text-sm font-medium text-neutral-900'
+                      : 'flex items-center gap-3 rounded-xl border border-neutral-200 px-4 py-3 text-left text-sm text-neutral-700 hover:border-primary-300'
+                  }
+                >
+                  <span
+                    className={
+                      isSelected
+                        ? 'flex h-4 w-4 shrink-0 items-center justify-center rounded-full border-2 border-primary-600'
+                        : 'flex h-4 w-4 shrink-0 items-center justify-center rounded-full border-2 border-neutral-300'
+                    }
+                  >
+                    {isSelected && <span className="h-2 w-2 rounded-full bg-primary-600" />}
+                  </span>
+                  {option.label}
+                </button>
+              )
+            })}
+          </div>
+        </div>
       </div>
 
       <div className="mt-8 flex items-center justify-between">

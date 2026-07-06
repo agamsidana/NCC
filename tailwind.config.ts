@@ -16,9 +16,19 @@ export default {
           from: { opacity: '0', transform: 'scale(1.04)' },
           to: { opacity: '1', transform: 'scale(1)' },
         },
+        'fade-in-up': {
+          from: { opacity: '0', transform: 'translateY(8px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
+        },
+        'question-enter': {
+          from: { opacity: '0', transform: 'translateY(10px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
+        },
       },
       animation: {
         'fade-zoom-out': 'fade-zoom-out 0.9s ease-out forwards',
+        'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
+        'question-enter': 'question-enter 280ms ease-out forwards',
       },
     },
   },
