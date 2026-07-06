@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import SEO from '../../../common/components/SEO'
 import strings from '../../../common/constants/strings'
 import type { Phase } from '../types'
@@ -14,6 +14,10 @@ function FindYourRitualPage() {
 
   const totalQuestions = findYourRitual.questions.length
   const currentQuestion = findYourRitual.questions[questionIndex]
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [phase, questionIndex])
 
   const { recommendedSlug, matchingAnswers } = useMemo(() => {
     const selectedOptions = answers
@@ -76,27 +80,29 @@ function FindYourRitualPage() {
       />
 
       <div className="mx-auto max-w-3xl px-4 py-12 md:py-16">
-        {phase === 'intro' && <IntroSection onStart={() => setPhase('quiz')} />}
+        <div key={phase} className="motion-safe:animate-question-enter">
+          {phase === 'intro' && <IntroSection onStart={() => setPhase('quiz')} />}
 
-        {phase === 'quiz' && (
-          <QuizSection
-            question={currentQuestion}
-            questionNumber={questionIndex + 1}
-            totalQuestions={totalQuestions}
-            selectedOptionIndex={answers[questionIndex] ?? null}
-            onSelect={handleSelect}
-            onBack={handleBack}
-            onNext={handleNext}
-          />
-        )}
+          {phase === 'quiz' && (
+            <QuizSection
+              question={currentQuestion}
+              questionNumber={questionIndex + 1}
+              totalQuestions={totalQuestions}
+              selectedOptionIndex={answers[questionIndex] ?? null}
+              onSelect={handleSelect}
+              onBack={handleBack}
+              onNext={handleNext}
+            />
+          )}
 
-        {phase === 'result' && recommendedSlug && (
-          <ResultSection
-            recommendedSlug={recommendedSlug}
-            matchingAnswers={matchingAnswers}
-            onRetake={handleRetake}
-          />
-        )}
+          {phase === 'result' && recommendedSlug && (
+            <ResultSection
+              recommendedSlug={recommendedSlug}
+              matchingAnswers={matchingAnswers}
+              onRetake={handleRetake}
+            />
+          )}
+        </div>
       </div>
     </>
   )
