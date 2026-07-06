@@ -11,7 +11,14 @@ function RitualGuidePage({ guide, path }: { guide: RitualGuideContent; path: str
       <div className="mx-auto max-w-3xl px-4 py-12 md:py-16">
         <p className="text-xs font-semibold tracking-[0.2em] text-primary-600">{guide.tag}</p>
         <h1 className="mt-3 font-serif text-4xl text-neutral-900 sm:text-5xl">{guide.title}</h1>
-        <p className="mt-4 text-neutral-600">{guide.intro}</p>
+
+        <img
+          src={guide.image}
+          alt={guide.title}
+          className="mt-6 aspect-[16/9] w-full rounded-2xl object-cover shadow-lg"
+        />
+
+        <p className="mt-6 text-neutral-600">{guide.intro}</p>
 
         <div className="mt-10">
           <h2 className="font-serif text-2xl text-neutral-900">{guide.stepsHeading}</h2>

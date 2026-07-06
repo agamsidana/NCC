@@ -1,6 +1,7 @@
 export type RitualGuideContent = {
   tag: string
   title: string
+  image: string
   intro: string
   stepsHeading: string
   steps: readonly string[]

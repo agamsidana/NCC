@@ -27,11 +27,20 @@ function RecipesPage() {
             <div key={featured.slug} className={groupIndex === 0 ? 'mt-10' : 'mt-8'}>
               <Link
                 to={`/recipes/${featured.slug}`}
-                className="block rounded-2xl bg-neutral-100 p-8 text-center transition-colors hover:bg-neutral-200/70"
+                className="group block overflow-hidden rounded-2xl bg-neutral-100 transition-colors hover:bg-neutral-200/70"
               >
-                <h2 className="font-serif text-xl text-neutral-900 sm:text-2xl">{featured.title}</h2>
-                <p className="mt-2 text-xs uppercase tracking-wide text-neutral-500">{featured.date}</p>
-                <p className="mx-auto mt-3 max-w-2xl text-sm text-neutral-600">{featured.excerpt}</p>
+                <div className="overflow-hidden [transform:translateZ(0)]">
+                  <img
+                    src={featured.img}
+                    alt={featured.title}
+                    className="aspect-[16/9] w-full object-cover transition-[filter] duration-500 group-hover:brightness-105"
+                  />
+                </div>
+                <div className="p-8 text-center">
+                  <h2 className="font-serif text-xl text-neutral-900 sm:text-2xl">{featured.title}</h2>
+                  <p className="mt-2 text-xs uppercase tracking-wide text-neutral-500">{featured.date}</p>
+                  <p className="mx-auto mt-3 max-w-2xl text-sm text-neutral-600">{featured.excerpt}</p>
+                </div>
               </Link>
 
               {rest.length > 0 && (
@@ -40,11 +49,20 @@ function RecipesPage() {
                     <Link
                       key={post.slug}
                       to={`/recipes/${post.slug}`}
-                      className="rounded-2xl bg-neutral-100 p-6 transition-colors hover:bg-neutral-200/70"
+                      className="group block overflow-hidden rounded-2xl bg-neutral-100 transition-colors hover:bg-neutral-200/70"
                     >
-                      <h3 className="font-serif text-lg text-neutral-900">{post.title}</h3>
-                      <p className="mt-2 text-xs uppercase tracking-wide text-neutral-500">{post.date}</p>
-                      <p className="mt-3 text-sm text-neutral-600">{post.excerpt}</p>
+                      <div className="overflow-hidden [transform:translateZ(0)]">
+                        <img
+                          src={post.img}
+                          alt={post.title}
+                          className="aspect-[16/9] w-full object-cover transition-[filter] duration-500 group-hover:brightness-105"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <h3 className="font-serif text-lg text-neutral-900">{post.title}</h3>
+                        <p className="mt-2 text-xs uppercase tracking-wide text-neutral-500">{post.date}</p>
+                        <p className="mt-3 text-sm text-neutral-600">{post.excerpt}</p>
+                      </div>
                     </Link>
                   ))}
                 </div>

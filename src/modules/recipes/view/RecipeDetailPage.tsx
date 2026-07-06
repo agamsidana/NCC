@@ -29,7 +29,14 @@ function RecipeDetailPage() {
         <h1 className="mt-4 font-serif text-3xl leading-tight text-neutral-900 sm:text-4xl">
           {post.title}
         </h1>
-        <p className="mt-2 text-xs uppercase tracking-wide text-neutral-500">{post.date}</p>
+
+        <img
+          src={post.img}
+          alt={post.title}
+          className="mt-6 aspect-[16/9] w-full rounded-2xl object-cover shadow-lg"
+        />
+
+        <p className="mt-6 text-xs uppercase tracking-wide text-neutral-500">{post.date}</p>
 
         <button
           type="button"

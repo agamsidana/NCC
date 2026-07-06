@@ -47,6 +47,12 @@ import CEYLON_DARK_ROAST from "../../assets/images/ceylonDarkRoast.png";
 import CEYLON_COLD_BREW from "../../assets/images/ceylonColdBrew.png";
 import CEYLON_HERBAL_WELLNESS from "../../assets/images/ceylonHerbalWellness.png";
 import CEYLON_GREEN_TEA from "../../assets/images/ceylonGreenTea.png";
+import RECIPE_MORNING_TONIC from "../../assets/images/recipeMorningTonic.png";
+import RECIPE_RED_DAL from "../../assets/images/recipeSri LankanRedDalwithCeylon Cinnamon.png";
+import RECIPE_CHAI_FRENCH_TOAST from "../../assets/images/recipeGolderChaiFrenchToast.png";
+import RECIPE_ICED_COFFEE from "../../assets/images/recipeIcedCeylonCinnamonCoffee.png";
+import RECIPE_CINNAMON_ROLLS from "../../assets/images/recipeCeylonCinnamonRolls.png";
+import RECIPE_ENERGY_BALLS from "../../assets/images/recipeCardamomEnergyBalls.jpg";
 
 export const IMAGES = {
   logo: LOGO,
@@ -106,5 +112,13 @@ export const IMAGES = {
     morningRitualDuo: GIFT_SET_MORNING_RITUAL_DUO,
     chaiAndCeylonSet: GIFT_SET_CHAI_AND_CEYLON_SET,
     dailyRitualTrio: GIFT_SET_DAILY_RITUAL_TRIO,
+  },
+  recipes: {
+    morningTonic: RECIPE_MORNING_TONIC,
+    redDal: RECIPE_RED_DAL,
+    chaiFrenchToast: RECIPE_CHAI_FRENCH_TOAST,
+    icedCoffee: RECIPE_ICED_COFFEE,
+    cinnamonRolls: RECIPE_CINNAMON_ROLLS,
+    energyBalls: RECIPE_ENERGY_BALLS,
   },
 };

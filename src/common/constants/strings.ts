@@ -461,6 +461,7 @@ const strings = {
       {
         slug: "ncc-metabolic-morning-tonic",
         title: "The NCC Metabolic Morning Tonic: Cinnamon, Lemon & Ginger",
+        img: IMAGES.recipes.morningTonic,
         date: "July 3, 2026",
         excerpt:
           "A 60-second morning drink using three ingredients with functional history: Ceylon cinnamon, fresh lemon, and ginger. Zero caffeine.",
@@ -489,6 +490,7 @@ const strings = {
       {
         slug: "sri-lankan-red-dal-with-ceylon-cinnamon",
         title: "Sri Lankan Red Dal with Ceylon Cinnamon",
+        img: IMAGES.recipes.redDal,
         date: "June 28, 2026",
         excerpt:
           "Cinnamon in dal is traditional in Sri Lanka — it adds a background warmth that deepens as it cooks. A simple weeknight red lentil dal using C4 Daily.",
@@ -520,6 +522,7 @@ const strings = {
       {
         slug: "golden-chai-french-toast",
         title: "Golden Chai French Toast: A Weekend Breakfast Ritual",
+        img: IMAGES.recipes.chaiFrenchToast,
         date: "June 21, 2026",
         excerpt:
           "The Golden Chai Latte blend — cinnamon, cardamom, ginger, black pepper — makes one of the best French toast batters we've tried.",
@@ -547,6 +550,7 @@ const strings = {
       {
         slug: "iced-ceylon-cinnamon-coffee",
         title: "Iced Ceylon Cinnamon Coffee: The Cold Brew Upgrade",
+        img: IMAGES.recipes.icedCoffee,
         date: "June 14, 2026",
         excerpt:
           "Cold brew steeped with NCC C5 Heritage Ceylon cinnamon, poured over ice, finished with oat milk. Takes 12 hours to prepare, 2 minutes to serve.",
@@ -573,6 +577,7 @@ const strings = {
       {
         slug: "ceylon-cinnamon-rolls-with-alba-reserve-glaze",
         title: "Ceylon Cinnamon Rolls with Alba Reserve Glaze",
+        img: IMAGES.recipes.cinnamonRolls,
         date: "June 7, 2026",
         excerpt:
           "Using NCC's Alba Reserve — the most delicate grade in our range — gives the filling a floral warmth that's genuinely different to any cinnamon roll you've had before.",
@@ -603,6 +608,7 @@ const strings = {
       {
         slug: "ceylon-cinnamon-cardamom-energy-balls",
         title: "Ceylon Cinnamon and Cardamom Energy Balls: A No-Bake Snack",
+        img: IMAGES.recipes.energyBalls,
         date: "May 31, 2026",
         excerpt:
           "No-bake energy balls made from dates, oats, true Ceylon cinnamon, and cardamom. A genuinely satisfying snack that takes ten minutes to make.",
@@ -1255,6 +1261,7 @@ const strings = {
     coffee: {
       tag: "Morning Ritual",
       title: "The Coffee Ritual Guide",
+      image: IMAGES.ritual1,
       intro:
         "Coffee is already a fixed habit — which makes it the easiest place to start. Ceylon Reserve Coffee pairs single-origin Sri Lankan Arabica with true Ceylon cinnamon and cardamom, turning the cup you already make every day into something warmer, more distinctive, and more ownable.",
       stepsHeading: "How to Make It",
@@ -1275,6 +1282,7 @@ const strings = {
     goldenChai: {
       tag: "Afternoon Ritual",
       title: "The Golden Chai Ritual Guide",
+      image: IMAGES.teaAndChai,
       intro:
         "The afternoon slump doesn't need a second coffee. Ceylon Golden Chai Latte Blend is a comfort ritual with compound logic — cinnamon, cardamom, ginger, and black pepper, chosen for how they work together, not just how they taste.",
       stepsHeading: "How to Make It",
@@ -1295,6 +1303,7 @@ const strings = {
     metabolicCinnamon: {
       tag: "Daily Base",
       title: "The Metabolic Cinnamon Guide",
+      image: IMAGES.gradeSystem.image2,
       intro:
         "True Ceylon cinnamon is the foundational ingredient underneath every ritual in this range — not just coffee and chai, but porridge, smoothies, oats, and any blood-sugar-aware routine. This is the guide to using it well, at whichever grade fits your goals.",
       stepsHeading: "How to Use It",
