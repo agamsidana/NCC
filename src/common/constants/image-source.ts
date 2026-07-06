@@ -41,7 +41,18 @@ import BEST_SELLER_COFFEE from "../../assets/images/bestSeller1.png";
 import BEST_SELLER_TEA from "../../assets/images/bestSeller2.png";
 import RITUAL_1 from "../../assets/images/ritual1.png";
 import RITUAL_2 from "../../assets/images/ritual2.png";
-import CINNAMON from "../../assets/images/cinnamon.png"
+import CINNAMON from "../../assets/images/cinnamon.png";
+import CERAMIC_MUG from "../../assets/images/brewingEssentialCreamicMug.jpg";
+import COFFEE_SPOON from "../../assets/images/brewingEssentialSpoon.png";
+import FRENCH_PRESS from "../../assets/images/brewingEssentialFrenchPress.jpg";
+import COFFEE_GRINDER from "../../assets/images/brewingEssentialCoffeeGrinder.png";
+import GLASS_STORAGE_JAR from "../../assets/images/brewingEssentialGlassStorageJar.jpg";
+import POUR_OVER_DRIPPER from "../../assets/images/brewingEssentialPourOverDripper.jpg";
+import GIFT_SET_SPICE_SAMPLER from "../../assets/images/giftSetCeylonSpiceSampler.png";
+import GIFT_SET_RESERVE_SPICE_COLLECTION from "../../assets/images/giftSetCeylonReserveSpiceCollection.jpg";
+import GIFT_SET_MORNING_RITUAL_DUO from "../../assets/images/giftSetMorningRitualDuo.jpg";
+import GIFT_SET_CHAI_AND_CEYLON_SET from "../../assets/images/giftSetChai&CeylonSet.jpg";
+import GIFT_SET_DAILY_RITUAL_TRIO from "../../assets/images/giftSetDailyRitualTrio.jpg";
 
 export const IMAGES = {
   logo: LOGO,
@@ -94,5 +105,20 @@ export const IMAGES = {
     grower1: GROWER_IMAGE_1,
     grower2: GROWER_IMAGE_2,
     grower3: GROWER_IMAGE_3,
+  },
+  brewingEssentials: {
+    ceramicMug: CERAMIC_MUG,
+    coffeeSpoon: COFFEE_SPOON,
+    frenchPress: FRENCH_PRESS,
+    coffeeGrinder: COFFEE_GRINDER,
+    glassStorageJar: GLASS_STORAGE_JAR,
+    pourOverDripper: POUR_OVER_DRIPPER,
+  },
+  giftSets: {
+    spiceSampler: GIFT_SET_SPICE_SAMPLER,
+    reserveSpiceCollection: GIFT_SET_RESERVE_SPICE_COLLECTION,
+    morningRitualDuo: GIFT_SET_MORNING_RITUAL_DUO,
+    chaiAndCeylonSet: GIFT_SET_CHAI_AND_CEYLON_SET,
+    dailyRitualTrio: GIFT_SET_DAILY_RITUAL_TRIO,
   },
 };

@@ -6,7 +6,6 @@ import AllProductsSection from "./AllProductsSection";
 import ChooseYourRitualSection from "./ChooseYourRitualSection";
 import FeaturedChaiSection from "./FeaturedChaiSection";
 import FeaturedCoffeeSection from "./FeaturedCoffeeSection";
-import GiftSetsBannerSection from "./GiftSetsBannerSection";
 import ShopHeroSection from "./ShopHeroSection";
 
 function ShopPage() {
@@ -31,9 +30,6 @@ function ShopPage() {
       </Reveal>
       <Reveal>
         <AllProductsSection />
-      </Reveal>
-      <Reveal>
-        <GiftSetsBannerSection />
       </Reveal>
     </>
   );

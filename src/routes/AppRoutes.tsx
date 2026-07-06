@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider, } from 'react-router-dom'
+import { createBrowserRouter, Navigate, RouterProvider, } from 'react-router-dom'
 import MainLayout from '../layouts/MainLayout'
 import { AboutPage } from '../modules/about'
 import { CartPage } from '../modules/cart'
@@ -12,7 +12,7 @@ import { RecipeDetailPage, RecipesPage } from '../modules/recipes'
 import { ReviewsPage } from '../modules/reviews'
 import { RitualGuidePage } from '../modules/ritual-guides'
 import { SciencePage } from '../modules/science'
-import { GiftSetsPage, ShopPage } from '../modules/shop'
+import { ShopPage } from '../modules/shop'
 import strings from '../common/constants/strings'
 
 const router=createBrowserRouter( [
@@ -25,7 +25,10 @@ const router=createBrowserRouter( [
       { path: 'recipes', element: <RecipesPage /> },
       { path: 'recipes/:slug', element: <RecipeDetailPage /> },
       { path: 'shop', element: <ShopPage /> },
-      { path: 'shop/gift-sets', element: <GiftSetsPage /> },
+      {
+        path: 'shop/gift-sets',
+        element: <Navigate to="/shop?category=gift-set#all-products" replace />,
+      },
       { path: 'products/:slug', element: <ProductPage /> },
       { path: 'reviews', element: <ReviewsPage /> },
       { path: 'find-your-ritual', element: <FindYourRitualPage /> },

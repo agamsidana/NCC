@@ -324,7 +324,7 @@ const strings = {
             href: "/products/ceylon-reserve-coffee",
           },
           { label: "Golden Chai Latte", href: "/products/golden-chai-latte" },
-          { label: "Gift Sets", href: "/shop/gift-sets" },
+          { label: "Gift Sets", href: "/shop?category=gift-set#all-products" },
         ],
       },
       {
@@ -684,21 +684,21 @@ const strings = {
       },
       {
         slug: "spice-of-kings-set-a",
-        name: "Spice of Kings Set A",
+        name: "Ceylon Spice Sampler",
         category: "gift-set",
         description:
           "Three 30g jars of Sri Lanka's finest: true Ceylon cinnamon, cardamom, and cloves or pepper.",
         price: "£34.95",
-        img: IMAGES.shop.img6,
+        img: IMAGES.giftSets.spiceSampler,
       },
       {
         slug: "queen-of-spices-reserve-set-b",
-        name: "Queen of Spices Reserve Set B",
+        name: "Ceylon Reserve Spice Collection",
         category: "gift-set",
         description:
           "The reserve edition — three full 100g jars at our highest grades, built to last months.",
         price: "£69.00",
-        img: IMAGES.shop.img7,
+        img: IMAGES.giftSets.reserveSpiceCollection,
       },
       {
         slug: "morning-ritual-duo",
@@ -707,7 +707,7 @@ const strings = {
         description:
           "Ceylon Reserve Coffee and C5 Heritage cinnamon, sized to run out together every month.",
         price: "£19.95",
-        img: IMAGES.shop.img8,
+        img: IMAGES.giftSets.morningRitualDuo,
       },
       {
         slug: "chai-and-ceylon-set",
@@ -716,7 +716,7 @@ const strings = {
         description:
           "Golden Chai Latte paired with C4 Daily cinnamon — warm spice for your afternoon ritual.",
         price: "£25.95",
-        img: IMAGES.shop.img9,
+        img: IMAGES.giftSets.chaiAndCeylonSet,
       },
       {
         slug: "daily-ritual-trio",
@@ -725,7 +725,7 @@ const strings = {
         description:
           "Coffee, chai, and cinnamon in one box — three everyday products, graded for daily use.",
         price: "£37.00",
-        img: IMAGES.shop.img10,
+        img: IMAGES.giftSets.dailyRitualTrio,
       },
       {
         slug: "ceramic-mug",
@@ -733,7 +733,7 @@ const strings = {
         category: "accessory",
         description: "A weighted, matte-finish mug sized for a proper morning pour.",
         price: "£18.00",
-        img: IMAGES.shop.img1,
+        img: IMAGES.brewingEssentials.ceramicMug,
       },
       {
         slug: "coffee-spoon",
@@ -741,7 +741,7 @@ const strings = {
         category: "accessory",
         description: "A long-handled measuring spoon for precise, consistent brewing.",
         price: "£9.00",
-        img: IMAGES.shop.img1,
+        img: IMAGES.brewingEssentials.coffeeSpoon,
       },
       {
         slug: "french-press",
@@ -749,7 +749,7 @@ const strings = {
         category: "accessory",
         description: "Borosilicate glass and brushed steel, for a full-bodied everyday brew.",
         price: "£34.00",
-        img: IMAGES.shop.img1,
+        img: IMAGES.brewingEssentials.frenchPress,
       },
       {
         slug: "coffee-grinder",
@@ -757,7 +757,7 @@ const strings = {
         category: "accessory",
         description: "A manual burr grinder for a consistent grind, cup after cup.",
         price: "£52.00",
-        img: IMAGES.shop.img1,
+        img: IMAGES.brewingEssentials.coffeeGrinder,
       },
       {
         slug: "glass-storage-jar",
@@ -765,7 +765,7 @@ const strings = {
         category: "accessory",
         description: "Airtight glass storage to keep beans and spice at their best.",
         price: "£16.00",
-        img: IMAGES.shop.img1,
+        img: IMAGES.brewingEssentials.glassStorageJar,
       },
       {
         slug: "pour-over-dripper",
@@ -773,7 +773,7 @@ const strings = {
         category: "accessory",
         description: "Ceramic dripper for a clean, slow, single-cup ritual.",
         price: "£28.00",
-        img: IMAGES.shop.img1,
+        img: IMAGES.brewingEssentials.pourOverDripper,
       },
     ],
     hero: {
@@ -815,9 +815,9 @@ const strings = {
       },
       {
         title: "Gift Sets",
-        description: "Luxury matte black gift box with coffee products inside.",
+        description: "Curated gift collections.",
         img: IMAGES.giftSet,
-        href: "/shop/gift-sets",
+        href: "/shop?category=gift-set#all-products",
       },
     ],
     featuredCoffee: {
@@ -844,17 +844,6 @@ const strings = {
     allProductsHeading: {
       heading: "All Products",
     },
-    giftSetsBanner: {
-      heading: "Curated Gift Collections",
-      subheading: "Thoughtfully assembled gifts for coffee lovers.",
-      cta: "Explore Collection",
-      img: IMAGES.shop.img7,
-    },
-  },
-  giftSets: {
-    title: "Gift Sets",
-    description:
-      "Curated Sri Lankan ritual gift sets. Premium packaging, provenance-led ingredients, and a story worth giving.",
   },
   productPage: {
     addToCartCta: "Add To Cart",

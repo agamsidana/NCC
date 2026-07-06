@@ -561,7 +561,7 @@ const productDetails: Record<string, ProductDetail> = {
         icon: 'mdi:crown-outline',
         title: 'You want the best we offer, full-size',
         description:
-          "This is Spice of Kings Set A's bigger sibling — full 100g jars at our highest grades, not tasting portions.",
+          "This is the Ceylon Spice Sampler's bigger sibling — full 100g jars at our highest grades, not tasting portions.",
         points: [
           'Full-size jars, not samples',
           'Every jar at our top grade',
@@ -597,7 +597,7 @@ const productDetails: Record<string, ProductDetail> = {
           date: '17/03/2026',
           rating: 5,
           title: 'The set to buy once you know you love NCC',
-          body: 'Started with Set A, loved it, upgraded to this. Full-size jars at reserve grade — exactly what I wanted.',
+          body: 'Started with the Spice Sampler, loved it, upgraded to this. Full-size jars at reserve grade — exactly what I wanted.',
         },
         {
           author: 'Thomas W.',
@@ -1213,7 +1213,7 @@ const fallbackDetail: ProductDetail = {
 
 function resolveCategory(category: string): { category: string; categoryHref: string } {
   return category === 'gift-set'
-    ? { category: 'Gift Sets', categoryHref: '/shop/gift-sets' }
+    ? { category: 'Gift Sets', categoryHref: '/shop?category=gift-set#all-products' }
     : { category: 'Shop', categoryHref: '/shop' };
 }
 
