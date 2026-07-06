@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react'
 import SEO from '../../../common/components/SEO'
 import { IMAGES } from '../../../common/constants/image-source'
 import strings from '../../../common/constants/strings'
@@ -17,26 +18,51 @@ function AboutPage() {
         <h1 className="font-serif text-4xl text-neutral-900 sm:text-5xl">{about.title}</h1>
         <p className="mt-3 text-lg text-neutral-600">{about.subtitle}</p>
 
-        <div className="mt-10 grid gap-10 md:grid-cols-2 md:items-start md:gap-16">
+        <div className="mt-10 grid gap-10 md:grid-cols-2 md:items-center md:gap-16">
           <figure>
             <img
               src={IMAGES.ourStory}
               alt={about.founder.photoCaption}
               className="aspect-[3/4] w-full rounded-2xl object-cover shadow-lg transition-shadow duration-500 hover:shadow-2xl"
             />
-            <figcaption className="mt-3 text-sm text-neutral-500">
-              {about.founder.photoCaption}
-            </figcaption>
           </figure>
 
           <div className="flex flex-col gap-5">
-            <blockquote className="font-serif text-2xl italic leading-snug text-neutral-900 sm:text-3xl">
-              “{about.founder.quote}”
+            <Icon
+              icon="mdi:format-quote-open"
+              width={48}
+              height={48}
+              className="text-neutral-200"
+            />
+            <blockquote className="-mt-6 font-serif text-3xl italic leading-snug text-neutral-900 sm:text-4xl">
+              {about.founder.quote}
             </blockquote>
+
+            <span className="block h-px w-10 bg-neutral-300" aria-hidden="true" />
+
             <p className="text-neutral-600">{about.founder.intro}</p>
-            <div className="border-t border-neutral-200 pt-4">
-              <p className="font-semibold text-neutral-900">{about.founder.name}</p>
-              <p className="text-sm text-neutral-500">{about.founder.role}</p>
+
+            <span className="block h-px w-10 bg-neutral-300" aria-hidden="true" />
+
+            <div className="flex flex-col gap-1">
+              <p className="font-signature text-3xl text-neutral-800">{about.founder.name}</p>
+              <p className="mt-1 font-semibold text-neutral-900">{about.founder.name}</p>
+              <p className="text-sm font-medium text-primary-600">{about.founder.role}</p>
+              <p className="text-sm italic text-neutral-500">{about.founder.sourcingNote}</p>
+            </div>
+
+            <div className="flex items-start divide-x divide-neutral-200 pt-2">
+              {about.founder.trustBadges.map((badge) => (
+                <div
+                  key={badge.label}
+                  className="flex flex-1 flex-col items-center gap-2 px-3 text-center"
+                >
+                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-primary-50 text-primary-600">
+                    <Icon icon={badge.icon} width={20} height={20} />
+                  </span>
+                  <p className="text-xs font-medium text-neutral-700">{badge.label}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -47,7 +73,7 @@ function AboutPage() {
           </h2>
 
           <img
-            src={IMAGES.science.whySpeciesMatter}
+            src={IMAGES.whyWeStarted}
             alt={about.whyWeStarted.heading}
             className="mt-5 aspect-[16/9] w-full rounded-2xl object-cover shadow-lg"
           />

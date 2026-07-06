@@ -368,12 +368,18 @@ const strings = {
     subtitle: "From Sri Lanka to Your Daily Ritual",
     founder: {
       name: "Ruwan Senavirathna",
-      role: "Founder, Natural Ceylon Cinnamon",
+      role: "Founder & Sourcing Director",
+      sourcingNote: "Born in Sri Lanka. Working with growers since 2019.",
       photoCaption: "Ruwan Senavirathna, Founder — Natural Ceylon Cinnamon",
       quote:
         "I couldn't find cinnamon in the UK that I'd actually trust. So I went back to the source.",
       intro:
         "We work directly with growers in Sri Lanka on cinnamon, coffee, and the wider spice pantry — selecting each harvest by grade, testing every batch independently, and shipping directly to you.",
+      trustBadges: [
+        { icon: "mdi:leaf", label: "Direct from Sri Lanka" },
+        { icon: "mdi:shield-check-outline", label: "Independently Lab Tested" },
+        { icon: "mdi:truck-fast-outline", label: "No Middlemen, Just Purity" },
+      ],
     },
     whyWeStarted: {
       heading: "Why We Started",

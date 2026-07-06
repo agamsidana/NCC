@@ -2,8 +2,9 @@ import LOGO from "../../assets/images/logo.jpg";
 import HERO from "../../assets/images/hero.png";
 import MAIN_PRODUCT from "../../assets/images/mainProduct.jpg";
 import MAIN_PRODUCT1 from "../../assets/images/mainProduct2.png";
-import WHY_PRODUCT from "../../assets/images/whyProduct.png"
+import WHY_PRODUCT from "../../assets/images/whyProduct.png";
 import OUR_STORY from "../../assets/images/our_story.png";
+import WHY_WE_STARTED from "../../assets/images/whyWeStarted.png";
 import ALBA_RESERVE from "../../assets/images/alba_reserve.png";
 import IMAGE1 from "../../assets/images/C5HeritageCinnamon.png";
 import IMAGE2 from "../../assets/images/C4DailyCinnamon.png";
@@ -61,17 +62,18 @@ import RITUAL_QUIZ_HERO from "../../assets/images/ritualQuizHero.png";
 export const IMAGES = {
   logo: LOGO,
   hero: HERO,
-  shopHero:SHOP_HERO,
-  bestSellerCoffee:BEST_SELLER_COFFEE,
-  bestSellerTea:BEST_SELLER_TEA,
+  shopHero: SHOP_HERO,
+  bestSellerCoffee: BEST_SELLER_COFFEE,
+  bestSellerTea: BEST_SELLER_TEA,
 
-  giftSet:GIFT_SET,
-  teaAndChai:TEAANDCHAI,
-  cinnamon:CINNAMON,
+  giftSet: GIFT_SET,
+  teaAndChai: TEAANDCHAI,
+  cinnamon: CINNAMON,
   mainProduct: MAIN_PRODUCT,
   mainProduct1: MAIN_PRODUCT1,
   ourStory: OUR_STORY,
-  whyProduct:WHY_PRODUCT,
+  whyWeStarted: WHY_WE_STARTED,
+  whyProduct: WHY_PRODUCT,
   albaReserve: ALBA_RESERVE,
   ritual1: RITUAL_1,
   ritual2: RITUAL_2,
