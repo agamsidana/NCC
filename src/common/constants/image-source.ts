@@ -38,6 +38,8 @@ import SHOP_HERO from "../../assets/images/shopHero.png"
 import GIFT_SET from "../../assets/images/giftSet.png"
 import BEST_SELLER_COFFEE from "../../assets/images/bestSeller1.png";
 import BEST_SELLER_TEA from "../../assets/images/bestSeller2.png";
+import RITUAL_1 from "../../assets/images/ritual1.png";
+import RITUAL_2 from "../../assets/images/ritual2.png";
 
 export const IMAGES = {
   logo: LOGO,
@@ -52,6 +54,8 @@ export const IMAGES = {
   ourStory: OUR_STORY,
   whyProduct:WHY_PRODUCT,
   albaReserve: ALBA_RESERVE,
+  ritual1: RITUAL_1,
+  ritual2: RITUAL_2,
   gradeSystem: {
     image1: IMAGE1,
     image2: IMAGE2,

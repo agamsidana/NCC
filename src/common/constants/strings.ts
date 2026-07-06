@@ -671,7 +671,7 @@ const strings = {
         description:
           "Premium Arabica coffee blended with grade C5 Heritage Ceylon cinnamon.",
         price: "£12.95",
-        img: IMAGES.mainProduct,
+        img: IMAGES.ritual1,
       },
       {
         slug: "golden-chai-latte",
@@ -792,7 +792,7 @@ const strings = {
       {
         title: "Coffee",
         description: "Large warm coffee cup with premium matte coffee bag.",
-        img: IMAGES.mainProduct,
+        img: IMAGES.ritual1,
         href: "/products/ceylon-reserve-coffee",
       },
       {
@@ -810,7 +810,7 @@ const strings = {
       {
         title: "Brewing Essentials",
         description: "Ceramic mug, wooden spoon, French press and coffee grinder arranged neatly.",
-        img: IMAGES.shop.img1,
+        img: IMAGES.ritual2,
         href: "/shop#accessories",
       },
       {
