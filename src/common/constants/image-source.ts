@@ -56,6 +56,7 @@ import RECIPE_ENERGY_BALLS from "../../assets/images/recipeCardamomEnergyBalls.j
 import SCIENCE_WHY_SPECIES_MATTER from "../../assets/images/scienceWhySpeciesMatter.jpg";
 import SCIENCE_METABOLIC_HEALTH_RESEARCH from "../../assets/images/scienceMetabolicHealthResearch.png";
 import SCIENCE_WHY_GRADE_MATTERS from "../../assets/images/scienceWhyGradeMattersScientifically.png";
+import RITUAL_QUIZ_HERO from "../../assets/images/ritualQuizHero.png";
 
 export const IMAGES = {
   logo: LOGO,
@@ -129,4 +130,5 @@ export const IMAGES = {
     metabolicHealthResearch: SCIENCE_METABOLIC_HEALTH_RESEARCH,
     whyGradeMatters: SCIENCE_WHY_GRADE_MATTERS,
   },
+  ritualQuizHero: RITUAL_QUIZ_HERO,
 };

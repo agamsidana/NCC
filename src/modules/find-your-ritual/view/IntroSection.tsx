@@ -1,4 +1,5 @@
 import { Icon } from '@iconify/react'
+import { IMAGES } from '../../../common/constants/image-source'
 import strings from '../../../common/constants/strings'
 
 function IntroSection({ onStart }: { onStart: () => void }) {
@@ -6,7 +7,13 @@ function IntroSection({ onStart }: { onStart: () => void }) {
 
   return (
     <div className="text-center">
-      <p className="text-xs font-semibold tracking-[0.2em] text-primary-600">{intro.eyebrow}</p>
+      <img
+        src={IMAGES.ritualQuizHero}
+        alt={intro.heading}
+        className="mx-auto aspect-[4/3] w-full max-w-md rounded-2xl object-cover shadow-lg"
+      />
+
+      <p className="mt-8 text-xs font-semibold tracking-[0.2em] text-primary-600">{intro.eyebrow}</p>
       <h1 className="mt-3 font-serif text-4xl text-neutral-900 sm:text-5xl">{intro.heading}</h1>
       <p className="mt-4 text-neutral-600">{intro.subheading}</p>
 

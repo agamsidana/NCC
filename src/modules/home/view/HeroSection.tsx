@@ -29,7 +29,21 @@ function HeroSection() {
             {hero.description}
           </p>
 
-          <div className="flex items-center gap-2 text-sm">
+          <div className="flex items-center gap-3 text-sm">
+            <span className="flex -space-x-2">
+              {IMAGES.reviewers.slice(0, 4).map((reviewer, index) => (
+                <span
+                  key={index}
+                  className="h-7 w-7 shrink-0 overflow-hidden rounded-full border-2 border-neutral-50"
+                >
+                  <img
+                    src={reviewer}
+                    alt=""
+                    className="h-full w-full scale-125 object-cover"
+                  />
+                </span>
+              ))}
+            </span>
             <span className="flex text-primary-500">
               {Array.from({ length: 5 }).map((_, index) => (
                 <Icon key={index} icon="mdi:star" width={16} height={16} />
