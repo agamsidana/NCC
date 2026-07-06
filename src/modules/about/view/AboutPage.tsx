@@ -45,7 +45,14 @@ function AboutPage() {
           <h2 className="font-serif text-2xl text-neutral-900 sm:text-3xl">
             {about.whyWeStarted.heading}
           </h2>
-          <div className="mt-4 flex flex-col gap-4 text-neutral-600">
+
+          <img
+            src={IMAGES.science.whySpeciesMatter}
+            alt={about.whyWeStarted.heading}
+            className="mt-5 aspect-[16/9] w-full rounded-2xl object-cover shadow-lg"
+          />
+
+          <div className="mt-6 flex flex-col gap-4 text-neutral-600">
             {about.whyWeStarted.paragraphs.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
