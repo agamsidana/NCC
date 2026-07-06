@@ -1,25 +1,34 @@
 import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import strings from "../../../common/constants/strings";
 import ProductGrid from "../components/ProductGrid";
 
 const filters: { label: string; value: string | null }[] = [
   { label: "All", value: null },
+  { label: "Coffee", value: "coffee" },
+  { label: "Tea & Chai", value: "tea" },
   { label: "Cinnamon", value: "cinnamon" },
-  { label: "Ritual", value: "ritual" },
   { label: "Accessories", value: "accessory" },
   { label: "Gift Sets", value: "gift-set" },
 ];
 
 function AllProductsSection() {
   const { allProductsHeading, products } = strings.shop;
-  const [activeFilter, setActiveFilter] = useState<string | null>(null);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const categoryParam = searchParams.get("category");
+  const [activeFilter, setActiveFilter] = useState<string | null>(categoryParam);
 
   const visibleProducts = activeFilter
     ? products.filter((product) => product.category === activeFilter)
     : products;
 
+  function handleFilterChange(value: string | null) {
+    setActiveFilter(value);
+    setSearchParams(value ? { category: value } : {}, { replace: true });
+  }
+
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section id="all-products" className="scroll-mt-24 bg-white py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4">
         <h2 className="text-center font-serif text-3xl leading-tight text-neutral-900 sm:text-4xl">
           {allProductsHeading.heading}
@@ -30,7 +39,7 @@ function AllProductsSection() {
             <button
               key={filter.label}
               type="button"
-              onClick={() => setActiveFilter(filter.value)}
+              onClick={() => handleFilterChange(filter.value)}
               className={`text-sm font-medium transition-colors ${
                 activeFilter === filter.value
                   ? "text-secondary-600 underline underline-offset-4"

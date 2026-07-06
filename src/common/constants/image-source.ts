@@ -34,12 +34,14 @@ import REVIEW_IMAGE_3 from "../../assets/images/reviewImage3.jpg";
 import GROWER_IMAGE_1 from "../../assets/images/grower1.png";
 import GROWER_IMAGE_2 from "../../assets/images/grower2.png";
 import GROWER_IMAGE_3 from "../../assets/images/grower3.png";
-import SHOP_HERO from "../../assets/images/shopHero.png"
-import GIFT_SET from "../../assets/images/giftSet.png"
+import SHOP_HERO from "../../assets/images/shopHero.png";
+import GIFT_SET from "../../assets/images/giftSet.png";
+import TEAANDCHAI from "../../assets/images/teaandchai.png";
 import BEST_SELLER_COFFEE from "../../assets/images/bestSeller1.png";
 import BEST_SELLER_TEA from "../../assets/images/bestSeller2.png";
 import RITUAL_1 from "../../assets/images/ritual1.png";
 import RITUAL_2 from "../../assets/images/ritual2.png";
+import CINNAMON from "../../assets/images/cinnamon.png"
 
 export const IMAGES = {
   logo: LOGO,
@@ -49,6 +51,8 @@ export const IMAGES = {
   bestSellerTea:BEST_SELLER_TEA,
 
   giftSet:GIFT_SET,
+  teaAndChai:TEAANDCHAI,
+  cinnamon:CINNAMON,
   mainProduct: MAIN_PRODUCT,
   mainProduct1: MAIN_PRODUCT1,
   ourStory: OUR_STORY,

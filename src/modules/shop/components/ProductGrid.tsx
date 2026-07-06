@@ -4,8 +4,10 @@ import strings from "../../../common/constants/strings";
 import type { ShopProduct } from "../types";
 
 const categoryLabels: Record<string, string> = {
+  coffee: "Coffee",
+  tea: "Tea & Chai",
   cinnamon: "Cinnamon",
-  ritual: "Ritual",
+  accessory: "Accessory",
   "gift-set": "Gift Set",
 };
 

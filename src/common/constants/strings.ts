@@ -667,7 +667,7 @@ const strings = {
       {
         slug: "ceylon-reserve-coffee",
         name: "Ceylon Reserve Coffee",
-        category: "ritual",
+        category: "coffee",
         description:
           "Premium Arabica coffee blended with grade C5 Heritage Ceylon cinnamon.",
         price: "£12.95",
@@ -676,7 +676,7 @@ const strings = {
       {
         slug: "golden-chai-latte",
         name: "Golden Chai Latte",
-        category: "ritual",
+        category: "tea",
         description:
           "One heaped teaspoon into hot oat milk. A deeply warming Sri Lankan spice blend.",
         price: "£19.95",
@@ -796,16 +796,16 @@ const strings = {
         href: "/products/ceylon-reserve-coffee",
       },
       {
-        title: "Golden Chai Latte",
-        description: "Creamy chai in ceramic mug with spices.",
-        img: IMAGES.mainProduct1,
-        href: "/products/golden-chai-latte",
+        title: "Tea & Chai",
+        description: "Black tea, chai latte & herbal blends.",
+        img: IMAGES.teaAndChai,
+        href: "/shop?category=tea#all-products",
       },
       {
-        title: "Ceylon Cinnamon",
-        description: "Luxury cinnamon jar with warm spices.",
-        img: IMAGES.gradeSystem.image1,
-        href: "/products/c5-heritage",
+        title: "Cinnamon",
+        description: "Pure Ceylon cinnamon collection.",
+        img: IMAGES.cinnamon,
+        href: "/shop?category=cinnamon#all-products",
       },
       {
         title: "Brewing Essentials",
