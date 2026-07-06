@@ -7,11 +7,13 @@ function IntroSection({ onStart }: { onStart: () => void }) {
 
   return (
     <div className="text-center">
-      <img
-        src={IMAGES.ritualQuizHero}
-        alt={intro.heading}
-        className="mx-auto aspect-[4/3] w-full max-w-md rounded-2xl object-cover shadow-lg"
-      />
+      <div className="mx-auto w-full max-w-md overflow-hidden rounded-2xl shadow-lg [transform:translateZ(0)]">
+        <img
+          src={IMAGES.ritualQuizHero}
+          alt={intro.heading}
+          className="aspect-[4/3] w-full origin-center rounded-2xl object-cover motion-safe:animate-fade-zoom-out"
+        />
+      </div>
 
       <p className="mt-8 text-xs font-semibold tracking-[0.2em] text-primary-600">{intro.eyebrow}</p>
       <h1 className="mt-3 font-serif text-4xl text-neutral-900 sm:text-5xl">{intro.heading}</h1>

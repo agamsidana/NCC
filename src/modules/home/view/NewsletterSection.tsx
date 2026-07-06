@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import { IMAGES } from "../../../common/constants/image-source";
 import strings from "../../../common/constants/strings";
 
 function NewsletterSection() {
@@ -30,6 +31,26 @@ function NewsletterSection() {
             </li>
           ))}
         </ul>
+
+        <div className="mt-6 flex items-center justify-center gap-3">
+          <span className="flex -space-x-2">
+            {IMAGES.reviewers.slice(0, 4).map((reviewer, index) => (
+              <span
+                key={index}
+                className="h-7 w-7 shrink-0 overflow-hidden rounded-full border-2 border-neutral-100"
+              >
+                <img
+                  src={reviewer}
+                  alt=""
+                  className="h-full w-full scale-125 object-cover"
+                />
+              </span>
+            ))}
+          </span>
+          <span className="text-sm font-medium text-neutral-700">
+            {newsletter.socialProof}
+          </span>
+        </div>
 
         <form
           className="mx-auto mt-8 flex max-w-md flex-col gap-3 sm:flex-row"

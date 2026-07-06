@@ -307,6 +307,7 @@ const strings = {
       placeholder: "Your email address",
       cta: "Join The Ritual List",
       disclaimer: "No spam. Unsubscribe any time.",
+      socialProof: "Join 200+ others already on the list",
     },
   },
   footer: {
