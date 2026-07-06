@@ -15,6 +15,8 @@ function RitualGuidePage({ guide, path }: { guide: RitualGuideContent; path: str
         <img
           src={guide.image}
           alt={guide.title}
+          loading="lazy"
+          decoding="async"
           className="mt-6 aspect-[16/9] w-full rounded-2xl object-cover shadow-lg"
         />
 

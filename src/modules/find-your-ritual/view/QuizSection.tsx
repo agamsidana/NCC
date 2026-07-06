@@ -38,6 +38,8 @@ function QuizSection({
         <img
           src={question.image}
           alt=""
+          loading="lazy"
+          decoding="async"
           className="aspect-[4/3] w-full rounded-2xl object-cover shadow-md sm:aspect-square"
         />
 

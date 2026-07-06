@@ -23,7 +23,13 @@ function ResultSection({
       <h1 className="mt-3 font-serif text-4xl text-neutral-900 sm:text-5xl">{result.heading}</h1>
 
       <div className="mx-auto mt-8 max-w-sm overflow-hidden rounded-2xl border border-neutral-200 bg-white text-left">
-        <img src={product.image} alt={product.title} className="aspect-square w-full object-cover" />
+        <img
+          src={product.image}
+          alt={product.title}
+          loading="lazy"
+          decoding="async"
+          className="aspect-square w-full object-cover"
+        />
         <div className="flex flex-col gap-2 p-6">
           <h2 className="font-serif text-xl text-neutral-900">{product.title}</h2>
           <p className="text-sm text-neutral-500">{product.description}</p>

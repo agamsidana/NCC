@@ -42,6 +42,8 @@ function NewsletterSection() {
                 <img
                   src={reviewer}
                   alt=""
+                  loading="lazy"
+                  decoding="async"
                   className="h-full w-full scale-125 object-cover"
                 />
               </span>

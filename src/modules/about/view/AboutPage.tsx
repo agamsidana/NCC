@@ -23,6 +23,8 @@ function AboutPage() {
             <img
               src={IMAGES.ourStory}
               alt={about.founder.photoCaption}
+              loading="lazy"
+              decoding="async"
               className="aspect-[3/4] w-full rounded-2xl object-cover shadow-lg transition-shadow duration-500 hover:shadow-2xl"
             />
           </figure>
@@ -75,6 +77,8 @@ function AboutPage() {
           <img
             src={IMAGES.whyWeStarted}
             alt={about.whyWeStarted.heading}
+            loading="lazy"
+            decoding="async"
             className="mt-5 aspect-[16/9] w-full rounded-2xl object-cover shadow-lg"
           />
 

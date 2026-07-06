@@ -26,6 +26,8 @@ function HarvestPeopleSection() {
                 <img
                   src={IMAGES.growers[photo.image as keyof typeof IMAGES.growers]}
                   alt={photo.caption}
+                  loading="lazy"
+                  decoding="async"
                   className="aspect-[3/4] w-full object-cover transition-[filter] duration-500 group-hover:brightness-105"
                 />
               </div>

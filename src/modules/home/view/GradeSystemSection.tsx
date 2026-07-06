@@ -29,6 +29,8 @@ function GradeSystemSection() {
               <img
                 src={product.img}
                 alt={product.title}
+                loading="lazy"
+                decoding="async"
                 className="aspect-[4/3] w-full object-cover transition-[filter] duration-500 hover:brightness-105"
               />
               <div className="flex flex-1 flex-col gap-3 p-6">

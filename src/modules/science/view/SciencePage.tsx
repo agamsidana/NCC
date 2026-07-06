@@ -28,6 +28,8 @@ function SciencePage() {
               <img
                 src={section.image}
                 alt={section.heading}
+                loading="lazy"
+                decoding="async"
                 className="mt-5 aspect-[16/9] w-full rounded-2xl object-cover shadow-lg"
               />
             )}

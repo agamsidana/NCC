@@ -33,6 +33,8 @@ function RecipesPage() {
                   <img
                     src={featured.img}
                     alt={featured.title}
+                    loading="lazy"
+                    decoding="async"
                     className="aspect-[16/9] w-full object-cover transition-[filter] duration-500 group-hover:brightness-105"
                   />
                 </div>
@@ -55,6 +57,8 @@ function RecipesPage() {
                         <img
                           src={post.img}
                           alt={post.title}
+                          loading="lazy"
+                          decoding="async"
                           className="aspect-[16/9] w-full object-cover transition-[filter] duration-500 group-hover:brightness-105"
                         />
                       </div>

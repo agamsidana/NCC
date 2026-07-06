@@ -37,6 +37,8 @@ function FeaturedCoffeeSection() {
           <img
             src={featuredCoffee.img}
             alt={featuredCoffee.heading}
+            loading="lazy"
+            decoding="async"
             className="aspect-[4/3] w-full object-cover md:aspect-auto md:h-full"
           />
           <div className="flex flex-col items-start justify-center gap-3 p-8 md:p-12">

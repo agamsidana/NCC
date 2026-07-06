@@ -51,6 +51,8 @@ function ProductOverviewSection({ product }: ProductOverviewSectionProps) {
           <img
             src={product.image}
             alt={product.title}
+            loading="lazy"
+            decoding="async"
             className="aspect-square w-full rounded-2xl object-cover shadow-lg transition-shadow duration-500 hover:shadow-2xl"
           />
         </div>

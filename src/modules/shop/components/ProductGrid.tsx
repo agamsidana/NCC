@@ -25,6 +25,8 @@ function ProductGrid({ products }: { products: readonly ShopProduct[] }) {
               <img
                 src={product.img}
                 alt={product.name}
+                loading="lazy"
+                decoding="async"
                 className="aspect-square w-full rounded-t-2xl object-cover transition-[filter] duration-500 group-hover:brightness-105"
               />
               {product.category && categoryLabels[product.category] && (

@@ -26,6 +26,8 @@ function RitualsSection() {
             <img
               src={IMAGES.mainProduct}
               alt={rituals.morning.heading}
+              loading="lazy"
+              decoding="async"
               className="aspect-[4/3] w-full object-cover transition-[filter] duration-500 hover:brightness-105 md:h-full md:aspect-auto"
             />
             <div className="flex flex-col justify-center gap-4 p-8">
@@ -96,6 +98,8 @@ function RitualsSection() {
             <img
               src={IMAGES.mainProduct1}
               alt={rituals.afternoon.heading}
+              loading="lazy"
+              decoding="async"
               className="order-1 aspect-[4/3] w-full object-cover transition-[filter] duration-500 hover:brightness-105 md:order-2 md:h-full md:aspect-auto"
             />
           </div>

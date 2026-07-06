@@ -40,6 +40,8 @@ function AccessoriesSection() {
                 <img
                   src={product.img}
                   alt={product.name}
+                  loading="lazy"
+                  decoding="async"
                   className="aspect-square w-full object-cover"
                 />
               </Link>

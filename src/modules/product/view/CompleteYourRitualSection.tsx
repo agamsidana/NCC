@@ -23,6 +23,8 @@ function CompleteYourRitualSection({ product }: CompleteYourRitualSectionProps) 
               <img
                 src={item.image}
                 alt={item.title}
+                loading="lazy"
+                decoding="async"
                 className="aspect-square w-full rounded-xl object-cover"
               />
               <p className="text-sm font-medium text-neutral-900">{item.title}</p>

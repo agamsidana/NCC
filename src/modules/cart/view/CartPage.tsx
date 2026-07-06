@@ -67,6 +67,8 @@ function CartPage() {
                   <img
                     src={IMAGES.mainProduct}
                     alt={product.title}
+                    loading="lazy"
+                    decoding="async"
                     className="h-20 w-20 shrink-0 rounded-lg object-cover"
                   />
                   <div className="flex flex-1 flex-col gap-1">

@@ -75,6 +75,8 @@ function ReviewsPage() {
                     <img
                       src={IMAGES.reviewers[index % IMAGES.reviewers.length]}
                       alt={review.author}
+                      loading="lazy"
+                      decoding="async"
                       className="h-full w-full scale-125 object-cover"
                     />
                   </span>

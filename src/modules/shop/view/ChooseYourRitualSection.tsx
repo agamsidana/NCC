@@ -25,6 +25,8 @@ function ChooseYourRitualSection() {
               <img
                 src={card.img}
                 alt={card.title}
+                loading="lazy"
+                decoding="async"
                 className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />

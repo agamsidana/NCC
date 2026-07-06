@@ -33,6 +33,8 @@ function RecipeDetailPage() {
         <img
           src={post.img}
           alt={post.title}
+          loading="lazy"
+          decoding="async"
           className="mt-6 aspect-[16/9] w-full rounded-2xl object-cover shadow-lg"
         />
 

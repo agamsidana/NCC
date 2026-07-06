@@ -15,7 +15,13 @@ function Footer() {
         <div className="flex flex-col gap-3">
           <Link to="/" className="flex items-center gap-2">
             <span className="flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-full border border-primary-400">
-              <img src={IMAGES.logo} alt="" className="h-full w-full object-cover" />
+              <img
+                src={IMAGES.logo}
+                alt=""
+                loading="lazy"
+                decoding="async"
+                className="h-full w-full object-cover"
+              />
             </span>
             <span className="font-serif text-lg tracking-wide text-white">{layout.siteName}</span>
           </Link>

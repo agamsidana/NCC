@@ -86,6 +86,8 @@ function FeaturedChaiSection() {
           <img
             src={featuredChai.img}
             alt={featuredChai.heading}
+            loading="lazy"
+            decoding="async"
             className="order-1 aspect-[4/3] w-full object-cover md:order-2 md:aspect-auto md:h-full"
           />
         </div>

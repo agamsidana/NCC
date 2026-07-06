@@ -39,6 +39,8 @@ function ReviewsSection() {
                 <img
                   src={IMAGES.reviewShowcase[index % IMAGES.reviewShowcase.length]}
                   alt={`${review.author} sharing their NCC ritual`}
+                  loading="lazy"
+                  decoding="async"
                   className="aspect-[4/5] w-full object-cover transition-[filter] duration-500 group-hover:brightness-105"
                 />
               </div>

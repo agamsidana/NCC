@@ -69,6 +69,8 @@ function CartDrawer() {
                   <img
                     src={item.image}
                     alt={item.title}
+                    loading="lazy"
+                    decoding="async"
                     className="h-16 w-16 shrink-0 rounded-lg object-cover"
                   />
                   <div className="flex flex-1 flex-col gap-1">
