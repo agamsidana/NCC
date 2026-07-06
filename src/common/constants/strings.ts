@@ -424,6 +424,7 @@ const strings = {
     sections: [
       {
         heading: "Ceylon vs. Cassia: Why Species Matters",
+        image: IMAGES.science.whySpeciesMatter,
         paragraphs: [
           "Cassia (Cinnamomum cassia) and Ceylon (Cinnamomum verum) are botanically different plants. Ceylon is lighter in colour, more delicate in flavour, and critically different in its coumarin content. Cassia contains 1–5% coumarin. Authenticated Ceylon contains approximately 0.04%, more than 25x less.",
           "The European Food Safety Authority has set tolerable daily intake limits specifically because of Cassia's coumarin levels. If you're consuming cinnamon regularly, species matters.",
@@ -433,6 +434,7 @@ const strings = {
       },
       {
         heading: "Metabolic Health Research",
+        image: IMAGES.science.metabolicHealthResearch,
         paragraphs: [
           "Over 40 peer-reviewed studies have examined cinnamon's relationship with glucose metabolism, insulin sensitivity, and post-meal blood sugar response. Several randomised controlled trials have shown statistically significant reductions in fasting blood glucose and HbA1c in participants supplementing with cinnamon regularly.",
         ],
@@ -441,6 +443,7 @@ const strings = {
       },
       {
         heading: "Why Grade Matters Scientifically",
+        image: IMAGES.science.whyGradeMatters,
         paragraphs: [
           "Essential oil concentration varies significantly by grade. C1 grade contains roughly 0.5–1% volatile oil, while C5 Heritage contains 2.5–3%, and Alba Reserve tests highest of all. The bioactive compounds most studied are concentrated in the essential oil, which is why grade — not just species — determines potency.",
         ],

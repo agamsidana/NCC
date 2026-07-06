@@ -24,6 +24,14 @@ function SciencePage() {
           <div key={section.heading} className="mt-12">
             <h2 className="font-serif text-2xl text-neutral-900 sm:text-3xl">{section.heading}</h2>
 
+            {section.image && (
+              <img
+                src={section.image}
+                alt={section.heading}
+                className="mt-5 aspect-[16/9] w-full rounded-2xl object-cover shadow-lg"
+              />
+            )}
+
             <div className="mt-4 flex flex-col gap-4 text-neutral-600">
               {section.paragraphs.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
